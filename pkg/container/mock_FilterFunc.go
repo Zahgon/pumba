@@ -13,27 +13,10 @@ type MockFilterFunc_Expecter struct {
 	mock *mock.Mock
 }
 
-func (_m *MockFilterFunc) EXPECT() *MockFilterFunc_Expecter {
-	return &MockFilterFunc_Expecter{mock: &_m.Mock}
-}
+func (_m *MockFilterFunc) EXPECT() *MockFilterFunc_Expecter { _ = "STUB: not implemented"; return nil }
 
 // Execute provides a mock function with given fields: _a0
-func (_m *MockFilterFunc) Execute(_a0 *Container) bool {
-	ret := _m.Called(_a0)
-
-	if len(ret) == 0 {
-		panic("no return value specified for Execute")
-	}
-
-	var r0 bool
-	if rf, ok := ret.Get(0).(func(*Container) bool); ok {
-		r0 = rf(_a0)
-	} else {
-		r0 = ret.Get(0).(bool)
-	}
-
-	return r0
-}
+func (_m *MockFilterFunc) Execute(_a0 *Container) bool { _ = "STUB: not implemented"; return false }
 
 // MockFilterFunc_Execute_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'Execute'
 type MockFilterFunc_Execute_Call struct {
@@ -43,24 +26,23 @@ type MockFilterFunc_Execute_Call struct {
 // Execute is a helper method to define mock.On call
 //   - _a0 *Container
 func (_e *MockFilterFunc_Expecter) Execute(_a0 interface{}) *MockFilterFunc_Execute_Call {
-	return &MockFilterFunc_Execute_Call{Call: _e.mock.On("Execute", _a0)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockFilterFunc_Execute_Call) Run(run func(_a0 *Container)) *MockFilterFunc_Execute_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(*Container))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockFilterFunc_Execute_Call) Return(_a0 bool) *MockFilterFunc_Execute_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockFilterFunc_Execute_Call) RunAndReturn(run func(*Container) bool) *MockFilterFunc_Execute_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewMockFilterFunc creates a new instance of MockFilterFunc. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
@@ -69,10 +51,6 @@ func NewMockFilterFunc(t interface {
 	mock.TestingT
 	Cleanup(func())
 }) *MockFilterFunc {
-	mock := &MockFilterFunc{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

@@ -3,12 +3,9 @@ package cmd
 
 import (
 	"context"
-	"fmt"
 
 	"github.com/alexei-led/pumba/pkg/chaos"
 	"github.com/alexei-led/pumba/pkg/chaos/cliflags"
-	chaoscmd "github.com/alexei-led/pumba/pkg/chaos/cmd"
-	"github.com/alexei-led/pumba/pkg/chaos/netem"
 	"github.com/alexei-led/pumba/pkg/container"
 	"github.com/urfave/cli"
 )
@@ -23,41 +20,16 @@ type CorruptParams struct {
 
 // NewCorruptCLICommand initialize CLI corrupt command.
 func NewCorruptCLICommand(ctx context.Context, runtime chaos.Runtime) *cli.Command {
-	return chaoscmd.NewAction(ctx, runtime, chaoscmd.Spec[CorruptParams]{
-		Name: "corrupt",
-		Flags: []cli.Flag{
-			cli.Float64Flag{
-				Name:  "percent, p",
-				Usage: "packet corrupt percentage",
-				Value: 0.0,
-			},
-			cli.Float64Flag{
-				Name:  "correlation, c",
-				Usage: "corrupt correlation; in percentage",
-				Value: 0.0,
-			},
-		},
-		Usage:       "adds packet corruption",
-		ArgsUsage:   fmt.Sprintf("containers (name, list of names, or RE2 regex if prefixed with %q", chaos.Re2Prefix),
-		Description: "adds packet corruption, based on independent (Bernoulli) probability model\n \tsee:  http://www.voiptroubleshooter.com/indepth/burstloss.html",
-		Parse:       parseCorruptParams,
-		Build:       buildCorruptCommand,
-	})
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func parseCorruptParams(c cliflags.Flags, gp *chaos.GlobalParams) (CorruptParams, error) {
-	base, limit, err := netem.ParseRequestBase(c.Parent(), gp)
-	if err != nil {
-		return CorruptParams{}, fmt.Errorf("error parsing netem parameters: %w", err)
-	}
-	return CorruptParams{
-		Base:        base,
-		Limit:       limit,
-		Percent:     c.Float64("percent"),
-		Correlation: c.Float64("correlation"),
-	}, nil
+	_ = "STUB: not implemented"
+	return *new(CorruptParams), nil
 }
 
 func buildCorruptCommand(client container.Client, gp *chaos.GlobalParams, p CorruptParams) (chaos.Command, error) {
-	return netem.NewCorruptCommand(client, gp, p.Base, p.Limit, p.Percent, p.Correlation)
+	_ = "STUB: not implemented"
+	return *new(chaos.Command), nil
 }

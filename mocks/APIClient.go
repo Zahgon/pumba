@@ -50,38 +50,12 @@ type APIClient_Expecter struct {
 	mock *mock.Mock
 }
 
-func (_m *APIClient) EXPECT() *APIClient_Expecter {
-	return &APIClient_Expecter{mock: &_m.Mock}
-}
+func (_m *APIClient) EXPECT() *APIClient_Expecter { _ = "STUB: not implemented"; return nil }
 
 // BuildCachePrune provides a mock function with given fields: ctx, opts
 func (_m *APIClient) BuildCachePrune(ctx context.Context, opts build.CachePruneOptions) (*build.CachePruneReport, error) {
-	ret := _m.Called(ctx, opts)
-
-	if len(ret) == 0 {
-		panic("no return value specified for BuildCachePrune")
-	}
-
-	var r0 *build.CachePruneReport
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, build.CachePruneOptions) (*build.CachePruneReport, error)); ok {
-		return rf(ctx, opts)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, build.CachePruneOptions) *build.CachePruneReport); ok {
-		r0 = rf(ctx, opts)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*build.CachePruneReport)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, build.CachePruneOptions) error); ok {
-		r1 = rf(ctx, opts)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // APIClient_BuildCachePrune_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'BuildCachePrune'
@@ -93,42 +67,29 @@ type APIClient_BuildCachePrune_Call struct {
 //   - ctx context.Context
 //   - opts build.CachePruneOptions
 func (_e *APIClient_Expecter) BuildCachePrune(ctx interface{}, opts interface{}) *APIClient_BuildCachePrune_Call {
-	return &APIClient_BuildCachePrune_Call{Call: _e.mock.On("BuildCachePrune", ctx, opts)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_BuildCachePrune_Call) Run(run func(ctx context.Context, opts build.CachePruneOptions)) *APIClient_BuildCachePrune_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(build.CachePruneOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_BuildCachePrune_Call) Return(_a0 *build.CachePruneReport, _a1 error) *APIClient_BuildCachePrune_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_BuildCachePrune_Call) RunAndReturn(run func(context.Context, build.CachePruneOptions) (*build.CachePruneReport, error)) *APIClient_BuildCachePrune_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // BuildCancel provides a mock function with given fields: ctx, id
 func (_m *APIClient) BuildCancel(ctx context.Context, id string) error {
-	ret := _m.Called(ctx, id)
-
-	if len(ret) == 0 {
-		panic("no return value specified for BuildCancel")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string) error); ok {
-		r0 = rf(ctx, id)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_BuildCancel_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'BuildCancel'
@@ -140,42 +101,29 @@ type APIClient_BuildCancel_Call struct {
 //   - ctx context.Context
 //   - id string
 func (_e *APIClient_Expecter) BuildCancel(ctx interface{}, id interface{}) *APIClient_BuildCancel_Call {
-	return &APIClient_BuildCancel_Call{Call: _e.mock.On("BuildCancel", ctx, id)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_BuildCancel_Call) Run(run func(ctx context.Context, id string)) *APIClient_BuildCancel_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_BuildCancel_Call) Return(_a0 error) *APIClient_BuildCancel_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_BuildCancel_Call) RunAndReturn(run func(context.Context, string) error) *APIClient_BuildCancel_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // CheckpointCreate provides a mock function with given fields: ctx, _a1, options
 func (_m *APIClient) CheckpointCreate(ctx context.Context, _a1 string, options checkpoint.CreateOptions) error {
-	ret := _m.Called(ctx, _a1, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for CheckpointCreate")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, checkpoint.CreateOptions) error); ok {
-		r0 = rf(ctx, _a1, options)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_CheckpointCreate_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'CheckpointCreate'
@@ -188,42 +136,29 @@ type APIClient_CheckpointCreate_Call struct {
 //   - _a1 string
 //   - options checkpoint.CreateOptions
 func (_e *APIClient_Expecter) CheckpointCreate(ctx interface{}, _a1 interface{}, options interface{}) *APIClient_CheckpointCreate_Call {
-	return &APIClient_CheckpointCreate_Call{Call: _e.mock.On("CheckpointCreate", ctx, _a1, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_CheckpointCreate_Call) Run(run func(ctx context.Context, _a1 string, options checkpoint.CreateOptions)) *APIClient_CheckpointCreate_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(checkpoint.CreateOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_CheckpointCreate_Call) Return(_a0 error) *APIClient_CheckpointCreate_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_CheckpointCreate_Call) RunAndReturn(run func(context.Context, string, checkpoint.CreateOptions) error) *APIClient_CheckpointCreate_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // CheckpointDelete provides a mock function with given fields: ctx, _a1, options
 func (_m *APIClient) CheckpointDelete(ctx context.Context, _a1 string, options checkpoint.DeleteOptions) error {
-	ret := _m.Called(ctx, _a1, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for CheckpointDelete")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, checkpoint.DeleteOptions) error); ok {
-		r0 = rf(ctx, _a1, options)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_CheckpointDelete_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'CheckpointDelete'
@@ -236,54 +171,29 @@ type APIClient_CheckpointDelete_Call struct {
 //   - _a1 string
 //   - options checkpoint.DeleteOptions
 func (_e *APIClient_Expecter) CheckpointDelete(ctx interface{}, _a1 interface{}, options interface{}) *APIClient_CheckpointDelete_Call {
-	return &APIClient_CheckpointDelete_Call{Call: _e.mock.On("CheckpointDelete", ctx, _a1, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_CheckpointDelete_Call) Run(run func(ctx context.Context, _a1 string, options checkpoint.DeleteOptions)) *APIClient_CheckpointDelete_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(checkpoint.DeleteOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_CheckpointDelete_Call) Return(_a0 error) *APIClient_CheckpointDelete_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_CheckpointDelete_Call) RunAndReturn(run func(context.Context, string, checkpoint.DeleteOptions) error) *APIClient_CheckpointDelete_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // CheckpointList provides a mock function with given fields: ctx, _a1, options
 func (_m *APIClient) CheckpointList(ctx context.Context, _a1 string, options checkpoint.ListOptions) ([]checkpoint.Summary, error) {
-	ret := _m.Called(ctx, _a1, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for CheckpointList")
-	}
-
-	var r0 []checkpoint.Summary
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, checkpoint.ListOptions) ([]checkpoint.Summary, error)); ok {
-		return rf(ctx, _a1, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, checkpoint.ListOptions) []checkpoint.Summary); ok {
-		r0 = rf(ctx, _a1, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]checkpoint.Summary)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, checkpoint.ListOptions) error); ok {
-		r1 = rf(ctx, _a1, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // APIClient_CheckpointList_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'CheckpointList'
@@ -296,43 +206,27 @@ type APIClient_CheckpointList_Call struct {
 //   - _a1 string
 //   - options checkpoint.ListOptions
 func (_e *APIClient_Expecter) CheckpointList(ctx interface{}, _a1 interface{}, options interface{}) *APIClient_CheckpointList_Call {
-	return &APIClient_CheckpointList_Call{Call: _e.mock.On("CheckpointList", ctx, _a1, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_CheckpointList_Call) Run(run func(ctx context.Context, _a1 string, options checkpoint.ListOptions)) *APIClient_CheckpointList_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(checkpoint.ListOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_CheckpointList_Call) Return(_a0 []checkpoint.Summary, _a1 error) *APIClient_CheckpointList_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_CheckpointList_Call) RunAndReturn(run func(context.Context, string, checkpoint.ListOptions) ([]checkpoint.Summary, error)) *APIClient_CheckpointList_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ClientVersion provides a mock function with no fields
-func (_m *APIClient) ClientVersion() string {
-	ret := _m.Called()
-
-	if len(ret) == 0 {
-		panic("no return value specified for ClientVersion")
-	}
-
-	var r0 string
-	if rf, ok := ret.Get(0).(func() string); ok {
-		r0 = rf()
-	} else {
-		r0 = ret.Get(0).(string)
-	}
-
-	return r0
-}
+func (_m *APIClient) ClientVersion() string { _ = "STUB: not implemented"; return "" }
 
 // APIClient_ClientVersion_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ClientVersion'
 type APIClient_ClientVersion_Call struct {
@@ -341,43 +235,27 @@ type APIClient_ClientVersion_Call struct {
 
 // ClientVersion is a helper method to define mock.On call
 func (_e *APIClient_Expecter) ClientVersion() *APIClient_ClientVersion_Call {
-	return &APIClient_ClientVersion_Call{Call: _e.mock.On("ClientVersion")}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ClientVersion_Call) Run(run func()) *APIClient_ClientVersion_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run()
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ClientVersion_Call) Return(_a0 string) *APIClient_ClientVersion_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ClientVersion_Call) RunAndReturn(run func() string) *APIClient_ClientVersion_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // Close provides a mock function with no fields
-func (_m *APIClient) Close() error {
-	ret := _m.Called()
-
-	if len(ret) == 0 {
-		panic("no return value specified for Close")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func() error); ok {
-		r0 = rf()
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
-}
+func (_m *APIClient) Close() error { _ = "STUB: not implemented"; return nil }
 
 // APIClient_Close_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'Close'
 type APIClient_Close_Call struct {
@@ -385,53 +263,27 @@ type APIClient_Close_Call struct {
 }
 
 // Close is a helper method to define mock.On call
-func (_e *APIClient_Expecter) Close() *APIClient_Close_Call {
-	return &APIClient_Close_Call{Call: _e.mock.On("Close")}
-}
+func (_e *APIClient_Expecter) Close() *APIClient_Close_Call { _ = "STUB: not implemented"; return nil }
 
 func (_c *APIClient_Close_Call) Run(run func()) *APIClient_Close_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run()
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_Close_Call) Return(_a0 error) *APIClient_Close_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_Close_Call) RunAndReturn(run func() error) *APIClient_Close_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ConfigCreate provides a mock function with given fields: ctx, config
 func (_m *APIClient) ConfigCreate(ctx context.Context, config swarm.ConfigSpec) (swarm.ConfigCreateResponse, error) {
-	ret := _m.Called(ctx, config)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ConfigCreate")
-	}
-
-	var r0 swarm.ConfigCreateResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, swarm.ConfigSpec) (swarm.ConfigCreateResponse, error)); ok {
-		return rf(ctx, config)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, swarm.ConfigSpec) swarm.ConfigCreateResponse); ok {
-		r0 = rf(ctx, config)
-	} else {
-		r0 = ret.Get(0).(swarm.ConfigCreateResponse)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, swarm.ConfigSpec) error); ok {
-		r1 = rf(ctx, config)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(swarm.ConfigCreateResponse), nil
 }
 
 // APIClient_ConfigCreate_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ConfigCreate'
@@ -443,61 +295,29 @@ type APIClient_ConfigCreate_Call struct {
 //   - ctx context.Context
 //   - config swarm.ConfigSpec
 func (_e *APIClient_Expecter) ConfigCreate(ctx interface{}, config interface{}) *APIClient_ConfigCreate_Call {
-	return &APIClient_ConfigCreate_Call{Call: _e.mock.On("ConfigCreate", ctx, config)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ConfigCreate_Call) Run(run func(ctx context.Context, config swarm.ConfigSpec)) *APIClient_ConfigCreate_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(swarm.ConfigSpec))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ConfigCreate_Call) Return(_a0 swarm.ConfigCreateResponse, _a1 error) *APIClient_ConfigCreate_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ConfigCreate_Call) RunAndReturn(run func(context.Context, swarm.ConfigSpec) (swarm.ConfigCreateResponse, error)) *APIClient_ConfigCreate_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ConfigInspectWithRaw provides a mock function with given fields: ctx, name
 func (_m *APIClient) ConfigInspectWithRaw(ctx context.Context, name string) (swarm.Config, []byte, error) {
-	ret := _m.Called(ctx, name)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ConfigInspectWithRaw")
-	}
-
-	var r0 swarm.Config
-	var r1 []byte
-	var r2 error
-	if rf, ok := ret.Get(0).(func(context.Context, string) (swarm.Config, []byte, error)); ok {
-		return rf(ctx, name)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string) swarm.Config); ok {
-		r0 = rf(ctx, name)
-	} else {
-		r0 = ret.Get(0).(swarm.Config)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string) []byte); ok {
-		r1 = rf(ctx, name)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).([]byte)
-		}
-	}
-
-	if rf, ok := ret.Get(2).(func(context.Context, string) error); ok {
-		r2 = rf(ctx, name)
-	} else {
-		r2 = ret.Error(2)
-	}
-
-	return r0, r1, r2
+	_ = "STUB: not implemented"
+	return *new(swarm.Config), nil, nil
 }
 
 // APIClient_ConfigInspectWithRaw_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ConfigInspectWithRaw'
@@ -509,54 +329,29 @@ type APIClient_ConfigInspectWithRaw_Call struct {
 //   - ctx context.Context
 //   - name string
 func (_e *APIClient_Expecter) ConfigInspectWithRaw(ctx interface{}, name interface{}) *APIClient_ConfigInspectWithRaw_Call {
-	return &APIClient_ConfigInspectWithRaw_Call{Call: _e.mock.On("ConfigInspectWithRaw", ctx, name)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ConfigInspectWithRaw_Call) Run(run func(ctx context.Context, name string)) *APIClient_ConfigInspectWithRaw_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ConfigInspectWithRaw_Call) Return(_a0 swarm.Config, _a1 []byte, _a2 error) *APIClient_ConfigInspectWithRaw_Call {
-	_c.Call.Return(_a0, _a1, _a2)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ConfigInspectWithRaw_Call) RunAndReturn(run func(context.Context, string) (swarm.Config, []byte, error)) *APIClient_ConfigInspectWithRaw_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ConfigList provides a mock function with given fields: ctx, options
 func (_m *APIClient) ConfigList(ctx context.Context, options swarm.ConfigListOptions) ([]swarm.Config, error) {
-	ret := _m.Called(ctx, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ConfigList")
-	}
-
-	var r0 []swarm.Config
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, swarm.ConfigListOptions) ([]swarm.Config, error)); ok {
-		return rf(ctx, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, swarm.ConfigListOptions) []swarm.Config); ok {
-		r0 = rf(ctx, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]swarm.Config)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, swarm.ConfigListOptions) error); ok {
-		r1 = rf(ctx, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // APIClient_ConfigList_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ConfigList'
@@ -568,42 +363,29 @@ type APIClient_ConfigList_Call struct {
 //   - ctx context.Context
 //   - options swarm.ConfigListOptions
 func (_e *APIClient_Expecter) ConfigList(ctx interface{}, options interface{}) *APIClient_ConfigList_Call {
-	return &APIClient_ConfigList_Call{Call: _e.mock.On("ConfigList", ctx, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ConfigList_Call) Run(run func(ctx context.Context, options swarm.ConfigListOptions)) *APIClient_ConfigList_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(swarm.ConfigListOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ConfigList_Call) Return(_a0 []swarm.Config, _a1 error) *APIClient_ConfigList_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ConfigList_Call) RunAndReturn(run func(context.Context, swarm.ConfigListOptions) ([]swarm.Config, error)) *APIClient_ConfigList_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ConfigRemove provides a mock function with given fields: ctx, id
 func (_m *APIClient) ConfigRemove(ctx context.Context, id string) error {
-	ret := _m.Called(ctx, id)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ConfigRemove")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string) error); ok {
-		r0 = rf(ctx, id)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_ConfigRemove_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ConfigRemove'
@@ -615,42 +397,29 @@ type APIClient_ConfigRemove_Call struct {
 //   - ctx context.Context
 //   - id string
 func (_e *APIClient_Expecter) ConfigRemove(ctx interface{}, id interface{}) *APIClient_ConfigRemove_Call {
-	return &APIClient_ConfigRemove_Call{Call: _e.mock.On("ConfigRemove", ctx, id)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ConfigRemove_Call) Run(run func(ctx context.Context, id string)) *APIClient_ConfigRemove_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ConfigRemove_Call) Return(_a0 error) *APIClient_ConfigRemove_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ConfigRemove_Call) RunAndReturn(run func(context.Context, string) error) *APIClient_ConfigRemove_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ConfigUpdate provides a mock function with given fields: ctx, id, version, config
 func (_m *APIClient) ConfigUpdate(ctx context.Context, id string, version swarm.Version, config swarm.ConfigSpec) error {
-	ret := _m.Called(ctx, id, version, config)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ConfigUpdate")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, swarm.Version, swarm.ConfigSpec) error); ok {
-		r0 = rf(ctx, id, version, config)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_ConfigUpdate_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ConfigUpdate'
@@ -664,52 +433,29 @@ type APIClient_ConfigUpdate_Call struct {
 //   - version swarm.Version
 //   - config swarm.ConfigSpec
 func (_e *APIClient_Expecter) ConfigUpdate(ctx interface{}, id interface{}, version interface{}, config interface{}) *APIClient_ConfigUpdate_Call {
-	return &APIClient_ConfigUpdate_Call{Call: _e.mock.On("ConfigUpdate", ctx, id, version, config)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ConfigUpdate_Call) Run(run func(ctx context.Context, id string, version swarm.Version, config swarm.ConfigSpec)) *APIClient_ConfigUpdate_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(swarm.Version), args[3].(swarm.ConfigSpec))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ConfigUpdate_Call) Return(_a0 error) *APIClient_ConfigUpdate_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ConfigUpdate_Call) RunAndReturn(run func(context.Context, string, swarm.Version, swarm.ConfigSpec) error) *APIClient_ConfigUpdate_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerAttach provides a mock function with given fields: ctx, _a1, options
 func (_m *APIClient) ContainerAttach(ctx context.Context, _a1 string, options container.AttachOptions) (types.HijackedResponse, error) {
-	ret := _m.Called(ctx, _a1, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerAttach")
-	}
-
-	var r0 types.HijackedResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, container.AttachOptions) (types.HijackedResponse, error)); ok {
-		return rf(ctx, _a1, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, container.AttachOptions) types.HijackedResponse); ok {
-		r0 = rf(ctx, _a1, options)
-	} else {
-		r0 = ret.Get(0).(types.HijackedResponse)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, container.AttachOptions) error); ok {
-		r1 = rf(ctx, _a1, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(types.HijackedResponse), nil
 }
 
 // APIClient_ContainerAttach_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerAttach'
@@ -722,52 +468,29 @@ type APIClient_ContainerAttach_Call struct {
 //   - _a1 string
 //   - options container.AttachOptions
 func (_e *APIClient_Expecter) ContainerAttach(ctx interface{}, _a1 interface{}, options interface{}) *APIClient_ContainerAttach_Call {
-	return &APIClient_ContainerAttach_Call{Call: _e.mock.On("ContainerAttach", ctx, _a1, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerAttach_Call) Run(run func(ctx context.Context, _a1 string, options container.AttachOptions)) *APIClient_ContainerAttach_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(container.AttachOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerAttach_Call) Return(_a0 types.HijackedResponse, _a1 error) *APIClient_ContainerAttach_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerAttach_Call) RunAndReturn(run func(context.Context, string, container.AttachOptions) (types.HijackedResponse, error)) *APIClient_ContainerAttach_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerCommit provides a mock function with given fields: ctx, _a1, options
 func (_m *APIClient) ContainerCommit(ctx context.Context, _a1 string, options container.CommitOptions) (container.CommitResponse, error) {
-	ret := _m.Called(ctx, _a1, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerCommit")
-	}
-
-	var r0 container.CommitResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, container.CommitOptions) (container.CommitResponse, error)); ok {
-		return rf(ctx, _a1, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, container.CommitOptions) container.CommitResponse); ok {
-		r0 = rf(ctx, _a1, options)
-	} else {
-		r0 = ret.Get(0).(container.CommitResponse)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, container.CommitOptions) error); ok {
-		r1 = rf(ctx, _a1, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(container.CommitResponse), nil
 }
 
 // APIClient_ContainerCommit_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerCommit'
@@ -780,52 +503,29 @@ type APIClient_ContainerCommit_Call struct {
 //   - _a1 string
 //   - options container.CommitOptions
 func (_e *APIClient_Expecter) ContainerCommit(ctx interface{}, _a1 interface{}, options interface{}) *APIClient_ContainerCommit_Call {
-	return &APIClient_ContainerCommit_Call{Call: _e.mock.On("ContainerCommit", ctx, _a1, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerCommit_Call) Run(run func(ctx context.Context, _a1 string, options container.CommitOptions)) *APIClient_ContainerCommit_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(container.CommitOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerCommit_Call) Return(_a0 container.CommitResponse, _a1 error) *APIClient_ContainerCommit_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerCommit_Call) RunAndReturn(run func(context.Context, string, container.CommitOptions) (container.CommitResponse, error)) *APIClient_ContainerCommit_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerCreate provides a mock function with given fields: ctx, config, hostConfig, networkingConfig, platform, containerName
 func (_m *APIClient) ContainerCreate(ctx context.Context, config *container.Config, hostConfig *container.HostConfig, networkingConfig *network.NetworkingConfig, platform *v1.Platform, containerName string) (container.CreateResponse, error) {
-	ret := _m.Called(ctx, config, hostConfig, networkingConfig, platform, containerName)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerCreate")
-	}
-
-	var r0 container.CreateResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *container.Config, *container.HostConfig, *network.NetworkingConfig, *v1.Platform, string) (container.CreateResponse, error)); ok {
-		return rf(ctx, config, hostConfig, networkingConfig, platform, containerName)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *container.Config, *container.HostConfig, *network.NetworkingConfig, *v1.Platform, string) container.CreateResponse); ok {
-		r0 = rf(ctx, config, hostConfig, networkingConfig, platform, containerName)
-	} else {
-		r0 = ret.Get(0).(container.CreateResponse)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *container.Config, *container.HostConfig, *network.NetworkingConfig, *v1.Platform, string) error); ok {
-		r1 = rf(ctx, config, hostConfig, networkingConfig, platform, containerName)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(container.CreateResponse), nil
 }
 
 // APIClient_ContainerCreate_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerCreate'
@@ -841,54 +541,29 @@ type APIClient_ContainerCreate_Call struct {
 //   - platform *v1.Platform
 //   - containerName string
 func (_e *APIClient_Expecter) ContainerCreate(ctx interface{}, config interface{}, hostConfig interface{}, networkingConfig interface{}, platform interface{}, containerName interface{}) *APIClient_ContainerCreate_Call {
-	return &APIClient_ContainerCreate_Call{Call: _e.mock.On("ContainerCreate", ctx, config, hostConfig, networkingConfig, platform, containerName)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerCreate_Call) Run(run func(ctx context.Context, config *container.Config, hostConfig *container.HostConfig, networkingConfig *network.NetworkingConfig, platform *v1.Platform, containerName string)) *APIClient_ContainerCreate_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(*container.Config), args[2].(*container.HostConfig), args[3].(*network.NetworkingConfig), args[4].(*v1.Platform), args[5].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerCreate_Call) Return(_a0 container.CreateResponse, _a1 error) *APIClient_ContainerCreate_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerCreate_Call) RunAndReturn(run func(context.Context, *container.Config, *container.HostConfig, *network.NetworkingConfig, *v1.Platform, string) (container.CreateResponse, error)) *APIClient_ContainerCreate_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerDiff provides a mock function with given fields: ctx, _a1
 func (_m *APIClient) ContainerDiff(ctx context.Context, _a1 string) ([]container.FilesystemChange, error) {
-	ret := _m.Called(ctx, _a1)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerDiff")
-	}
-
-	var r0 []container.FilesystemChange
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string) ([]container.FilesystemChange, error)); ok {
-		return rf(ctx, _a1)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string) []container.FilesystemChange); ok {
-		r0 = rf(ctx, _a1)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]container.FilesystemChange)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string) error); ok {
-		r1 = rf(ctx, _a1)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // APIClient_ContainerDiff_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerDiff'
@@ -900,52 +575,29 @@ type APIClient_ContainerDiff_Call struct {
 //   - ctx context.Context
 //   - _a1 string
 func (_e *APIClient_Expecter) ContainerDiff(ctx interface{}, _a1 interface{}) *APIClient_ContainerDiff_Call {
-	return &APIClient_ContainerDiff_Call{Call: _e.mock.On("ContainerDiff", ctx, _a1)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerDiff_Call) Run(run func(ctx context.Context, _a1 string)) *APIClient_ContainerDiff_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerDiff_Call) Return(_a0 []container.FilesystemChange, _a1 error) *APIClient_ContainerDiff_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerDiff_Call) RunAndReturn(run func(context.Context, string) ([]container.FilesystemChange, error)) *APIClient_ContainerDiff_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerExecAttach provides a mock function with given fields: ctx, execID, options
 func (_m *APIClient) ContainerExecAttach(ctx context.Context, execID string, options container.ExecAttachOptions) (types.HijackedResponse, error) {
-	ret := _m.Called(ctx, execID, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerExecAttach")
-	}
-
-	var r0 types.HijackedResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, container.ExecAttachOptions) (types.HijackedResponse, error)); ok {
-		return rf(ctx, execID, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, container.ExecAttachOptions) types.HijackedResponse); ok {
-		r0 = rf(ctx, execID, options)
-	} else {
-		r0 = ret.Get(0).(types.HijackedResponse)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, container.ExecAttachOptions) error); ok {
-		r1 = rf(ctx, execID, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(types.HijackedResponse), nil
 }
 
 // APIClient_ContainerExecAttach_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerExecAttach'
@@ -958,52 +610,29 @@ type APIClient_ContainerExecAttach_Call struct {
 //   - execID string
 //   - options container.ExecAttachOptions
 func (_e *APIClient_Expecter) ContainerExecAttach(ctx interface{}, execID interface{}, options interface{}) *APIClient_ContainerExecAttach_Call {
-	return &APIClient_ContainerExecAttach_Call{Call: _e.mock.On("ContainerExecAttach", ctx, execID, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerExecAttach_Call) Run(run func(ctx context.Context, execID string, options container.ExecAttachOptions)) *APIClient_ContainerExecAttach_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(container.ExecAttachOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerExecAttach_Call) Return(_a0 types.HijackedResponse, _a1 error) *APIClient_ContainerExecAttach_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerExecAttach_Call) RunAndReturn(run func(context.Context, string, container.ExecAttachOptions) (types.HijackedResponse, error)) *APIClient_ContainerExecAttach_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerExecCreate provides a mock function with given fields: ctx, _a1, options
 func (_m *APIClient) ContainerExecCreate(ctx context.Context, _a1 string, options container.ExecOptions) (container.ExecCreateResponse, error) {
-	ret := _m.Called(ctx, _a1, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerExecCreate")
-	}
-
-	var r0 container.ExecCreateResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, container.ExecOptions) (container.ExecCreateResponse, error)); ok {
-		return rf(ctx, _a1, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, container.ExecOptions) container.ExecCreateResponse); ok {
-		r0 = rf(ctx, _a1, options)
-	} else {
-		r0 = ret.Get(0).(container.ExecCreateResponse)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, container.ExecOptions) error); ok {
-		r1 = rf(ctx, _a1, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(container.ExecCreateResponse), nil
 }
 
 // APIClient_ContainerExecCreate_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerExecCreate'
@@ -1016,52 +645,29 @@ type APIClient_ContainerExecCreate_Call struct {
 //   - _a1 string
 //   - options container.ExecOptions
 func (_e *APIClient_Expecter) ContainerExecCreate(ctx interface{}, _a1 interface{}, options interface{}) *APIClient_ContainerExecCreate_Call {
-	return &APIClient_ContainerExecCreate_Call{Call: _e.mock.On("ContainerExecCreate", ctx, _a1, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerExecCreate_Call) Run(run func(ctx context.Context, _a1 string, options container.ExecOptions)) *APIClient_ContainerExecCreate_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(container.ExecOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerExecCreate_Call) Return(_a0 container.ExecCreateResponse, _a1 error) *APIClient_ContainerExecCreate_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerExecCreate_Call) RunAndReturn(run func(context.Context, string, container.ExecOptions) (container.ExecCreateResponse, error)) *APIClient_ContainerExecCreate_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerExecInspect provides a mock function with given fields: ctx, execID
 func (_m *APIClient) ContainerExecInspect(ctx context.Context, execID string) (container.ExecInspect, error) {
-	ret := _m.Called(ctx, execID)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerExecInspect")
-	}
-
-	var r0 container.ExecInspect
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string) (container.ExecInspect, error)); ok {
-		return rf(ctx, execID)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string) container.ExecInspect); ok {
-		r0 = rf(ctx, execID)
-	} else {
-		r0 = ret.Get(0).(container.ExecInspect)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string) error); ok {
-		r1 = rf(ctx, execID)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(container.ExecInspect), nil
 }
 
 // APIClient_ContainerExecInspect_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerExecInspect'
@@ -1073,42 +679,29 @@ type APIClient_ContainerExecInspect_Call struct {
 //   - ctx context.Context
 //   - execID string
 func (_e *APIClient_Expecter) ContainerExecInspect(ctx interface{}, execID interface{}) *APIClient_ContainerExecInspect_Call {
-	return &APIClient_ContainerExecInspect_Call{Call: _e.mock.On("ContainerExecInspect", ctx, execID)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerExecInspect_Call) Run(run func(ctx context.Context, execID string)) *APIClient_ContainerExecInspect_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerExecInspect_Call) Return(_a0 container.ExecInspect, _a1 error) *APIClient_ContainerExecInspect_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerExecInspect_Call) RunAndReturn(run func(context.Context, string) (container.ExecInspect, error)) *APIClient_ContainerExecInspect_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerExecResize provides a mock function with given fields: ctx, execID, options
 func (_m *APIClient) ContainerExecResize(ctx context.Context, execID string, options container.ResizeOptions) error {
-	ret := _m.Called(ctx, execID, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerExecResize")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, container.ResizeOptions) error); ok {
-		r0 = rf(ctx, execID, options)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_ContainerExecResize_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerExecResize'
@@ -1121,42 +714,29 @@ type APIClient_ContainerExecResize_Call struct {
 //   - execID string
 //   - options container.ResizeOptions
 func (_e *APIClient_Expecter) ContainerExecResize(ctx interface{}, execID interface{}, options interface{}) *APIClient_ContainerExecResize_Call {
-	return &APIClient_ContainerExecResize_Call{Call: _e.mock.On("ContainerExecResize", ctx, execID, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerExecResize_Call) Run(run func(ctx context.Context, execID string, options container.ResizeOptions)) *APIClient_ContainerExecResize_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(container.ResizeOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerExecResize_Call) Return(_a0 error) *APIClient_ContainerExecResize_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerExecResize_Call) RunAndReturn(run func(context.Context, string, container.ResizeOptions) error) *APIClient_ContainerExecResize_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerExecStart provides a mock function with given fields: ctx, execID, options
 func (_m *APIClient) ContainerExecStart(ctx context.Context, execID string, options container.ExecStartOptions) error {
-	ret := _m.Called(ctx, execID, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerExecStart")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, container.ExecStartOptions) error); ok {
-		r0 = rf(ctx, execID, options)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_ContainerExecStart_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerExecStart'
@@ -1169,54 +749,29 @@ type APIClient_ContainerExecStart_Call struct {
 //   - execID string
 //   - options container.ExecStartOptions
 func (_e *APIClient_Expecter) ContainerExecStart(ctx interface{}, execID interface{}, options interface{}) *APIClient_ContainerExecStart_Call {
-	return &APIClient_ContainerExecStart_Call{Call: _e.mock.On("ContainerExecStart", ctx, execID, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerExecStart_Call) Run(run func(ctx context.Context, execID string, options container.ExecStartOptions)) *APIClient_ContainerExecStart_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(container.ExecStartOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerExecStart_Call) Return(_a0 error) *APIClient_ContainerExecStart_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerExecStart_Call) RunAndReturn(run func(context.Context, string, container.ExecStartOptions) error) *APIClient_ContainerExecStart_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerExport provides a mock function with given fields: ctx, _a1
 func (_m *APIClient) ContainerExport(ctx context.Context, _a1 string) (io.ReadCloser, error) {
-	ret := _m.Called(ctx, _a1)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerExport")
-	}
-
-	var r0 io.ReadCloser
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string) (io.ReadCloser, error)); ok {
-		return rf(ctx, _a1)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string) io.ReadCloser); ok {
-		r0 = rf(ctx, _a1)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(io.ReadCloser)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string) error); ok {
-		r1 = rf(ctx, _a1)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(io.ReadCloser), nil
 }
 
 // APIClient_ContainerExport_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerExport'
@@ -1228,52 +783,29 @@ type APIClient_ContainerExport_Call struct {
 //   - ctx context.Context
 //   - _a1 string
 func (_e *APIClient_Expecter) ContainerExport(ctx interface{}, _a1 interface{}) *APIClient_ContainerExport_Call {
-	return &APIClient_ContainerExport_Call{Call: _e.mock.On("ContainerExport", ctx, _a1)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerExport_Call) Run(run func(ctx context.Context, _a1 string)) *APIClient_ContainerExport_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerExport_Call) Return(_a0 io.ReadCloser, _a1 error) *APIClient_ContainerExport_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerExport_Call) RunAndReturn(run func(context.Context, string) (io.ReadCloser, error)) *APIClient_ContainerExport_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerInspect provides a mock function with given fields: ctx, _a1
 func (_m *APIClient) ContainerInspect(ctx context.Context, _a1 string) (container.InspectResponse, error) {
-	ret := _m.Called(ctx, _a1)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerInspect")
-	}
-
-	var r0 container.InspectResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string) (container.InspectResponse, error)); ok {
-		return rf(ctx, _a1)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string) container.InspectResponse); ok {
-		r0 = rf(ctx, _a1)
-	} else {
-		r0 = ret.Get(0).(container.InspectResponse)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string) error); ok {
-		r1 = rf(ctx, _a1)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(container.InspectResponse), nil
 }
 
 // APIClient_ContainerInspect_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerInspect'
@@ -1285,61 +817,29 @@ type APIClient_ContainerInspect_Call struct {
 //   - ctx context.Context
 //   - _a1 string
 func (_e *APIClient_Expecter) ContainerInspect(ctx interface{}, _a1 interface{}) *APIClient_ContainerInspect_Call {
-	return &APIClient_ContainerInspect_Call{Call: _e.mock.On("ContainerInspect", ctx, _a1)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerInspect_Call) Run(run func(ctx context.Context, _a1 string)) *APIClient_ContainerInspect_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerInspect_Call) Return(_a0 container.InspectResponse, _a1 error) *APIClient_ContainerInspect_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerInspect_Call) RunAndReturn(run func(context.Context, string) (container.InspectResponse, error)) *APIClient_ContainerInspect_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerInspectWithRaw provides a mock function with given fields: ctx, _a1, getSize
 func (_m *APIClient) ContainerInspectWithRaw(ctx context.Context, _a1 string, getSize bool) (container.InspectResponse, []byte, error) {
-	ret := _m.Called(ctx, _a1, getSize)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerInspectWithRaw")
-	}
-
-	var r0 container.InspectResponse
-	var r1 []byte
-	var r2 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, bool) (container.InspectResponse, []byte, error)); ok {
-		return rf(ctx, _a1, getSize)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, bool) container.InspectResponse); ok {
-		r0 = rf(ctx, _a1, getSize)
-	} else {
-		r0 = ret.Get(0).(container.InspectResponse)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, bool) []byte); ok {
-		r1 = rf(ctx, _a1, getSize)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).([]byte)
-		}
-	}
-
-	if rf, ok := ret.Get(2).(func(context.Context, string, bool) error); ok {
-		r2 = rf(ctx, _a1, getSize)
-	} else {
-		r2 = ret.Error(2)
-	}
-
-	return r0, r1, r2
+	_ = "STUB: not implemented"
+	return *new(container.InspectResponse), nil, nil
 }
 
 // APIClient_ContainerInspectWithRaw_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerInspectWithRaw'
@@ -1352,42 +852,29 @@ type APIClient_ContainerInspectWithRaw_Call struct {
 //   - _a1 string
 //   - getSize bool
 func (_e *APIClient_Expecter) ContainerInspectWithRaw(ctx interface{}, _a1 interface{}, getSize interface{}) *APIClient_ContainerInspectWithRaw_Call {
-	return &APIClient_ContainerInspectWithRaw_Call{Call: _e.mock.On("ContainerInspectWithRaw", ctx, _a1, getSize)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerInspectWithRaw_Call) Run(run func(ctx context.Context, _a1 string, getSize bool)) *APIClient_ContainerInspectWithRaw_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(bool))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerInspectWithRaw_Call) Return(_a0 container.InspectResponse, _a1 []byte, _a2 error) *APIClient_ContainerInspectWithRaw_Call {
-	_c.Call.Return(_a0, _a1, _a2)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerInspectWithRaw_Call) RunAndReturn(run func(context.Context, string, bool) (container.InspectResponse, []byte, error)) *APIClient_ContainerInspectWithRaw_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerKill provides a mock function with given fields: ctx, _a1, signal
 func (_m *APIClient) ContainerKill(ctx context.Context, _a1 string, signal string) error {
-	ret := _m.Called(ctx, _a1, signal)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerKill")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, string) error); ok {
-		r0 = rf(ctx, _a1, signal)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_ContainerKill_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerKill'
@@ -1400,54 +887,29 @@ type APIClient_ContainerKill_Call struct {
 //   - _a1 string
 //   - signal string
 func (_e *APIClient_Expecter) ContainerKill(ctx interface{}, _a1 interface{}, signal interface{}) *APIClient_ContainerKill_Call {
-	return &APIClient_ContainerKill_Call{Call: _e.mock.On("ContainerKill", ctx, _a1, signal)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerKill_Call) Run(run func(ctx context.Context, _a1 string, signal string)) *APIClient_ContainerKill_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerKill_Call) Return(_a0 error) *APIClient_ContainerKill_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerKill_Call) RunAndReturn(run func(context.Context, string, string) error) *APIClient_ContainerKill_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerList provides a mock function with given fields: ctx, options
 func (_m *APIClient) ContainerList(ctx context.Context, options container.ListOptions) ([]container.Summary, error) {
-	ret := _m.Called(ctx, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerList")
-	}
-
-	var r0 []container.Summary
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, container.ListOptions) ([]container.Summary, error)); ok {
-		return rf(ctx, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, container.ListOptions) []container.Summary); ok {
-		r0 = rf(ctx, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]container.Summary)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, container.ListOptions) error); ok {
-		r1 = rf(ctx, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // APIClient_ContainerList_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerList'
@@ -1459,54 +921,29 @@ type APIClient_ContainerList_Call struct {
 //   - ctx context.Context
 //   - options container.ListOptions
 func (_e *APIClient_Expecter) ContainerList(ctx interface{}, options interface{}) *APIClient_ContainerList_Call {
-	return &APIClient_ContainerList_Call{Call: _e.mock.On("ContainerList", ctx, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerList_Call) Run(run func(ctx context.Context, options container.ListOptions)) *APIClient_ContainerList_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(container.ListOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerList_Call) Return(_a0 []container.Summary, _a1 error) *APIClient_ContainerList_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerList_Call) RunAndReturn(run func(context.Context, container.ListOptions) ([]container.Summary, error)) *APIClient_ContainerList_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerLogs provides a mock function with given fields: ctx, _a1, options
 func (_m *APIClient) ContainerLogs(ctx context.Context, _a1 string, options container.LogsOptions) (io.ReadCloser, error) {
-	ret := _m.Called(ctx, _a1, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerLogs")
-	}
-
-	var r0 io.ReadCloser
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, container.LogsOptions) (io.ReadCloser, error)); ok {
-		return rf(ctx, _a1, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, container.LogsOptions) io.ReadCloser); ok {
-		r0 = rf(ctx, _a1, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(io.ReadCloser)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, container.LogsOptions) error); ok {
-		r1 = rf(ctx, _a1, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(io.ReadCloser), nil
 }
 
 // APIClient_ContainerLogs_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerLogs'
@@ -1519,42 +956,29 @@ type APIClient_ContainerLogs_Call struct {
 //   - _a1 string
 //   - options container.LogsOptions
 func (_e *APIClient_Expecter) ContainerLogs(ctx interface{}, _a1 interface{}, options interface{}) *APIClient_ContainerLogs_Call {
-	return &APIClient_ContainerLogs_Call{Call: _e.mock.On("ContainerLogs", ctx, _a1, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerLogs_Call) Run(run func(ctx context.Context, _a1 string, options container.LogsOptions)) *APIClient_ContainerLogs_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(container.LogsOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerLogs_Call) Return(_a0 io.ReadCloser, _a1 error) *APIClient_ContainerLogs_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerLogs_Call) RunAndReturn(run func(context.Context, string, container.LogsOptions) (io.ReadCloser, error)) *APIClient_ContainerLogs_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerPause provides a mock function with given fields: ctx, _a1
 func (_m *APIClient) ContainerPause(ctx context.Context, _a1 string) error {
-	ret := _m.Called(ctx, _a1)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerPause")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string) error); ok {
-		r0 = rf(ctx, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_ContainerPause_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerPause'
@@ -1566,42 +990,29 @@ type APIClient_ContainerPause_Call struct {
 //   - ctx context.Context
 //   - _a1 string
 func (_e *APIClient_Expecter) ContainerPause(ctx interface{}, _a1 interface{}) *APIClient_ContainerPause_Call {
-	return &APIClient_ContainerPause_Call{Call: _e.mock.On("ContainerPause", ctx, _a1)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerPause_Call) Run(run func(ctx context.Context, _a1 string)) *APIClient_ContainerPause_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerPause_Call) Return(_a0 error) *APIClient_ContainerPause_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerPause_Call) RunAndReturn(run func(context.Context, string) error) *APIClient_ContainerPause_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerRemove provides a mock function with given fields: ctx, _a1, options
 func (_m *APIClient) ContainerRemove(ctx context.Context, _a1 string, options container.RemoveOptions) error {
-	ret := _m.Called(ctx, _a1, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerRemove")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, container.RemoveOptions) error); ok {
-		r0 = rf(ctx, _a1, options)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_ContainerRemove_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerRemove'
@@ -1614,42 +1025,29 @@ type APIClient_ContainerRemove_Call struct {
 //   - _a1 string
 //   - options container.RemoveOptions
 func (_e *APIClient_Expecter) ContainerRemove(ctx interface{}, _a1 interface{}, options interface{}) *APIClient_ContainerRemove_Call {
-	return &APIClient_ContainerRemove_Call{Call: _e.mock.On("ContainerRemove", ctx, _a1, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerRemove_Call) Run(run func(ctx context.Context, _a1 string, options container.RemoveOptions)) *APIClient_ContainerRemove_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(container.RemoveOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerRemove_Call) Return(_a0 error) *APIClient_ContainerRemove_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerRemove_Call) RunAndReturn(run func(context.Context, string, container.RemoveOptions) error) *APIClient_ContainerRemove_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerRename provides a mock function with given fields: ctx, _a1, newContainerName
 func (_m *APIClient) ContainerRename(ctx context.Context, _a1 string, newContainerName string) error {
-	ret := _m.Called(ctx, _a1, newContainerName)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerRename")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, string) error); ok {
-		r0 = rf(ctx, _a1, newContainerName)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_ContainerRename_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerRename'
@@ -1662,42 +1060,29 @@ type APIClient_ContainerRename_Call struct {
 //   - _a1 string
 //   - newContainerName string
 func (_e *APIClient_Expecter) ContainerRename(ctx interface{}, _a1 interface{}, newContainerName interface{}) *APIClient_ContainerRename_Call {
-	return &APIClient_ContainerRename_Call{Call: _e.mock.On("ContainerRename", ctx, _a1, newContainerName)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerRename_Call) Run(run func(ctx context.Context, _a1 string, newContainerName string)) *APIClient_ContainerRename_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerRename_Call) Return(_a0 error) *APIClient_ContainerRename_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerRename_Call) RunAndReturn(run func(context.Context, string, string) error) *APIClient_ContainerRename_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerResize provides a mock function with given fields: ctx, _a1, options
 func (_m *APIClient) ContainerResize(ctx context.Context, _a1 string, options container.ResizeOptions) error {
-	ret := _m.Called(ctx, _a1, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerResize")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, container.ResizeOptions) error); ok {
-		r0 = rf(ctx, _a1, options)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_ContainerResize_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerResize'
@@ -1710,42 +1095,29 @@ type APIClient_ContainerResize_Call struct {
 //   - _a1 string
 //   - options container.ResizeOptions
 func (_e *APIClient_Expecter) ContainerResize(ctx interface{}, _a1 interface{}, options interface{}) *APIClient_ContainerResize_Call {
-	return &APIClient_ContainerResize_Call{Call: _e.mock.On("ContainerResize", ctx, _a1, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerResize_Call) Run(run func(ctx context.Context, _a1 string, options container.ResizeOptions)) *APIClient_ContainerResize_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(container.ResizeOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerResize_Call) Return(_a0 error) *APIClient_ContainerResize_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerResize_Call) RunAndReturn(run func(context.Context, string, container.ResizeOptions) error) *APIClient_ContainerResize_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerRestart provides a mock function with given fields: ctx, _a1, options
 func (_m *APIClient) ContainerRestart(ctx context.Context, _a1 string, options container.StopOptions) error {
-	ret := _m.Called(ctx, _a1, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerRestart")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, container.StopOptions) error); ok {
-		r0 = rf(ctx, _a1, options)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_ContainerRestart_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerRestart'
@@ -1758,42 +1130,29 @@ type APIClient_ContainerRestart_Call struct {
 //   - _a1 string
 //   - options container.StopOptions
 func (_e *APIClient_Expecter) ContainerRestart(ctx interface{}, _a1 interface{}, options interface{}) *APIClient_ContainerRestart_Call {
-	return &APIClient_ContainerRestart_Call{Call: _e.mock.On("ContainerRestart", ctx, _a1, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerRestart_Call) Run(run func(ctx context.Context, _a1 string, options container.StopOptions)) *APIClient_ContainerRestart_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(container.StopOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerRestart_Call) Return(_a0 error) *APIClient_ContainerRestart_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerRestart_Call) RunAndReturn(run func(context.Context, string, container.StopOptions) error) *APIClient_ContainerRestart_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerStart provides a mock function with given fields: ctx, _a1, options
 func (_m *APIClient) ContainerStart(ctx context.Context, _a1 string, options container.StartOptions) error {
-	ret := _m.Called(ctx, _a1, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerStart")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, container.StartOptions) error); ok {
-		r0 = rf(ctx, _a1, options)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_ContainerStart_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerStart'
@@ -1806,52 +1165,29 @@ type APIClient_ContainerStart_Call struct {
 //   - _a1 string
 //   - options container.StartOptions
 func (_e *APIClient_Expecter) ContainerStart(ctx interface{}, _a1 interface{}, options interface{}) *APIClient_ContainerStart_Call {
-	return &APIClient_ContainerStart_Call{Call: _e.mock.On("ContainerStart", ctx, _a1, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerStart_Call) Run(run func(ctx context.Context, _a1 string, options container.StartOptions)) *APIClient_ContainerStart_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(container.StartOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerStart_Call) Return(_a0 error) *APIClient_ContainerStart_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerStart_Call) RunAndReturn(run func(context.Context, string, container.StartOptions) error) *APIClient_ContainerStart_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerStatPath provides a mock function with given fields: ctx, _a1, path
 func (_m *APIClient) ContainerStatPath(ctx context.Context, _a1 string, path string) (container.PathStat, error) {
-	ret := _m.Called(ctx, _a1, path)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerStatPath")
-	}
-
-	var r0 container.PathStat
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, string) (container.PathStat, error)); ok {
-		return rf(ctx, _a1, path)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, string) container.PathStat); ok {
-		r0 = rf(ctx, _a1, path)
-	} else {
-		r0 = ret.Get(0).(container.PathStat)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, string) error); ok {
-		r1 = rf(ctx, _a1, path)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(container.PathStat), nil
 }
 
 // APIClient_ContainerStatPath_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerStatPath'
@@ -1864,52 +1200,29 @@ type APIClient_ContainerStatPath_Call struct {
 //   - _a1 string
 //   - path string
 func (_e *APIClient_Expecter) ContainerStatPath(ctx interface{}, _a1 interface{}, path interface{}) *APIClient_ContainerStatPath_Call {
-	return &APIClient_ContainerStatPath_Call{Call: _e.mock.On("ContainerStatPath", ctx, _a1, path)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerStatPath_Call) Run(run func(ctx context.Context, _a1 string, path string)) *APIClient_ContainerStatPath_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerStatPath_Call) Return(_a0 container.PathStat, _a1 error) *APIClient_ContainerStatPath_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerStatPath_Call) RunAndReturn(run func(context.Context, string, string) (container.PathStat, error)) *APIClient_ContainerStatPath_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerStats provides a mock function with given fields: ctx, _a1, stream
 func (_m *APIClient) ContainerStats(ctx context.Context, _a1 string, stream bool) (container.StatsResponseReader, error) {
-	ret := _m.Called(ctx, _a1, stream)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerStats")
-	}
-
-	var r0 container.StatsResponseReader
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, bool) (container.StatsResponseReader, error)); ok {
-		return rf(ctx, _a1, stream)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, bool) container.StatsResponseReader); ok {
-		r0 = rf(ctx, _a1, stream)
-	} else {
-		r0 = ret.Get(0).(container.StatsResponseReader)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, bool) error); ok {
-		r1 = rf(ctx, _a1, stream)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(container.StatsResponseReader), nil
 }
 
 // APIClient_ContainerStats_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerStats'
@@ -1922,52 +1235,29 @@ type APIClient_ContainerStats_Call struct {
 //   - _a1 string
 //   - stream bool
 func (_e *APIClient_Expecter) ContainerStats(ctx interface{}, _a1 interface{}, stream interface{}) *APIClient_ContainerStats_Call {
-	return &APIClient_ContainerStats_Call{Call: _e.mock.On("ContainerStats", ctx, _a1, stream)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerStats_Call) Run(run func(ctx context.Context, _a1 string, stream bool)) *APIClient_ContainerStats_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(bool))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerStats_Call) Return(_a0 container.StatsResponseReader, _a1 error) *APIClient_ContainerStats_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerStats_Call) RunAndReturn(run func(context.Context, string, bool) (container.StatsResponseReader, error)) *APIClient_ContainerStats_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerStatsOneShot provides a mock function with given fields: ctx, _a1
 func (_m *APIClient) ContainerStatsOneShot(ctx context.Context, _a1 string) (container.StatsResponseReader, error) {
-	ret := _m.Called(ctx, _a1)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerStatsOneShot")
-	}
-
-	var r0 container.StatsResponseReader
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string) (container.StatsResponseReader, error)); ok {
-		return rf(ctx, _a1)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string) container.StatsResponseReader); ok {
-		r0 = rf(ctx, _a1)
-	} else {
-		r0 = ret.Get(0).(container.StatsResponseReader)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string) error); ok {
-		r1 = rf(ctx, _a1)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(container.StatsResponseReader), nil
 }
 
 // APIClient_ContainerStatsOneShot_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerStatsOneShot'
@@ -1979,42 +1269,29 @@ type APIClient_ContainerStatsOneShot_Call struct {
 //   - ctx context.Context
 //   - _a1 string
 func (_e *APIClient_Expecter) ContainerStatsOneShot(ctx interface{}, _a1 interface{}) *APIClient_ContainerStatsOneShot_Call {
-	return &APIClient_ContainerStatsOneShot_Call{Call: _e.mock.On("ContainerStatsOneShot", ctx, _a1)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerStatsOneShot_Call) Run(run func(ctx context.Context, _a1 string)) *APIClient_ContainerStatsOneShot_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerStatsOneShot_Call) Return(_a0 container.StatsResponseReader, _a1 error) *APIClient_ContainerStatsOneShot_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerStatsOneShot_Call) RunAndReturn(run func(context.Context, string) (container.StatsResponseReader, error)) *APIClient_ContainerStatsOneShot_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerStop provides a mock function with given fields: ctx, _a1, options
 func (_m *APIClient) ContainerStop(ctx context.Context, _a1 string, options container.StopOptions) error {
-	ret := _m.Called(ctx, _a1, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerStop")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, container.StopOptions) error); ok {
-		r0 = rf(ctx, _a1, options)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_ContainerStop_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerStop'
@@ -2027,52 +1304,29 @@ type APIClient_ContainerStop_Call struct {
 //   - _a1 string
 //   - options container.StopOptions
 func (_e *APIClient_Expecter) ContainerStop(ctx interface{}, _a1 interface{}, options interface{}) *APIClient_ContainerStop_Call {
-	return &APIClient_ContainerStop_Call{Call: _e.mock.On("ContainerStop", ctx, _a1, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerStop_Call) Run(run func(ctx context.Context, _a1 string, options container.StopOptions)) *APIClient_ContainerStop_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(container.StopOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerStop_Call) Return(_a0 error) *APIClient_ContainerStop_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerStop_Call) RunAndReturn(run func(context.Context, string, container.StopOptions) error) *APIClient_ContainerStop_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerTop provides a mock function with given fields: ctx, _a1, arguments
 func (_m *APIClient) ContainerTop(ctx context.Context, _a1 string, arguments []string) (container.TopResponse, error) {
-	ret := _m.Called(ctx, _a1, arguments)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerTop")
-	}
-
-	var r0 container.TopResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, []string) (container.TopResponse, error)); ok {
-		return rf(ctx, _a1, arguments)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, []string) container.TopResponse); ok {
-		r0 = rf(ctx, _a1, arguments)
-	} else {
-		r0 = ret.Get(0).(container.TopResponse)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, []string) error); ok {
-		r1 = rf(ctx, _a1, arguments)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(container.TopResponse), nil
 }
 
 // APIClient_ContainerTop_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerTop'
@@ -2085,42 +1339,29 @@ type APIClient_ContainerTop_Call struct {
 //   - _a1 string
 //   - arguments []string
 func (_e *APIClient_Expecter) ContainerTop(ctx interface{}, _a1 interface{}, arguments interface{}) *APIClient_ContainerTop_Call {
-	return &APIClient_ContainerTop_Call{Call: _e.mock.On("ContainerTop", ctx, _a1, arguments)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerTop_Call) Run(run func(ctx context.Context, _a1 string, arguments []string)) *APIClient_ContainerTop_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].([]string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerTop_Call) Return(_a0 container.TopResponse, _a1 error) *APIClient_ContainerTop_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerTop_Call) RunAndReturn(run func(context.Context, string, []string) (container.TopResponse, error)) *APIClient_ContainerTop_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerUnpause provides a mock function with given fields: ctx, _a1
 func (_m *APIClient) ContainerUnpause(ctx context.Context, _a1 string) error {
-	ret := _m.Called(ctx, _a1)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerUnpause")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string) error); ok {
-		r0 = rf(ctx, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_ContainerUnpause_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerUnpause'
@@ -2132,52 +1373,29 @@ type APIClient_ContainerUnpause_Call struct {
 //   - ctx context.Context
 //   - _a1 string
 func (_e *APIClient_Expecter) ContainerUnpause(ctx interface{}, _a1 interface{}) *APIClient_ContainerUnpause_Call {
-	return &APIClient_ContainerUnpause_Call{Call: _e.mock.On("ContainerUnpause", ctx, _a1)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerUnpause_Call) Run(run func(ctx context.Context, _a1 string)) *APIClient_ContainerUnpause_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerUnpause_Call) Return(_a0 error) *APIClient_ContainerUnpause_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerUnpause_Call) RunAndReturn(run func(context.Context, string) error) *APIClient_ContainerUnpause_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerUpdate provides a mock function with given fields: ctx, _a1, updateConfig
 func (_m *APIClient) ContainerUpdate(ctx context.Context, _a1 string, updateConfig container.UpdateConfig) (container.UpdateResponse, error) {
-	ret := _m.Called(ctx, _a1, updateConfig)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerUpdate")
-	}
-
-	var r0 container.UpdateResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, container.UpdateConfig) (container.UpdateResponse, error)); ok {
-		return rf(ctx, _a1, updateConfig)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, container.UpdateConfig) container.UpdateResponse); ok {
-		r0 = rf(ctx, _a1, updateConfig)
-	} else {
-		r0 = ret.Get(0).(container.UpdateResponse)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, container.UpdateConfig) error); ok {
-		r1 = rf(ctx, _a1, updateConfig)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(container.UpdateResponse), nil
 }
 
 // APIClient_ContainerUpdate_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerUpdate'
@@ -2190,56 +1408,29 @@ type APIClient_ContainerUpdate_Call struct {
 //   - _a1 string
 //   - updateConfig container.UpdateConfig
 func (_e *APIClient_Expecter) ContainerUpdate(ctx interface{}, _a1 interface{}, updateConfig interface{}) *APIClient_ContainerUpdate_Call {
-	return &APIClient_ContainerUpdate_Call{Call: _e.mock.On("ContainerUpdate", ctx, _a1, updateConfig)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerUpdate_Call) Run(run func(ctx context.Context, _a1 string, updateConfig container.UpdateConfig)) *APIClient_ContainerUpdate_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(container.UpdateConfig))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerUpdate_Call) Return(_a0 container.UpdateResponse, _a1 error) *APIClient_ContainerUpdate_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerUpdate_Call) RunAndReturn(run func(context.Context, string, container.UpdateConfig) (container.UpdateResponse, error)) *APIClient_ContainerUpdate_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainerWait provides a mock function with given fields: ctx, _a1, condition
 func (_m *APIClient) ContainerWait(ctx context.Context, _a1 string, condition container.WaitCondition) (<-chan container.WaitResponse, <-chan error) {
-	ret := _m.Called(ctx, _a1, condition)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainerWait")
-	}
-
-	var r0 <-chan container.WaitResponse
-	var r1 <-chan error
-	if rf, ok := ret.Get(0).(func(context.Context, string, container.WaitCondition) (<-chan container.WaitResponse, <-chan error)); ok {
-		return rf(ctx, _a1, condition)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, container.WaitCondition) <-chan container.WaitResponse); ok {
-		r0 = rf(ctx, _a1, condition)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(<-chan container.WaitResponse)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, container.WaitCondition) <-chan error); ok {
-		r1 = rf(ctx, _a1, condition)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(<-chan error)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // APIClient_ContainerWait_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainerWait'
@@ -2252,52 +1443,29 @@ type APIClient_ContainerWait_Call struct {
 //   - _a1 string
 //   - condition container.WaitCondition
 func (_e *APIClient_Expecter) ContainerWait(ctx interface{}, _a1 interface{}, condition interface{}) *APIClient_ContainerWait_Call {
-	return &APIClient_ContainerWait_Call{Call: _e.mock.On("ContainerWait", ctx, _a1, condition)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerWait_Call) Run(run func(ctx context.Context, _a1 string, condition container.WaitCondition)) *APIClient_ContainerWait_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(container.WaitCondition))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerWait_Call) Return(_a0 <-chan container.WaitResponse, _a1 <-chan error) *APIClient_ContainerWait_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainerWait_Call) RunAndReturn(run func(context.Context, string, container.WaitCondition) (<-chan container.WaitResponse, <-chan error)) *APIClient_ContainerWait_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ContainersPrune provides a mock function with given fields: ctx, pruneFilters
 func (_m *APIClient) ContainersPrune(ctx context.Context, pruneFilters filters.Args) (container.PruneReport, error) {
-	ret := _m.Called(ctx, pruneFilters)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ContainersPrune")
-	}
-
-	var r0 container.PruneReport
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, filters.Args) (container.PruneReport, error)); ok {
-		return rf(ctx, pruneFilters)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, filters.Args) container.PruneReport); ok {
-		r0 = rf(ctx, pruneFilters)
-	} else {
-		r0 = ret.Get(0).(container.PruneReport)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, filters.Args) error); ok {
-		r1 = rf(ctx, pruneFilters)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(container.PruneReport), nil
 }
 
 // APIClient_ContainersPrune_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ContainersPrune'
@@ -2309,61 +1477,29 @@ type APIClient_ContainersPrune_Call struct {
 //   - ctx context.Context
 //   - pruneFilters filters.Args
 func (_e *APIClient_Expecter) ContainersPrune(ctx interface{}, pruneFilters interface{}) *APIClient_ContainersPrune_Call {
-	return &APIClient_ContainersPrune_Call{Call: _e.mock.On("ContainersPrune", ctx, pruneFilters)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainersPrune_Call) Run(run func(ctx context.Context, pruneFilters filters.Args)) *APIClient_ContainersPrune_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(filters.Args))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainersPrune_Call) Return(_a0 container.PruneReport, _a1 error) *APIClient_ContainersPrune_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ContainersPrune_Call) RunAndReturn(run func(context.Context, filters.Args) (container.PruneReport, error)) *APIClient_ContainersPrune_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // CopyFromContainer provides a mock function with given fields: ctx, _a1, srcPath
 func (_m *APIClient) CopyFromContainer(ctx context.Context, _a1 string, srcPath string) (io.ReadCloser, container.PathStat, error) {
-	ret := _m.Called(ctx, _a1, srcPath)
-
-	if len(ret) == 0 {
-		panic("no return value specified for CopyFromContainer")
-	}
-
-	var r0 io.ReadCloser
-	var r1 container.PathStat
-	var r2 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, string) (io.ReadCloser, container.PathStat, error)); ok {
-		return rf(ctx, _a1, srcPath)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, string) io.ReadCloser); ok {
-		r0 = rf(ctx, _a1, srcPath)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(io.ReadCloser)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, string) container.PathStat); ok {
-		r1 = rf(ctx, _a1, srcPath)
-	} else {
-		r1 = ret.Get(1).(container.PathStat)
-	}
-
-	if rf, ok := ret.Get(2).(func(context.Context, string, string) error); ok {
-		r2 = rf(ctx, _a1, srcPath)
-	} else {
-		r2 = ret.Error(2)
-	}
-
-	return r0, r1, r2
+	_ = "STUB: not implemented"
+	return *new(io.ReadCloser), *new(container.PathStat), nil
 }
 
 // APIClient_CopyFromContainer_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'CopyFromContainer'
@@ -2376,42 +1512,29 @@ type APIClient_CopyFromContainer_Call struct {
 //   - _a1 string
 //   - srcPath string
 func (_e *APIClient_Expecter) CopyFromContainer(ctx interface{}, _a1 interface{}, srcPath interface{}) *APIClient_CopyFromContainer_Call {
-	return &APIClient_CopyFromContainer_Call{Call: _e.mock.On("CopyFromContainer", ctx, _a1, srcPath)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_CopyFromContainer_Call) Run(run func(ctx context.Context, _a1 string, srcPath string)) *APIClient_CopyFromContainer_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_CopyFromContainer_Call) Return(_a0 io.ReadCloser, _a1 container.PathStat, _a2 error) *APIClient_CopyFromContainer_Call {
-	_c.Call.Return(_a0, _a1, _a2)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_CopyFromContainer_Call) RunAndReturn(run func(context.Context, string, string) (io.ReadCloser, container.PathStat, error)) *APIClient_CopyFromContainer_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // CopyToContainer provides a mock function with given fields: ctx, _a1, path, content, options
 func (_m *APIClient) CopyToContainer(ctx context.Context, _a1 string, path string, content io.Reader, options container.CopyToContainerOptions) error {
-	ret := _m.Called(ctx, _a1, path, content, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for CopyToContainer")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, string, io.Reader, container.CopyToContainerOptions) error); ok {
-		r0 = rf(ctx, _a1, path, content, options)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_CopyToContainer_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'CopyToContainer'
@@ -2426,43 +1549,27 @@ type APIClient_CopyToContainer_Call struct {
 //   - content io.Reader
 //   - options container.CopyToContainerOptions
 func (_e *APIClient_Expecter) CopyToContainer(ctx interface{}, _a1 interface{}, path interface{}, content interface{}, options interface{}) *APIClient_CopyToContainer_Call {
-	return &APIClient_CopyToContainer_Call{Call: _e.mock.On("CopyToContainer", ctx, _a1, path, content, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_CopyToContainer_Call) Run(run func(ctx context.Context, _a1 string, path string, content io.Reader, options container.CopyToContainerOptions)) *APIClient_CopyToContainer_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(string), args[3].(io.Reader), args[4].(container.CopyToContainerOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_CopyToContainer_Call) Return(_a0 error) *APIClient_CopyToContainer_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_CopyToContainer_Call) RunAndReturn(run func(context.Context, string, string, io.Reader, container.CopyToContainerOptions) error) *APIClient_CopyToContainer_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // DaemonHost provides a mock function with no fields
-func (_m *APIClient) DaemonHost() string {
-	ret := _m.Called()
-
-	if len(ret) == 0 {
-		panic("no return value specified for DaemonHost")
-	}
-
-	var r0 string
-	if rf, ok := ret.Get(0).(func() string); ok {
-		r0 = rf()
-	} else {
-		r0 = ret.Get(0).(string)
-	}
-
-	return r0
-}
+func (_m *APIClient) DaemonHost() string { _ = "STUB: not implemented"; return "" }
 
 // APIClient_DaemonHost_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'DaemonHost'
 type APIClient_DaemonHost_Call struct {
@@ -2471,54 +1578,29 @@ type APIClient_DaemonHost_Call struct {
 
 // DaemonHost is a helper method to define mock.On call
 func (_e *APIClient_Expecter) DaemonHost() *APIClient_DaemonHost_Call {
-	return &APIClient_DaemonHost_Call{Call: _e.mock.On("DaemonHost")}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_DaemonHost_Call) Run(run func()) *APIClient_DaemonHost_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run()
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_DaemonHost_Call) Return(_a0 string) *APIClient_DaemonHost_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_DaemonHost_Call) RunAndReturn(run func() string) *APIClient_DaemonHost_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // DialHijack provides a mock function with given fields: ctx, url, proto, meta
 func (_m *APIClient) DialHijack(ctx context.Context, url string, proto string, meta map[string][]string) (net.Conn, error) {
-	ret := _m.Called(ctx, url, proto, meta)
-
-	if len(ret) == 0 {
-		panic("no return value specified for DialHijack")
-	}
-
-	var r0 net.Conn
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, string, map[string][]string) (net.Conn, error)); ok {
-		return rf(ctx, url, proto, meta)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, string, map[string][]string) net.Conn); ok {
-		r0 = rf(ctx, url, proto, meta)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(net.Conn)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, string, map[string][]string) error); ok {
-		r1 = rf(ctx, url, proto, meta)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(net.Conn), nil
 }
 
 // APIClient_DialHijack_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'DialHijack'
@@ -2532,44 +1614,29 @@ type APIClient_DialHijack_Call struct {
 //   - proto string
 //   - meta map[string][]string
 func (_e *APIClient_Expecter) DialHijack(ctx interface{}, url interface{}, proto interface{}, meta interface{}) *APIClient_DialHijack_Call {
-	return &APIClient_DialHijack_Call{Call: _e.mock.On("DialHijack", ctx, url, proto, meta)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_DialHijack_Call) Run(run func(ctx context.Context, url string, proto string, meta map[string][]string)) *APIClient_DialHijack_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(string), args[3].(map[string][]string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_DialHijack_Call) Return(_a0 net.Conn, _a1 error) *APIClient_DialHijack_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_DialHijack_Call) RunAndReturn(run func(context.Context, string, string, map[string][]string) (net.Conn, error)) *APIClient_DialHijack_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // Dialer provides a mock function with no fields
 func (_m *APIClient) Dialer() func(context.Context) (net.Conn, error) {
-	ret := _m.Called()
-
-	if len(ret) == 0 {
-		panic("no return value specified for Dialer")
-	}
-
-	var r0 func(context.Context) (net.Conn, error)
-	if rf, ok := ret.Get(0).(func() func(context.Context) (net.Conn, error)); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(func(context.Context) (net.Conn, error))
-		}
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_Dialer_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'Dialer'
@@ -2579,52 +1646,29 @@ type APIClient_Dialer_Call struct {
 
 // Dialer is a helper method to define mock.On call
 func (_e *APIClient_Expecter) Dialer() *APIClient_Dialer_Call {
-	return &APIClient_Dialer_Call{Call: _e.mock.On("Dialer")}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_Dialer_Call) Run(run func()) *APIClient_Dialer_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run()
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_Dialer_Call) Return(_a0 func(context.Context) (net.Conn, error)) *APIClient_Dialer_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_Dialer_Call) RunAndReturn(run func() func(context.Context) (net.Conn, error)) *APIClient_Dialer_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // DiskUsage provides a mock function with given fields: ctx, options
 func (_m *APIClient) DiskUsage(ctx context.Context, options types.DiskUsageOptions) (types.DiskUsage, error) {
-	ret := _m.Called(ctx, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for DiskUsage")
-	}
-
-	var r0 types.DiskUsage
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, types.DiskUsageOptions) (types.DiskUsage, error)); ok {
-		return rf(ctx, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, types.DiskUsageOptions) types.DiskUsage); ok {
-		r0 = rf(ctx, options)
-	} else {
-		r0 = ret.Get(0).(types.DiskUsage)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, types.DiskUsageOptions) error); ok {
-		r1 = rf(ctx, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(types.DiskUsage), nil
 }
 
 // APIClient_DiskUsage_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'DiskUsage'
@@ -2636,52 +1680,29 @@ type APIClient_DiskUsage_Call struct {
 //   - ctx context.Context
 //   - options types.DiskUsageOptions
 func (_e *APIClient_Expecter) DiskUsage(ctx interface{}, options interface{}) *APIClient_DiskUsage_Call {
-	return &APIClient_DiskUsage_Call{Call: _e.mock.On("DiskUsage", ctx, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_DiskUsage_Call) Run(run func(ctx context.Context, options types.DiskUsageOptions)) *APIClient_DiskUsage_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(types.DiskUsageOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_DiskUsage_Call) Return(_a0 types.DiskUsage, _a1 error) *APIClient_DiskUsage_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_DiskUsage_Call) RunAndReturn(run func(context.Context, types.DiskUsageOptions) (types.DiskUsage, error)) *APIClient_DiskUsage_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // DistributionInspect provides a mock function with given fields: ctx, _a1, encodedRegistryAuth
 func (_m *APIClient) DistributionInspect(ctx context.Context, _a1 string, encodedRegistryAuth string) (registry.DistributionInspect, error) {
-	ret := _m.Called(ctx, _a1, encodedRegistryAuth)
-
-	if len(ret) == 0 {
-		panic("no return value specified for DistributionInspect")
-	}
-
-	var r0 registry.DistributionInspect
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, string) (registry.DistributionInspect, error)); ok {
-		return rf(ctx, _a1, encodedRegistryAuth)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, string) registry.DistributionInspect); ok {
-		r0 = rf(ctx, _a1, encodedRegistryAuth)
-	} else {
-		r0 = ret.Get(0).(registry.DistributionInspect)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, string) error); ok {
-		r1 = rf(ctx, _a1, encodedRegistryAuth)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(registry.DistributionInspect), nil
 }
 
 // APIClient_DistributionInspect_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'DistributionInspect'
@@ -2694,56 +1715,29 @@ type APIClient_DistributionInspect_Call struct {
 //   - _a1 string
 //   - encodedRegistryAuth string
 func (_e *APIClient_Expecter) DistributionInspect(ctx interface{}, _a1 interface{}, encodedRegistryAuth interface{}) *APIClient_DistributionInspect_Call {
-	return &APIClient_DistributionInspect_Call{Call: _e.mock.On("DistributionInspect", ctx, _a1, encodedRegistryAuth)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_DistributionInspect_Call) Run(run func(ctx context.Context, _a1 string, encodedRegistryAuth string)) *APIClient_DistributionInspect_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_DistributionInspect_Call) Return(_a0 registry.DistributionInspect, _a1 error) *APIClient_DistributionInspect_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_DistributionInspect_Call) RunAndReturn(run func(context.Context, string, string) (registry.DistributionInspect, error)) *APIClient_DistributionInspect_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // Events provides a mock function with given fields: ctx, options
 func (_m *APIClient) Events(ctx context.Context, options events.ListOptions) (<-chan events.Message, <-chan error) {
-	ret := _m.Called(ctx, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for Events")
-	}
-
-	var r0 <-chan events.Message
-	var r1 <-chan error
-	if rf, ok := ret.Get(0).(func(context.Context, events.ListOptions) (<-chan events.Message, <-chan error)); ok {
-		return rf(ctx, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, events.ListOptions) <-chan events.Message); ok {
-		r0 = rf(ctx, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(<-chan events.Message)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, events.ListOptions) <-chan error); ok {
-		r1 = rf(ctx, options)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(<-chan error)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // APIClient_Events_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'Events'
@@ -2755,45 +1749,27 @@ type APIClient_Events_Call struct {
 //   - ctx context.Context
 //   - options events.ListOptions
 func (_e *APIClient_Expecter) Events(ctx interface{}, options interface{}) *APIClient_Events_Call {
-	return &APIClient_Events_Call{Call: _e.mock.On("Events", ctx, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_Events_Call) Run(run func(ctx context.Context, options events.ListOptions)) *APIClient_Events_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(events.ListOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_Events_Call) Return(_a0 <-chan events.Message, _a1 <-chan error) *APIClient_Events_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_Events_Call) RunAndReturn(run func(context.Context, events.ListOptions) (<-chan events.Message, <-chan error)) *APIClient_Events_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // HTTPClient provides a mock function with no fields
-func (_m *APIClient) HTTPClient() *http.Client {
-	ret := _m.Called()
-
-	if len(ret) == 0 {
-		panic("no return value specified for HTTPClient")
-	}
-
-	var r0 *http.Client
-	if rf, ok := ret.Get(0).(func() *http.Client); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*http.Client)
-		}
-	}
-
-	return r0
-}
+func (_m *APIClient) HTTPClient() *http.Client { _ = "STUB: not implemented"; return nil }
 
 // APIClient_HTTPClient_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'HTTPClient'
 type APIClient_HTTPClient_Call struct {
@@ -2802,52 +1778,29 @@ type APIClient_HTTPClient_Call struct {
 
 // HTTPClient is a helper method to define mock.On call
 func (_e *APIClient_Expecter) HTTPClient() *APIClient_HTTPClient_Call {
-	return &APIClient_HTTPClient_Call{Call: _e.mock.On("HTTPClient")}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_HTTPClient_Call) Run(run func()) *APIClient_HTTPClient_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run()
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_HTTPClient_Call) Return(_a0 *http.Client) *APIClient_HTTPClient_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_HTTPClient_Call) RunAndReturn(run func() *http.Client) *APIClient_HTTPClient_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImageBuild provides a mock function with given fields: ctx, _a1, options
 func (_m *APIClient) ImageBuild(ctx context.Context, _a1 io.Reader, options build.ImageBuildOptions) (build.ImageBuildResponse, error) {
-	ret := _m.Called(ctx, _a1, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImageBuild")
-	}
-
-	var r0 build.ImageBuildResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, io.Reader, build.ImageBuildOptions) (build.ImageBuildResponse, error)); ok {
-		return rf(ctx, _a1, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, io.Reader, build.ImageBuildOptions) build.ImageBuildResponse); ok {
-		r0 = rf(ctx, _a1, options)
-	} else {
-		r0 = ret.Get(0).(build.ImageBuildResponse)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, io.Reader, build.ImageBuildOptions) error); ok {
-		r1 = rf(ctx, _a1, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(build.ImageBuildResponse), nil
 }
 
 // APIClient_ImageBuild_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImageBuild'
@@ -2860,54 +1813,29 @@ type APIClient_ImageBuild_Call struct {
 //   - _a1 io.Reader
 //   - options build.ImageBuildOptions
 func (_e *APIClient_Expecter) ImageBuild(ctx interface{}, _a1 interface{}, options interface{}) *APIClient_ImageBuild_Call {
-	return &APIClient_ImageBuild_Call{Call: _e.mock.On("ImageBuild", ctx, _a1, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageBuild_Call) Run(run func(ctx context.Context, _a1 io.Reader, options build.ImageBuildOptions)) *APIClient_ImageBuild_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(io.Reader), args[2].(build.ImageBuildOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageBuild_Call) Return(_a0 build.ImageBuildResponse, _a1 error) *APIClient_ImageBuild_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageBuild_Call) RunAndReturn(run func(context.Context, io.Reader, build.ImageBuildOptions) (build.ImageBuildResponse, error)) *APIClient_ImageBuild_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImageCreate provides a mock function with given fields: ctx, parentReference, options
 func (_m *APIClient) ImageCreate(ctx context.Context, parentReference string, options image.CreateOptions) (io.ReadCloser, error) {
-	ret := _m.Called(ctx, parentReference, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImageCreate")
-	}
-
-	var r0 io.ReadCloser
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, image.CreateOptions) (io.ReadCloser, error)); ok {
-		return rf(ctx, parentReference, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, image.CreateOptions) io.ReadCloser); ok {
-		r0 = rf(ctx, parentReference, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(io.ReadCloser)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, image.CreateOptions) error); ok {
-		r1 = rf(ctx, parentReference, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(io.ReadCloser), nil
 }
 
 // APIClient_ImageCreate_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImageCreate'
@@ -2920,61 +1848,29 @@ type APIClient_ImageCreate_Call struct {
 //   - parentReference string
 //   - options image.CreateOptions
 func (_e *APIClient_Expecter) ImageCreate(ctx interface{}, parentReference interface{}, options interface{}) *APIClient_ImageCreate_Call {
-	return &APIClient_ImageCreate_Call{Call: _e.mock.On("ImageCreate", ctx, parentReference, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageCreate_Call) Run(run func(ctx context.Context, parentReference string, options image.CreateOptions)) *APIClient_ImageCreate_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(image.CreateOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageCreate_Call) Return(_a0 io.ReadCloser, _a1 error) *APIClient_ImageCreate_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageCreate_Call) RunAndReturn(run func(context.Context, string, image.CreateOptions) (io.ReadCloser, error)) *APIClient_ImageCreate_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImageHistory provides a mock function with given fields: ctx, _a1, _a2
 func (_m *APIClient) ImageHistory(ctx context.Context, _a1 string, _a2 ...client.ImageHistoryOption) ([]image.HistoryResponseItem, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, ctx, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImageHistory")
-	}
-
-	var r0 []image.HistoryResponseItem
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, ...client.ImageHistoryOption) ([]image.HistoryResponseItem, error)); ok {
-		return rf(ctx, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, ...client.ImageHistoryOption) []image.HistoryResponseItem); ok {
-		r0 = rf(ctx, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]image.HistoryResponseItem)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, ...client.ImageHistoryOption) error); ok {
-		r1 = rf(ctx, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // APIClient_ImageHistory_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImageHistory'
@@ -2987,61 +1883,29 @@ type APIClient_ImageHistory_Call struct {
 //   - _a1 string
 //   - _a2 ...client.ImageHistoryOption
 func (_e *APIClient_Expecter) ImageHistory(ctx interface{}, _a1 interface{}, _a2 ...interface{}) *APIClient_ImageHistory_Call {
-	return &APIClient_ImageHistory_Call{Call: _e.mock.On("ImageHistory",
-		append([]interface{}{ctx, _a1}, _a2...)...)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageHistory_Call) Run(run func(ctx context.Context, _a1 string, _a2 ...client.ImageHistoryOption)) *APIClient_ImageHistory_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		variadicArgs := make([]client.ImageHistoryOption, len(args)-2)
-		for i, a := range args[2:] {
-			if a != nil {
-				variadicArgs[i] = a.(client.ImageHistoryOption)
-			}
-		}
-		run(args[0].(context.Context), args[1].(string), variadicArgs...)
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageHistory_Call) Return(_a0 []image.HistoryResponseItem, _a1 error) *APIClient_ImageHistory_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageHistory_Call) RunAndReturn(run func(context.Context, string, ...client.ImageHistoryOption) ([]image.HistoryResponseItem, error)) *APIClient_ImageHistory_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImageImport provides a mock function with given fields: ctx, source, ref, options
 func (_m *APIClient) ImageImport(ctx context.Context, source image.ImportSource, ref string, options image.ImportOptions) (io.ReadCloser, error) {
-	ret := _m.Called(ctx, source, ref, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImageImport")
-	}
-
-	var r0 io.ReadCloser
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, image.ImportSource, string, image.ImportOptions) (io.ReadCloser, error)); ok {
-		return rf(ctx, source, ref, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, image.ImportSource, string, image.ImportOptions) io.ReadCloser); ok {
-		r0 = rf(ctx, source, ref, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(io.ReadCloser)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, image.ImportSource, string, image.ImportOptions) error); ok {
-		r1 = rf(ctx, source, ref, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(io.ReadCloser), nil
 }
 
 // APIClient_ImageImport_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImageImport'
@@ -3055,59 +1919,29 @@ type APIClient_ImageImport_Call struct {
 //   - ref string
 //   - options image.ImportOptions
 func (_e *APIClient_Expecter) ImageImport(ctx interface{}, source interface{}, ref interface{}, options interface{}) *APIClient_ImageImport_Call {
-	return &APIClient_ImageImport_Call{Call: _e.mock.On("ImageImport", ctx, source, ref, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageImport_Call) Run(run func(ctx context.Context, source image.ImportSource, ref string, options image.ImportOptions)) *APIClient_ImageImport_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(image.ImportSource), args[2].(string), args[3].(image.ImportOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageImport_Call) Return(_a0 io.ReadCloser, _a1 error) *APIClient_ImageImport_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageImport_Call) RunAndReturn(run func(context.Context, image.ImportSource, string, image.ImportOptions) (io.ReadCloser, error)) *APIClient_ImageImport_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImageInspect provides a mock function with given fields: ctx, _a1, _a2
 func (_m *APIClient) ImageInspect(ctx context.Context, _a1 string, _a2 ...client.ImageInspectOption) (image.InspectResponse, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, ctx, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImageInspect")
-	}
-
-	var r0 image.InspectResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, ...client.ImageInspectOption) (image.InspectResponse, error)); ok {
-		return rf(ctx, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, ...client.ImageInspectOption) image.InspectResponse); ok {
-		r0 = rf(ctx, _a1, _a2...)
-	} else {
-		r0 = ret.Get(0).(image.InspectResponse)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, ...client.ImageInspectOption) error); ok {
-		r1 = rf(ctx, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(image.InspectResponse), nil
 }
 
 // APIClient_ImageInspect_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImageInspect'
@@ -3120,68 +1954,29 @@ type APIClient_ImageInspect_Call struct {
 //   - _a1 string
 //   - _a2 ...client.ImageInspectOption
 func (_e *APIClient_Expecter) ImageInspect(ctx interface{}, _a1 interface{}, _a2 ...interface{}) *APIClient_ImageInspect_Call {
-	return &APIClient_ImageInspect_Call{Call: _e.mock.On("ImageInspect",
-		append([]interface{}{ctx, _a1}, _a2...)...)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageInspect_Call) Run(run func(ctx context.Context, _a1 string, _a2 ...client.ImageInspectOption)) *APIClient_ImageInspect_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		variadicArgs := make([]client.ImageInspectOption, len(args)-2)
-		for i, a := range args[2:] {
-			if a != nil {
-				variadicArgs[i] = a.(client.ImageInspectOption)
-			}
-		}
-		run(args[0].(context.Context), args[1].(string), variadicArgs...)
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageInspect_Call) Return(_a0 image.InspectResponse, _a1 error) *APIClient_ImageInspect_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageInspect_Call) RunAndReturn(run func(context.Context, string, ...client.ImageInspectOption) (image.InspectResponse, error)) *APIClient_ImageInspect_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImageInspectWithRaw provides a mock function with given fields: ctx, _a1
 func (_m *APIClient) ImageInspectWithRaw(ctx context.Context, _a1 string) (image.InspectResponse, []byte, error) {
-	ret := _m.Called(ctx, _a1)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImageInspectWithRaw")
-	}
-
-	var r0 image.InspectResponse
-	var r1 []byte
-	var r2 error
-	if rf, ok := ret.Get(0).(func(context.Context, string) (image.InspectResponse, []byte, error)); ok {
-		return rf(ctx, _a1)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string) image.InspectResponse); ok {
-		r0 = rf(ctx, _a1)
-	} else {
-		r0 = ret.Get(0).(image.InspectResponse)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string) []byte); ok {
-		r1 = rf(ctx, _a1)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).([]byte)
-		}
-	}
-
-	if rf, ok := ret.Get(2).(func(context.Context, string) error); ok {
-		r2 = rf(ctx, _a1)
-	} else {
-		r2 = ret.Error(2)
-	}
-
-	return r0, r1, r2
+	_ = "STUB: not implemented"
+	return *new(image.InspectResponse), nil, nil
 }
 
 // APIClient_ImageInspectWithRaw_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImageInspectWithRaw'
@@ -3193,54 +1988,29 @@ type APIClient_ImageInspectWithRaw_Call struct {
 //   - ctx context.Context
 //   - _a1 string
 func (_e *APIClient_Expecter) ImageInspectWithRaw(ctx interface{}, _a1 interface{}) *APIClient_ImageInspectWithRaw_Call {
-	return &APIClient_ImageInspectWithRaw_Call{Call: _e.mock.On("ImageInspectWithRaw", ctx, _a1)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageInspectWithRaw_Call) Run(run func(ctx context.Context, _a1 string)) *APIClient_ImageInspectWithRaw_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageInspectWithRaw_Call) Return(_a0 image.InspectResponse, _a1 []byte, _a2 error) *APIClient_ImageInspectWithRaw_Call {
-	_c.Call.Return(_a0, _a1, _a2)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageInspectWithRaw_Call) RunAndReturn(run func(context.Context, string) (image.InspectResponse, []byte, error)) *APIClient_ImageInspectWithRaw_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImageList provides a mock function with given fields: ctx, options
 func (_m *APIClient) ImageList(ctx context.Context, options image.ListOptions) ([]image.Summary, error) {
-	ret := _m.Called(ctx, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImageList")
-	}
-
-	var r0 []image.Summary
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, image.ListOptions) ([]image.Summary, error)); ok {
-		return rf(ctx, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, image.ListOptions) []image.Summary); ok {
-		r0 = rf(ctx, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]image.Summary)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, image.ListOptions) error); ok {
-		r1 = rf(ctx, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // APIClient_ImageList_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImageList'
@@ -3252,59 +2022,29 @@ type APIClient_ImageList_Call struct {
 //   - ctx context.Context
 //   - options image.ListOptions
 func (_e *APIClient_Expecter) ImageList(ctx interface{}, options interface{}) *APIClient_ImageList_Call {
-	return &APIClient_ImageList_Call{Call: _e.mock.On("ImageList", ctx, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageList_Call) Run(run func(ctx context.Context, options image.ListOptions)) *APIClient_ImageList_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(image.ListOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageList_Call) Return(_a0 []image.Summary, _a1 error) *APIClient_ImageList_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageList_Call) RunAndReturn(run func(context.Context, image.ListOptions) ([]image.Summary, error)) *APIClient_ImageList_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImageLoad provides a mock function with given fields: ctx, input, _a2
 func (_m *APIClient) ImageLoad(ctx context.Context, input io.Reader, _a2 ...client.ImageLoadOption) (image.LoadResponse, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, ctx, input)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImageLoad")
-	}
-
-	var r0 image.LoadResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, io.Reader, ...client.ImageLoadOption) (image.LoadResponse, error)); ok {
-		return rf(ctx, input, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, io.Reader, ...client.ImageLoadOption) image.LoadResponse); ok {
-		r0 = rf(ctx, input, _a2...)
-	} else {
-		r0 = ret.Get(0).(image.LoadResponse)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, io.Reader, ...client.ImageLoadOption) error); ok {
-		r1 = rf(ctx, input, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(image.LoadResponse), nil
 }
 
 // APIClient_ImageLoad_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImageLoad'
@@ -3317,61 +2057,29 @@ type APIClient_ImageLoad_Call struct {
 //   - input io.Reader
 //   - _a2 ...client.ImageLoadOption
 func (_e *APIClient_Expecter) ImageLoad(ctx interface{}, input interface{}, _a2 ...interface{}) *APIClient_ImageLoad_Call {
-	return &APIClient_ImageLoad_Call{Call: _e.mock.On("ImageLoad",
-		append([]interface{}{ctx, input}, _a2...)...)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageLoad_Call) Run(run func(ctx context.Context, input io.Reader, _a2 ...client.ImageLoadOption)) *APIClient_ImageLoad_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		variadicArgs := make([]client.ImageLoadOption, len(args)-2)
-		for i, a := range args[2:] {
-			if a != nil {
-				variadicArgs[i] = a.(client.ImageLoadOption)
-			}
-		}
-		run(args[0].(context.Context), args[1].(io.Reader), variadicArgs...)
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageLoad_Call) Return(_a0 image.LoadResponse, _a1 error) *APIClient_ImageLoad_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageLoad_Call) RunAndReturn(run func(context.Context, io.Reader, ...client.ImageLoadOption) (image.LoadResponse, error)) *APIClient_ImageLoad_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImagePull provides a mock function with given fields: ctx, ref, options
 func (_m *APIClient) ImagePull(ctx context.Context, ref string, options image.PullOptions) (io.ReadCloser, error) {
-	ret := _m.Called(ctx, ref, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImagePull")
-	}
-
-	var r0 io.ReadCloser
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, image.PullOptions) (io.ReadCloser, error)); ok {
-		return rf(ctx, ref, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, image.PullOptions) io.ReadCloser); ok {
-		r0 = rf(ctx, ref, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(io.ReadCloser)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, image.PullOptions) error); ok {
-		r1 = rf(ctx, ref, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(io.ReadCloser), nil
 }
 
 // APIClient_ImagePull_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImagePull'
@@ -3384,54 +2092,29 @@ type APIClient_ImagePull_Call struct {
 //   - ref string
 //   - options image.PullOptions
 func (_e *APIClient_Expecter) ImagePull(ctx interface{}, ref interface{}, options interface{}) *APIClient_ImagePull_Call {
-	return &APIClient_ImagePull_Call{Call: _e.mock.On("ImagePull", ctx, ref, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImagePull_Call) Run(run func(ctx context.Context, ref string, options image.PullOptions)) *APIClient_ImagePull_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(image.PullOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImagePull_Call) Return(_a0 io.ReadCloser, _a1 error) *APIClient_ImagePull_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImagePull_Call) RunAndReturn(run func(context.Context, string, image.PullOptions) (io.ReadCloser, error)) *APIClient_ImagePull_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImagePush provides a mock function with given fields: ctx, ref, options
 func (_m *APIClient) ImagePush(ctx context.Context, ref string, options image.PushOptions) (io.ReadCloser, error) {
-	ret := _m.Called(ctx, ref, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImagePush")
-	}
-
-	var r0 io.ReadCloser
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, image.PushOptions) (io.ReadCloser, error)); ok {
-		return rf(ctx, ref, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, image.PushOptions) io.ReadCloser); ok {
-		r0 = rf(ctx, ref, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(io.ReadCloser)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, image.PushOptions) error); ok {
-		r1 = rf(ctx, ref, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(io.ReadCloser), nil
 }
 
 // APIClient_ImagePush_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImagePush'
@@ -3444,54 +2127,29 @@ type APIClient_ImagePush_Call struct {
 //   - ref string
 //   - options image.PushOptions
 func (_e *APIClient_Expecter) ImagePush(ctx interface{}, ref interface{}, options interface{}) *APIClient_ImagePush_Call {
-	return &APIClient_ImagePush_Call{Call: _e.mock.On("ImagePush", ctx, ref, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImagePush_Call) Run(run func(ctx context.Context, ref string, options image.PushOptions)) *APIClient_ImagePush_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(image.PushOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImagePush_Call) Return(_a0 io.ReadCloser, _a1 error) *APIClient_ImagePush_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImagePush_Call) RunAndReturn(run func(context.Context, string, image.PushOptions) (io.ReadCloser, error)) *APIClient_ImagePush_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImageRemove provides a mock function with given fields: ctx, _a1, options
 func (_m *APIClient) ImageRemove(ctx context.Context, _a1 string, options image.RemoveOptions) ([]image.DeleteResponse, error) {
-	ret := _m.Called(ctx, _a1, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImageRemove")
-	}
-
-	var r0 []image.DeleteResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, image.RemoveOptions) ([]image.DeleteResponse, error)); ok {
-		return rf(ctx, _a1, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, image.RemoveOptions) []image.DeleteResponse); ok {
-		r0 = rf(ctx, _a1, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]image.DeleteResponse)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, image.RemoveOptions) error); ok {
-		r1 = rf(ctx, _a1, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // APIClient_ImageRemove_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImageRemove'
@@ -3504,61 +2162,29 @@ type APIClient_ImageRemove_Call struct {
 //   - _a1 string
 //   - options image.RemoveOptions
 func (_e *APIClient_Expecter) ImageRemove(ctx interface{}, _a1 interface{}, options interface{}) *APIClient_ImageRemove_Call {
-	return &APIClient_ImageRemove_Call{Call: _e.mock.On("ImageRemove", ctx, _a1, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageRemove_Call) Run(run func(ctx context.Context, _a1 string, options image.RemoveOptions)) *APIClient_ImageRemove_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(image.RemoveOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageRemove_Call) Return(_a0 []image.DeleteResponse, _a1 error) *APIClient_ImageRemove_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageRemove_Call) RunAndReturn(run func(context.Context, string, image.RemoveOptions) ([]image.DeleteResponse, error)) *APIClient_ImageRemove_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImageSave provides a mock function with given fields: ctx, images, _a2
 func (_m *APIClient) ImageSave(ctx context.Context, images []string, _a2 ...client.ImageSaveOption) (io.ReadCloser, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, ctx, images)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImageSave")
-	}
-
-	var r0 io.ReadCloser
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, []string, ...client.ImageSaveOption) (io.ReadCloser, error)); ok {
-		return rf(ctx, images, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, []string, ...client.ImageSaveOption) io.ReadCloser); ok {
-		r0 = rf(ctx, images, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(io.ReadCloser)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, []string, ...client.ImageSaveOption) error); ok {
-		r1 = rf(ctx, images, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(io.ReadCloser), nil
 }
 
 // APIClient_ImageSave_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImageSave'
@@ -3571,61 +2197,29 @@ type APIClient_ImageSave_Call struct {
 //   - images []string
 //   - _a2 ...client.ImageSaveOption
 func (_e *APIClient_Expecter) ImageSave(ctx interface{}, images interface{}, _a2 ...interface{}) *APIClient_ImageSave_Call {
-	return &APIClient_ImageSave_Call{Call: _e.mock.On("ImageSave",
-		append([]interface{}{ctx, images}, _a2...)...)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageSave_Call) Run(run func(ctx context.Context, images []string, _a2 ...client.ImageSaveOption)) *APIClient_ImageSave_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		variadicArgs := make([]client.ImageSaveOption, len(args)-2)
-		for i, a := range args[2:] {
-			if a != nil {
-				variadicArgs[i] = a.(client.ImageSaveOption)
-			}
-		}
-		run(args[0].(context.Context), args[1].([]string), variadicArgs...)
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageSave_Call) Return(_a0 io.ReadCloser, _a1 error) *APIClient_ImageSave_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageSave_Call) RunAndReturn(run func(context.Context, []string, ...client.ImageSaveOption) (io.ReadCloser, error)) *APIClient_ImageSave_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImageSearch provides a mock function with given fields: ctx, term, options
 func (_m *APIClient) ImageSearch(ctx context.Context, term string, options registry.SearchOptions) ([]registry.SearchResult, error) {
-	ret := _m.Called(ctx, term, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImageSearch")
-	}
-
-	var r0 []registry.SearchResult
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, registry.SearchOptions) ([]registry.SearchResult, error)); ok {
-		return rf(ctx, term, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, registry.SearchOptions) []registry.SearchResult); ok {
-		r0 = rf(ctx, term, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]registry.SearchResult)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, registry.SearchOptions) error); ok {
-		r1 = rf(ctx, term, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // APIClient_ImageSearch_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImageSearch'
@@ -3638,42 +2232,29 @@ type APIClient_ImageSearch_Call struct {
 //   - term string
 //   - options registry.SearchOptions
 func (_e *APIClient_Expecter) ImageSearch(ctx interface{}, term interface{}, options interface{}) *APIClient_ImageSearch_Call {
-	return &APIClient_ImageSearch_Call{Call: _e.mock.On("ImageSearch", ctx, term, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageSearch_Call) Run(run func(ctx context.Context, term string, options registry.SearchOptions)) *APIClient_ImageSearch_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(registry.SearchOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageSearch_Call) Return(_a0 []registry.SearchResult, _a1 error) *APIClient_ImageSearch_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageSearch_Call) RunAndReturn(run func(context.Context, string, registry.SearchOptions) ([]registry.SearchResult, error)) *APIClient_ImageSearch_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImageTag provides a mock function with given fields: ctx, _a1, ref
 func (_m *APIClient) ImageTag(ctx context.Context, _a1 string, ref string) error {
-	ret := _m.Called(ctx, _a1, ref)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImageTag")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, string) error); ok {
-		r0 = rf(ctx, _a1, ref)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_ImageTag_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImageTag'
@@ -3686,52 +2267,29 @@ type APIClient_ImageTag_Call struct {
 //   - _a1 string
 //   - ref string
 func (_e *APIClient_Expecter) ImageTag(ctx interface{}, _a1 interface{}, ref interface{}) *APIClient_ImageTag_Call {
-	return &APIClient_ImageTag_Call{Call: _e.mock.On("ImageTag", ctx, _a1, ref)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageTag_Call) Run(run func(ctx context.Context, _a1 string, ref string)) *APIClient_ImageTag_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageTag_Call) Return(_a0 error) *APIClient_ImageTag_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImageTag_Call) RunAndReturn(run func(context.Context, string, string) error) *APIClient_ImageTag_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImagesPrune provides a mock function with given fields: ctx, pruneFilter
 func (_m *APIClient) ImagesPrune(ctx context.Context, pruneFilter filters.Args) (image.PruneReport, error) {
-	ret := _m.Called(ctx, pruneFilter)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImagesPrune")
-	}
-
-	var r0 image.PruneReport
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, filters.Args) (image.PruneReport, error)); ok {
-		return rf(ctx, pruneFilter)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, filters.Args) image.PruneReport); ok {
-		r0 = rf(ctx, pruneFilter)
-	} else {
-		r0 = ret.Get(0).(image.PruneReport)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, filters.Args) error); ok {
-		r1 = rf(ctx, pruneFilter)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(image.PruneReport), nil
 }
 
 // APIClient_ImagesPrune_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImagesPrune'
@@ -3743,52 +2301,29 @@ type APIClient_ImagesPrune_Call struct {
 //   - ctx context.Context
 //   - pruneFilter filters.Args
 func (_e *APIClient_Expecter) ImagesPrune(ctx interface{}, pruneFilter interface{}) *APIClient_ImagesPrune_Call {
-	return &APIClient_ImagesPrune_Call{Call: _e.mock.On("ImagesPrune", ctx, pruneFilter)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImagesPrune_Call) Run(run func(ctx context.Context, pruneFilter filters.Args)) *APIClient_ImagesPrune_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(filters.Args))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImagesPrune_Call) Return(_a0 image.PruneReport, _a1 error) *APIClient_ImagesPrune_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ImagesPrune_Call) RunAndReturn(run func(context.Context, filters.Args) (image.PruneReport, error)) *APIClient_ImagesPrune_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // Info provides a mock function with given fields: ctx
 func (_m *APIClient) Info(ctx context.Context) (system.Info, error) {
-	ret := _m.Called(ctx)
-
-	if len(ret) == 0 {
-		panic("no return value specified for Info")
-	}
-
-	var r0 system.Info
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context) (system.Info, error)); ok {
-		return rf(ctx)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context) system.Info); ok {
-		r0 = rf(ctx)
-	} else {
-		r0 = ret.Get(0).(system.Info)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context) error); ok {
-		r1 = rf(ctx)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(system.Info), nil
 }
 
 // APIClient_Info_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'Info'
@@ -3799,32 +2334,33 @@ type APIClient_Info_Call struct {
 // Info is a helper method to define mock.On call
 //   - ctx context.Context
 func (_e *APIClient_Expecter) Info(ctx interface{}) *APIClient_Info_Call {
-	return &APIClient_Info_Call{Call: _e.mock.On("Info", ctx)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_Info_Call) Run(run func(ctx context.Context)) *APIClient_Info_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_Info_Call) Return(_a0 system.Info, _a1 error) *APIClient_Info_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_Info_Call) RunAndReturn(run func(context.Context) (system.Info, error)) *APIClient_Info_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NegotiateAPIVersion provides a mock function with given fields: ctx
 func (_m *APIClient) NegotiateAPIVersion(ctx context.Context) {
-	_m.Called(ctx)
+	_ = "STUB: not implemented"
+
+	// APIClient_NegotiateAPIVersion_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'NegotiateAPIVersion'
+	return
 }
 
-// APIClient_NegotiateAPIVersion_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'NegotiateAPIVersion'
 type APIClient_NegotiateAPIVersion_Call struct {
 	*mock.Call
 }
@@ -3832,32 +2368,34 @@ type APIClient_NegotiateAPIVersion_Call struct {
 // NegotiateAPIVersion is a helper method to define mock.On call
 //   - ctx context.Context
 func (_e *APIClient_Expecter) NegotiateAPIVersion(ctx interface{}) *APIClient_NegotiateAPIVersion_Call {
-	return &APIClient_NegotiateAPIVersion_Call{Call: _e.mock.On("NegotiateAPIVersion", ctx)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NegotiateAPIVersion_Call) Run(run func(ctx context.Context)) *APIClient_NegotiateAPIVersion_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NegotiateAPIVersion_Call) Return() *APIClient_NegotiateAPIVersion_Call {
-	_c.Call.Return()
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NegotiateAPIVersion_Call) RunAndReturn(run func(context.Context)) *APIClient_NegotiateAPIVersion_Call {
-	_c.Run(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
+
+	// NegotiateAPIVersionPing provides a mock function with given fields: _a0
 }
 
-// NegotiateAPIVersionPing provides a mock function with given fields: _a0
 func (_m *APIClient) NegotiateAPIVersionPing(_a0 types.Ping) {
-	_m.Called(_a0)
+	_ = "STUB: not implemented"
+
+	// APIClient_NegotiateAPIVersionPing_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'NegotiateAPIVersionPing'
+	return
 }
 
-// APIClient_NegotiateAPIVersionPing_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'NegotiateAPIVersionPing'
 type APIClient_NegotiateAPIVersionPing_Call struct {
 	*mock.Call
 }
@@ -3865,42 +2403,30 @@ type APIClient_NegotiateAPIVersionPing_Call struct {
 // NegotiateAPIVersionPing is a helper method to define mock.On call
 //   - _a0 types.Ping
 func (_e *APIClient_Expecter) NegotiateAPIVersionPing(_a0 interface{}) *APIClient_NegotiateAPIVersionPing_Call {
-	return &APIClient_NegotiateAPIVersionPing_Call{Call: _e.mock.On("NegotiateAPIVersionPing", _a0)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NegotiateAPIVersionPing_Call) Run(run func(_a0 types.Ping)) *APIClient_NegotiateAPIVersionPing_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(types.Ping))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NegotiateAPIVersionPing_Call) Return() *APIClient_NegotiateAPIVersionPing_Call {
-	_c.Call.Return()
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NegotiateAPIVersionPing_Call) RunAndReturn(run func(types.Ping)) *APIClient_NegotiateAPIVersionPing_Call {
-	_c.Run(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
+
+	// NetworkConnect provides a mock function with given fields: ctx, _a1, _a2, config
 }
 
-// NetworkConnect provides a mock function with given fields: ctx, _a1, _a2, config
 func (_m *APIClient) NetworkConnect(ctx context.Context, _a1 string, _a2 string, config *network.EndpointSettings) error {
-	ret := _m.Called(ctx, _a1, _a2, config)
-
-	if len(ret) == 0 {
-		panic("no return value specified for NetworkConnect")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, string, *network.EndpointSettings) error); ok {
-		r0 = rf(ctx, _a1, _a2, config)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_NetworkConnect_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'NetworkConnect'
@@ -3914,52 +2440,29 @@ type APIClient_NetworkConnect_Call struct {
 //   - _a2 string
 //   - config *network.EndpointSettings
 func (_e *APIClient_Expecter) NetworkConnect(ctx interface{}, _a1 interface{}, _a2 interface{}, config interface{}) *APIClient_NetworkConnect_Call {
-	return &APIClient_NetworkConnect_Call{Call: _e.mock.On("NetworkConnect", ctx, _a1, _a2, config)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NetworkConnect_Call) Run(run func(ctx context.Context, _a1 string, _a2 string, config *network.EndpointSettings)) *APIClient_NetworkConnect_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(string), args[3].(*network.EndpointSettings))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NetworkConnect_Call) Return(_a0 error) *APIClient_NetworkConnect_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NetworkConnect_Call) RunAndReturn(run func(context.Context, string, string, *network.EndpointSettings) error) *APIClient_NetworkConnect_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NetworkCreate provides a mock function with given fields: ctx, name, options
 func (_m *APIClient) NetworkCreate(ctx context.Context, name string, options network.CreateOptions) (network.CreateResponse, error) {
-	ret := _m.Called(ctx, name, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for NetworkCreate")
-	}
-
-	var r0 network.CreateResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, network.CreateOptions) (network.CreateResponse, error)); ok {
-		return rf(ctx, name, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, network.CreateOptions) network.CreateResponse); ok {
-		r0 = rf(ctx, name, options)
-	} else {
-		r0 = ret.Get(0).(network.CreateResponse)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, network.CreateOptions) error); ok {
-		r1 = rf(ctx, name, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(network.CreateResponse), nil
 }
 
 // APIClient_NetworkCreate_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'NetworkCreate'
@@ -3972,42 +2475,29 @@ type APIClient_NetworkCreate_Call struct {
 //   - name string
 //   - options network.CreateOptions
 func (_e *APIClient_Expecter) NetworkCreate(ctx interface{}, name interface{}, options interface{}) *APIClient_NetworkCreate_Call {
-	return &APIClient_NetworkCreate_Call{Call: _e.mock.On("NetworkCreate", ctx, name, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NetworkCreate_Call) Run(run func(ctx context.Context, name string, options network.CreateOptions)) *APIClient_NetworkCreate_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(network.CreateOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NetworkCreate_Call) Return(_a0 network.CreateResponse, _a1 error) *APIClient_NetworkCreate_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NetworkCreate_Call) RunAndReturn(run func(context.Context, string, network.CreateOptions) (network.CreateResponse, error)) *APIClient_NetworkCreate_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NetworkDisconnect provides a mock function with given fields: ctx, _a1, _a2, force
 func (_m *APIClient) NetworkDisconnect(ctx context.Context, _a1 string, _a2 string, force bool) error {
-	ret := _m.Called(ctx, _a1, _a2, force)
-
-	if len(ret) == 0 {
-		panic("no return value specified for NetworkDisconnect")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, string, bool) error); ok {
-		r0 = rf(ctx, _a1, _a2, force)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_NetworkDisconnect_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'NetworkDisconnect'
@@ -4021,52 +2511,29 @@ type APIClient_NetworkDisconnect_Call struct {
 //   - _a2 string
 //   - force bool
 func (_e *APIClient_Expecter) NetworkDisconnect(ctx interface{}, _a1 interface{}, _a2 interface{}, force interface{}) *APIClient_NetworkDisconnect_Call {
-	return &APIClient_NetworkDisconnect_Call{Call: _e.mock.On("NetworkDisconnect", ctx, _a1, _a2, force)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NetworkDisconnect_Call) Run(run func(ctx context.Context, _a1 string, _a2 string, force bool)) *APIClient_NetworkDisconnect_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(string), args[3].(bool))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NetworkDisconnect_Call) Return(_a0 error) *APIClient_NetworkDisconnect_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NetworkDisconnect_Call) RunAndReturn(run func(context.Context, string, string, bool) error) *APIClient_NetworkDisconnect_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NetworkInspect provides a mock function with given fields: ctx, _a1, options
 func (_m *APIClient) NetworkInspect(ctx context.Context, _a1 string, options network.InspectOptions) (network.Inspect, error) {
-	ret := _m.Called(ctx, _a1, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for NetworkInspect")
-	}
-
-	var r0 network.Inspect
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, network.InspectOptions) (network.Inspect, error)); ok {
-		return rf(ctx, _a1, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, network.InspectOptions) network.Inspect); ok {
-		r0 = rf(ctx, _a1, options)
-	} else {
-		r0 = ret.Get(0).(network.Inspect)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, network.InspectOptions) error); ok {
-		r1 = rf(ctx, _a1, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(network.Inspect), nil
 }
 
 // APIClient_NetworkInspect_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'NetworkInspect'
@@ -4079,61 +2546,29 @@ type APIClient_NetworkInspect_Call struct {
 //   - _a1 string
 //   - options network.InspectOptions
 func (_e *APIClient_Expecter) NetworkInspect(ctx interface{}, _a1 interface{}, options interface{}) *APIClient_NetworkInspect_Call {
-	return &APIClient_NetworkInspect_Call{Call: _e.mock.On("NetworkInspect", ctx, _a1, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NetworkInspect_Call) Run(run func(ctx context.Context, _a1 string, options network.InspectOptions)) *APIClient_NetworkInspect_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(network.InspectOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NetworkInspect_Call) Return(_a0 network.Inspect, _a1 error) *APIClient_NetworkInspect_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NetworkInspect_Call) RunAndReturn(run func(context.Context, string, network.InspectOptions) (network.Inspect, error)) *APIClient_NetworkInspect_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NetworkInspectWithRaw provides a mock function with given fields: ctx, _a1, options
 func (_m *APIClient) NetworkInspectWithRaw(ctx context.Context, _a1 string, options network.InspectOptions) (network.Inspect, []byte, error) {
-	ret := _m.Called(ctx, _a1, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for NetworkInspectWithRaw")
-	}
-
-	var r0 network.Inspect
-	var r1 []byte
-	var r2 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, network.InspectOptions) (network.Inspect, []byte, error)); ok {
-		return rf(ctx, _a1, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, network.InspectOptions) network.Inspect); ok {
-		r0 = rf(ctx, _a1, options)
-	} else {
-		r0 = ret.Get(0).(network.Inspect)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, network.InspectOptions) []byte); ok {
-		r1 = rf(ctx, _a1, options)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).([]byte)
-		}
-	}
-
-	if rf, ok := ret.Get(2).(func(context.Context, string, network.InspectOptions) error); ok {
-		r2 = rf(ctx, _a1, options)
-	} else {
-		r2 = ret.Error(2)
-	}
-
-	return r0, r1, r2
+	_ = "STUB: not implemented"
+	return *new(network.Inspect), nil, nil
 }
 
 // APIClient_NetworkInspectWithRaw_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'NetworkInspectWithRaw'
@@ -4146,54 +2581,29 @@ type APIClient_NetworkInspectWithRaw_Call struct {
 //   - _a1 string
 //   - options network.InspectOptions
 func (_e *APIClient_Expecter) NetworkInspectWithRaw(ctx interface{}, _a1 interface{}, options interface{}) *APIClient_NetworkInspectWithRaw_Call {
-	return &APIClient_NetworkInspectWithRaw_Call{Call: _e.mock.On("NetworkInspectWithRaw", ctx, _a1, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NetworkInspectWithRaw_Call) Run(run func(ctx context.Context, _a1 string, options network.InspectOptions)) *APIClient_NetworkInspectWithRaw_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(network.InspectOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NetworkInspectWithRaw_Call) Return(_a0 network.Inspect, _a1 []byte, _a2 error) *APIClient_NetworkInspectWithRaw_Call {
-	_c.Call.Return(_a0, _a1, _a2)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NetworkInspectWithRaw_Call) RunAndReturn(run func(context.Context, string, network.InspectOptions) (network.Inspect, []byte, error)) *APIClient_NetworkInspectWithRaw_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NetworkList provides a mock function with given fields: ctx, options
 func (_m *APIClient) NetworkList(ctx context.Context, options network.ListOptions) ([]network.Summary, error) {
-	ret := _m.Called(ctx, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for NetworkList")
-	}
-
-	var r0 []network.Summary
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, network.ListOptions) ([]network.Summary, error)); ok {
-		return rf(ctx, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, network.ListOptions) []network.Summary); ok {
-		r0 = rf(ctx, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]network.Summary)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, network.ListOptions) error); ok {
-		r1 = rf(ctx, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // APIClient_NetworkList_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'NetworkList'
@@ -4205,42 +2615,29 @@ type APIClient_NetworkList_Call struct {
 //   - ctx context.Context
 //   - options network.ListOptions
 func (_e *APIClient_Expecter) NetworkList(ctx interface{}, options interface{}) *APIClient_NetworkList_Call {
-	return &APIClient_NetworkList_Call{Call: _e.mock.On("NetworkList", ctx, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NetworkList_Call) Run(run func(ctx context.Context, options network.ListOptions)) *APIClient_NetworkList_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(network.ListOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NetworkList_Call) Return(_a0 []network.Summary, _a1 error) *APIClient_NetworkList_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NetworkList_Call) RunAndReturn(run func(context.Context, network.ListOptions) ([]network.Summary, error)) *APIClient_NetworkList_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NetworkRemove provides a mock function with given fields: ctx, _a1
 func (_m *APIClient) NetworkRemove(ctx context.Context, _a1 string) error {
-	ret := _m.Called(ctx, _a1)
-
-	if len(ret) == 0 {
-		panic("no return value specified for NetworkRemove")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string) error); ok {
-		r0 = rf(ctx, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_NetworkRemove_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'NetworkRemove'
@@ -4252,52 +2649,29 @@ type APIClient_NetworkRemove_Call struct {
 //   - ctx context.Context
 //   - _a1 string
 func (_e *APIClient_Expecter) NetworkRemove(ctx interface{}, _a1 interface{}) *APIClient_NetworkRemove_Call {
-	return &APIClient_NetworkRemove_Call{Call: _e.mock.On("NetworkRemove", ctx, _a1)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NetworkRemove_Call) Run(run func(ctx context.Context, _a1 string)) *APIClient_NetworkRemove_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NetworkRemove_Call) Return(_a0 error) *APIClient_NetworkRemove_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NetworkRemove_Call) RunAndReturn(run func(context.Context, string) error) *APIClient_NetworkRemove_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NetworksPrune provides a mock function with given fields: ctx, pruneFilter
 func (_m *APIClient) NetworksPrune(ctx context.Context, pruneFilter filters.Args) (network.PruneReport, error) {
-	ret := _m.Called(ctx, pruneFilter)
-
-	if len(ret) == 0 {
-		panic("no return value specified for NetworksPrune")
-	}
-
-	var r0 network.PruneReport
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, filters.Args) (network.PruneReport, error)); ok {
-		return rf(ctx, pruneFilter)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, filters.Args) network.PruneReport); ok {
-		r0 = rf(ctx, pruneFilter)
-	} else {
-		r0 = ret.Get(0).(network.PruneReport)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, filters.Args) error); ok {
-		r1 = rf(ctx, pruneFilter)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(network.PruneReport), nil
 }
 
 // APIClient_NetworksPrune_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'NetworksPrune'
@@ -4309,61 +2683,29 @@ type APIClient_NetworksPrune_Call struct {
 //   - ctx context.Context
 //   - pruneFilter filters.Args
 func (_e *APIClient_Expecter) NetworksPrune(ctx interface{}, pruneFilter interface{}) *APIClient_NetworksPrune_Call {
-	return &APIClient_NetworksPrune_Call{Call: _e.mock.On("NetworksPrune", ctx, pruneFilter)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NetworksPrune_Call) Run(run func(ctx context.Context, pruneFilter filters.Args)) *APIClient_NetworksPrune_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(filters.Args))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NetworksPrune_Call) Return(_a0 network.PruneReport, _a1 error) *APIClient_NetworksPrune_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NetworksPrune_Call) RunAndReturn(run func(context.Context, filters.Args) (network.PruneReport, error)) *APIClient_NetworksPrune_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NodeInspectWithRaw provides a mock function with given fields: ctx, nodeID
 func (_m *APIClient) NodeInspectWithRaw(ctx context.Context, nodeID string) (swarm.Node, []byte, error) {
-	ret := _m.Called(ctx, nodeID)
-
-	if len(ret) == 0 {
-		panic("no return value specified for NodeInspectWithRaw")
-	}
-
-	var r0 swarm.Node
-	var r1 []byte
-	var r2 error
-	if rf, ok := ret.Get(0).(func(context.Context, string) (swarm.Node, []byte, error)); ok {
-		return rf(ctx, nodeID)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string) swarm.Node); ok {
-		r0 = rf(ctx, nodeID)
-	} else {
-		r0 = ret.Get(0).(swarm.Node)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string) []byte); ok {
-		r1 = rf(ctx, nodeID)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).([]byte)
-		}
-	}
-
-	if rf, ok := ret.Get(2).(func(context.Context, string) error); ok {
-		r2 = rf(ctx, nodeID)
-	} else {
-		r2 = ret.Error(2)
-	}
-
-	return r0, r1, r2
+	_ = "STUB: not implemented"
+	return *new(swarm.Node), nil, nil
 }
 
 // APIClient_NodeInspectWithRaw_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'NodeInspectWithRaw'
@@ -4375,54 +2717,29 @@ type APIClient_NodeInspectWithRaw_Call struct {
 //   - ctx context.Context
 //   - nodeID string
 func (_e *APIClient_Expecter) NodeInspectWithRaw(ctx interface{}, nodeID interface{}) *APIClient_NodeInspectWithRaw_Call {
-	return &APIClient_NodeInspectWithRaw_Call{Call: _e.mock.On("NodeInspectWithRaw", ctx, nodeID)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NodeInspectWithRaw_Call) Run(run func(ctx context.Context, nodeID string)) *APIClient_NodeInspectWithRaw_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NodeInspectWithRaw_Call) Return(_a0 swarm.Node, _a1 []byte, _a2 error) *APIClient_NodeInspectWithRaw_Call {
-	_c.Call.Return(_a0, _a1, _a2)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NodeInspectWithRaw_Call) RunAndReturn(run func(context.Context, string) (swarm.Node, []byte, error)) *APIClient_NodeInspectWithRaw_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NodeList provides a mock function with given fields: ctx, options
 func (_m *APIClient) NodeList(ctx context.Context, options swarm.NodeListOptions) ([]swarm.Node, error) {
-	ret := _m.Called(ctx, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for NodeList")
-	}
-
-	var r0 []swarm.Node
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, swarm.NodeListOptions) ([]swarm.Node, error)); ok {
-		return rf(ctx, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, swarm.NodeListOptions) []swarm.Node); ok {
-		r0 = rf(ctx, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]swarm.Node)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, swarm.NodeListOptions) error); ok {
-		r1 = rf(ctx, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // APIClient_NodeList_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'NodeList'
@@ -4434,42 +2751,29 @@ type APIClient_NodeList_Call struct {
 //   - ctx context.Context
 //   - options swarm.NodeListOptions
 func (_e *APIClient_Expecter) NodeList(ctx interface{}, options interface{}) *APIClient_NodeList_Call {
-	return &APIClient_NodeList_Call{Call: _e.mock.On("NodeList", ctx, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NodeList_Call) Run(run func(ctx context.Context, options swarm.NodeListOptions)) *APIClient_NodeList_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(swarm.NodeListOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NodeList_Call) Return(_a0 []swarm.Node, _a1 error) *APIClient_NodeList_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NodeList_Call) RunAndReturn(run func(context.Context, swarm.NodeListOptions) ([]swarm.Node, error)) *APIClient_NodeList_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NodeRemove provides a mock function with given fields: ctx, nodeID, options
 func (_m *APIClient) NodeRemove(ctx context.Context, nodeID string, options swarm.NodeRemoveOptions) error {
-	ret := _m.Called(ctx, nodeID, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for NodeRemove")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, swarm.NodeRemoveOptions) error); ok {
-		r0 = rf(ctx, nodeID, options)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_NodeRemove_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'NodeRemove'
@@ -4482,42 +2786,29 @@ type APIClient_NodeRemove_Call struct {
 //   - nodeID string
 //   - options swarm.NodeRemoveOptions
 func (_e *APIClient_Expecter) NodeRemove(ctx interface{}, nodeID interface{}, options interface{}) *APIClient_NodeRemove_Call {
-	return &APIClient_NodeRemove_Call{Call: _e.mock.On("NodeRemove", ctx, nodeID, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NodeRemove_Call) Run(run func(ctx context.Context, nodeID string, options swarm.NodeRemoveOptions)) *APIClient_NodeRemove_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(swarm.NodeRemoveOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NodeRemove_Call) Return(_a0 error) *APIClient_NodeRemove_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NodeRemove_Call) RunAndReturn(run func(context.Context, string, swarm.NodeRemoveOptions) error) *APIClient_NodeRemove_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NodeUpdate provides a mock function with given fields: ctx, nodeID, version, node
 func (_m *APIClient) NodeUpdate(ctx context.Context, nodeID string, version swarm.Version, node swarm.NodeSpec) error {
-	ret := _m.Called(ctx, nodeID, version, node)
-
-	if len(ret) == 0 {
-		panic("no return value specified for NodeUpdate")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, swarm.Version, swarm.NodeSpec) error); ok {
-		r0 = rf(ctx, nodeID, version, node)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_NodeUpdate_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'NodeUpdate'
@@ -4531,52 +2822,29 @@ type APIClient_NodeUpdate_Call struct {
 //   - version swarm.Version
 //   - node swarm.NodeSpec
 func (_e *APIClient_Expecter) NodeUpdate(ctx interface{}, nodeID interface{}, version interface{}, node interface{}) *APIClient_NodeUpdate_Call {
-	return &APIClient_NodeUpdate_Call{Call: _e.mock.On("NodeUpdate", ctx, nodeID, version, node)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NodeUpdate_Call) Run(run func(ctx context.Context, nodeID string, version swarm.Version, node swarm.NodeSpec)) *APIClient_NodeUpdate_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(swarm.Version), args[3].(swarm.NodeSpec))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NodeUpdate_Call) Return(_a0 error) *APIClient_NodeUpdate_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_NodeUpdate_Call) RunAndReturn(run func(context.Context, string, swarm.Version, swarm.NodeSpec) error) *APIClient_NodeUpdate_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // Ping provides a mock function with given fields: ctx
 func (_m *APIClient) Ping(ctx context.Context) (types.Ping, error) {
-	ret := _m.Called(ctx)
-
-	if len(ret) == 0 {
-		panic("no return value specified for Ping")
-	}
-
-	var r0 types.Ping
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context) (types.Ping, error)); ok {
-		return rf(ctx)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context) types.Ping); ok {
-		r0 = rf(ctx)
-	} else {
-		r0 = ret.Get(0).(types.Ping)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context) error); ok {
-		r1 = rf(ctx)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(types.Ping), nil
 }
 
 // APIClient_Ping_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'Ping'
@@ -4587,42 +2855,29 @@ type APIClient_Ping_Call struct {
 // Ping is a helper method to define mock.On call
 //   - ctx context.Context
 func (_e *APIClient_Expecter) Ping(ctx interface{}) *APIClient_Ping_Call {
-	return &APIClient_Ping_Call{Call: _e.mock.On("Ping", ctx)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_Ping_Call) Run(run func(ctx context.Context)) *APIClient_Ping_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_Ping_Call) Return(_a0 types.Ping, _a1 error) *APIClient_Ping_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_Ping_Call) RunAndReturn(run func(context.Context) (types.Ping, error)) *APIClient_Ping_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // PluginCreate provides a mock function with given fields: ctx, createContext, options
 func (_m *APIClient) PluginCreate(ctx context.Context, createContext io.Reader, options types.PluginCreateOptions) error {
-	ret := _m.Called(ctx, createContext, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for PluginCreate")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, io.Reader, types.PluginCreateOptions) error); ok {
-		r0 = rf(ctx, createContext, options)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_PluginCreate_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'PluginCreate'
@@ -4635,42 +2890,29 @@ type APIClient_PluginCreate_Call struct {
 //   - createContext io.Reader
 //   - options types.PluginCreateOptions
 func (_e *APIClient_Expecter) PluginCreate(ctx interface{}, createContext interface{}, options interface{}) *APIClient_PluginCreate_Call {
-	return &APIClient_PluginCreate_Call{Call: _e.mock.On("PluginCreate", ctx, createContext, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginCreate_Call) Run(run func(ctx context.Context, createContext io.Reader, options types.PluginCreateOptions)) *APIClient_PluginCreate_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(io.Reader), args[2].(types.PluginCreateOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginCreate_Call) Return(_a0 error) *APIClient_PluginCreate_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginCreate_Call) RunAndReturn(run func(context.Context, io.Reader, types.PluginCreateOptions) error) *APIClient_PluginCreate_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // PluginDisable provides a mock function with given fields: ctx, name, options
 func (_m *APIClient) PluginDisable(ctx context.Context, name string, options types.PluginDisableOptions) error {
-	ret := _m.Called(ctx, name, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for PluginDisable")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, types.PluginDisableOptions) error); ok {
-		r0 = rf(ctx, name, options)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_PluginDisable_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'PluginDisable'
@@ -4683,42 +2925,29 @@ type APIClient_PluginDisable_Call struct {
 //   - name string
 //   - options types.PluginDisableOptions
 func (_e *APIClient_Expecter) PluginDisable(ctx interface{}, name interface{}, options interface{}) *APIClient_PluginDisable_Call {
-	return &APIClient_PluginDisable_Call{Call: _e.mock.On("PluginDisable", ctx, name, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginDisable_Call) Run(run func(ctx context.Context, name string, options types.PluginDisableOptions)) *APIClient_PluginDisable_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(types.PluginDisableOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginDisable_Call) Return(_a0 error) *APIClient_PluginDisable_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginDisable_Call) RunAndReturn(run func(context.Context, string, types.PluginDisableOptions) error) *APIClient_PluginDisable_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // PluginEnable provides a mock function with given fields: ctx, name, options
 func (_m *APIClient) PluginEnable(ctx context.Context, name string, options types.PluginEnableOptions) error {
-	ret := _m.Called(ctx, name, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for PluginEnable")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, types.PluginEnableOptions) error); ok {
-		r0 = rf(ctx, name, options)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_PluginEnable_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'PluginEnable'
@@ -4731,63 +2960,29 @@ type APIClient_PluginEnable_Call struct {
 //   - name string
 //   - options types.PluginEnableOptions
 func (_e *APIClient_Expecter) PluginEnable(ctx interface{}, name interface{}, options interface{}) *APIClient_PluginEnable_Call {
-	return &APIClient_PluginEnable_Call{Call: _e.mock.On("PluginEnable", ctx, name, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginEnable_Call) Run(run func(ctx context.Context, name string, options types.PluginEnableOptions)) *APIClient_PluginEnable_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(types.PluginEnableOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginEnable_Call) Return(_a0 error) *APIClient_PluginEnable_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginEnable_Call) RunAndReturn(run func(context.Context, string, types.PluginEnableOptions) error) *APIClient_PluginEnable_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // PluginInspectWithRaw provides a mock function with given fields: ctx, name
 func (_m *APIClient) PluginInspectWithRaw(ctx context.Context, name string) (*types.Plugin, []byte, error) {
-	ret := _m.Called(ctx, name)
-
-	if len(ret) == 0 {
-		panic("no return value specified for PluginInspectWithRaw")
-	}
-
-	var r0 *types.Plugin
-	var r1 []byte
-	var r2 error
-	if rf, ok := ret.Get(0).(func(context.Context, string) (*types.Plugin, []byte, error)); ok {
-		return rf(ctx, name)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string) *types.Plugin); ok {
-		r0 = rf(ctx, name)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*types.Plugin)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string) []byte); ok {
-		r1 = rf(ctx, name)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).([]byte)
-		}
-	}
-
-	if rf, ok := ret.Get(2).(func(context.Context, string) error); ok {
-		r2 = rf(ctx, name)
-	} else {
-		r2 = ret.Error(2)
-	}
-
-	return r0, r1, r2
+	_ = "STUB: not implemented"
+	return nil, nil, nil
 }
 
 // APIClient_PluginInspectWithRaw_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'PluginInspectWithRaw'
@@ -4799,54 +2994,29 @@ type APIClient_PluginInspectWithRaw_Call struct {
 //   - ctx context.Context
 //   - name string
 func (_e *APIClient_Expecter) PluginInspectWithRaw(ctx interface{}, name interface{}) *APIClient_PluginInspectWithRaw_Call {
-	return &APIClient_PluginInspectWithRaw_Call{Call: _e.mock.On("PluginInspectWithRaw", ctx, name)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginInspectWithRaw_Call) Run(run func(ctx context.Context, name string)) *APIClient_PluginInspectWithRaw_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginInspectWithRaw_Call) Return(_a0 *types.Plugin, _a1 []byte, _a2 error) *APIClient_PluginInspectWithRaw_Call {
-	_c.Call.Return(_a0, _a1, _a2)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginInspectWithRaw_Call) RunAndReturn(run func(context.Context, string) (*types.Plugin, []byte, error)) *APIClient_PluginInspectWithRaw_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // PluginInstall provides a mock function with given fields: ctx, name, options
 func (_m *APIClient) PluginInstall(ctx context.Context, name string, options types.PluginInstallOptions) (io.ReadCloser, error) {
-	ret := _m.Called(ctx, name, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for PluginInstall")
-	}
-
-	var r0 io.ReadCloser
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, types.PluginInstallOptions) (io.ReadCloser, error)); ok {
-		return rf(ctx, name, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, types.PluginInstallOptions) io.ReadCloser); ok {
-		r0 = rf(ctx, name, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(io.ReadCloser)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, types.PluginInstallOptions) error); ok {
-		r1 = rf(ctx, name, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(io.ReadCloser), nil
 }
 
 // APIClient_PluginInstall_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'PluginInstall'
@@ -4859,54 +3029,29 @@ type APIClient_PluginInstall_Call struct {
 //   - name string
 //   - options types.PluginInstallOptions
 func (_e *APIClient_Expecter) PluginInstall(ctx interface{}, name interface{}, options interface{}) *APIClient_PluginInstall_Call {
-	return &APIClient_PluginInstall_Call{Call: _e.mock.On("PluginInstall", ctx, name, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginInstall_Call) Run(run func(ctx context.Context, name string, options types.PluginInstallOptions)) *APIClient_PluginInstall_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(types.PluginInstallOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginInstall_Call) Return(_a0 io.ReadCloser, _a1 error) *APIClient_PluginInstall_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginInstall_Call) RunAndReturn(run func(context.Context, string, types.PluginInstallOptions) (io.ReadCloser, error)) *APIClient_PluginInstall_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // PluginList provides a mock function with given fields: ctx, filter
 func (_m *APIClient) PluginList(ctx context.Context, filter filters.Args) (types.PluginsListResponse, error) {
-	ret := _m.Called(ctx, filter)
-
-	if len(ret) == 0 {
-		panic("no return value specified for PluginList")
-	}
-
-	var r0 types.PluginsListResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, filters.Args) (types.PluginsListResponse, error)); ok {
-		return rf(ctx, filter)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, filters.Args) types.PluginsListResponse); ok {
-		r0 = rf(ctx, filter)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(types.PluginsListResponse)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, filters.Args) error); ok {
-		r1 = rf(ctx, filter)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(types.PluginsListResponse), nil
 }
 
 // APIClient_PluginList_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'PluginList'
@@ -4918,54 +3063,29 @@ type APIClient_PluginList_Call struct {
 //   - ctx context.Context
 //   - filter filters.Args
 func (_e *APIClient_Expecter) PluginList(ctx interface{}, filter interface{}) *APIClient_PluginList_Call {
-	return &APIClient_PluginList_Call{Call: _e.mock.On("PluginList", ctx, filter)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginList_Call) Run(run func(ctx context.Context, filter filters.Args)) *APIClient_PluginList_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(filters.Args))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginList_Call) Return(_a0 types.PluginsListResponse, _a1 error) *APIClient_PluginList_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginList_Call) RunAndReturn(run func(context.Context, filters.Args) (types.PluginsListResponse, error)) *APIClient_PluginList_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // PluginPush provides a mock function with given fields: ctx, name, registryAuth
 func (_m *APIClient) PluginPush(ctx context.Context, name string, registryAuth string) (io.ReadCloser, error) {
-	ret := _m.Called(ctx, name, registryAuth)
-
-	if len(ret) == 0 {
-		panic("no return value specified for PluginPush")
-	}
-
-	var r0 io.ReadCloser
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, string) (io.ReadCloser, error)); ok {
-		return rf(ctx, name, registryAuth)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, string) io.ReadCloser); ok {
-		r0 = rf(ctx, name, registryAuth)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(io.ReadCloser)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, string) error); ok {
-		r1 = rf(ctx, name, registryAuth)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(io.ReadCloser), nil
 }
 
 // APIClient_PluginPush_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'PluginPush'
@@ -4978,42 +3098,29 @@ type APIClient_PluginPush_Call struct {
 //   - name string
 //   - registryAuth string
 func (_e *APIClient_Expecter) PluginPush(ctx interface{}, name interface{}, registryAuth interface{}) *APIClient_PluginPush_Call {
-	return &APIClient_PluginPush_Call{Call: _e.mock.On("PluginPush", ctx, name, registryAuth)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginPush_Call) Run(run func(ctx context.Context, name string, registryAuth string)) *APIClient_PluginPush_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginPush_Call) Return(_a0 io.ReadCloser, _a1 error) *APIClient_PluginPush_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginPush_Call) RunAndReturn(run func(context.Context, string, string) (io.ReadCloser, error)) *APIClient_PluginPush_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // PluginRemove provides a mock function with given fields: ctx, name, options
 func (_m *APIClient) PluginRemove(ctx context.Context, name string, options types.PluginRemoveOptions) error {
-	ret := _m.Called(ctx, name, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for PluginRemove")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, types.PluginRemoveOptions) error); ok {
-		r0 = rf(ctx, name, options)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_PluginRemove_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'PluginRemove'
@@ -5026,42 +3133,29 @@ type APIClient_PluginRemove_Call struct {
 //   - name string
 //   - options types.PluginRemoveOptions
 func (_e *APIClient_Expecter) PluginRemove(ctx interface{}, name interface{}, options interface{}) *APIClient_PluginRemove_Call {
-	return &APIClient_PluginRemove_Call{Call: _e.mock.On("PluginRemove", ctx, name, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginRemove_Call) Run(run func(ctx context.Context, name string, options types.PluginRemoveOptions)) *APIClient_PluginRemove_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(types.PluginRemoveOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginRemove_Call) Return(_a0 error) *APIClient_PluginRemove_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginRemove_Call) RunAndReturn(run func(context.Context, string, types.PluginRemoveOptions) error) *APIClient_PluginRemove_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // PluginSet provides a mock function with given fields: ctx, name, args
 func (_m *APIClient) PluginSet(ctx context.Context, name string, args []string) error {
-	ret := _m.Called(ctx, name, args)
-
-	if len(ret) == 0 {
-		panic("no return value specified for PluginSet")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, []string) error); ok {
-		r0 = rf(ctx, name, args)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_PluginSet_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'PluginSet'
@@ -5074,54 +3168,29 @@ type APIClient_PluginSet_Call struct {
 //   - name string
 //   - args []string
 func (_e *APIClient_Expecter) PluginSet(ctx interface{}, name interface{}, args interface{}) *APIClient_PluginSet_Call {
-	return &APIClient_PluginSet_Call{Call: _e.mock.On("PluginSet", ctx, name, args)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginSet_Call) Run(run func(ctx context.Context, name string, args []string)) *APIClient_PluginSet_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].([]string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginSet_Call) Return(_a0 error) *APIClient_PluginSet_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginSet_Call) RunAndReturn(run func(context.Context, string, []string) error) *APIClient_PluginSet_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // PluginUpgrade provides a mock function with given fields: ctx, name, options
 func (_m *APIClient) PluginUpgrade(ctx context.Context, name string, options types.PluginInstallOptions) (io.ReadCloser, error) {
-	ret := _m.Called(ctx, name, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for PluginUpgrade")
-	}
-
-	var r0 io.ReadCloser
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, types.PluginInstallOptions) (io.ReadCloser, error)); ok {
-		return rf(ctx, name, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, types.PluginInstallOptions) io.ReadCloser); ok {
-		r0 = rf(ctx, name, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(io.ReadCloser)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, types.PluginInstallOptions) error); ok {
-		r1 = rf(ctx, name, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(io.ReadCloser), nil
 }
 
 // APIClient_PluginUpgrade_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'PluginUpgrade'
@@ -5134,52 +3203,29 @@ type APIClient_PluginUpgrade_Call struct {
 //   - name string
 //   - options types.PluginInstallOptions
 func (_e *APIClient_Expecter) PluginUpgrade(ctx interface{}, name interface{}, options interface{}) *APIClient_PluginUpgrade_Call {
-	return &APIClient_PluginUpgrade_Call{Call: _e.mock.On("PluginUpgrade", ctx, name, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginUpgrade_Call) Run(run func(ctx context.Context, name string, options types.PluginInstallOptions)) *APIClient_PluginUpgrade_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(types.PluginInstallOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginUpgrade_Call) Return(_a0 io.ReadCloser, _a1 error) *APIClient_PluginUpgrade_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_PluginUpgrade_Call) RunAndReturn(run func(context.Context, string, types.PluginInstallOptions) (io.ReadCloser, error)) *APIClient_PluginUpgrade_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // RegistryLogin provides a mock function with given fields: ctx, auth
 func (_m *APIClient) RegistryLogin(ctx context.Context, auth registry.AuthConfig) (registry.AuthenticateOKBody, error) {
-	ret := _m.Called(ctx, auth)
-
-	if len(ret) == 0 {
-		panic("no return value specified for RegistryLogin")
-	}
-
-	var r0 registry.AuthenticateOKBody
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, registry.AuthConfig) (registry.AuthenticateOKBody, error)); ok {
-		return rf(ctx, auth)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, registry.AuthConfig) registry.AuthenticateOKBody); ok {
-		r0 = rf(ctx, auth)
-	} else {
-		r0 = ret.Get(0).(registry.AuthenticateOKBody)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, registry.AuthConfig) error); ok {
-		r1 = rf(ctx, auth)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(registry.AuthenticateOKBody), nil
 }
 
 // APIClient_RegistryLogin_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'RegistryLogin'
@@ -5191,52 +3237,29 @@ type APIClient_RegistryLogin_Call struct {
 //   - ctx context.Context
 //   - auth registry.AuthConfig
 func (_e *APIClient_Expecter) RegistryLogin(ctx interface{}, auth interface{}) *APIClient_RegistryLogin_Call {
-	return &APIClient_RegistryLogin_Call{Call: _e.mock.On("RegistryLogin", ctx, auth)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_RegistryLogin_Call) Run(run func(ctx context.Context, auth registry.AuthConfig)) *APIClient_RegistryLogin_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(registry.AuthConfig))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_RegistryLogin_Call) Return(_a0 registry.AuthenticateOKBody, _a1 error) *APIClient_RegistryLogin_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_RegistryLogin_Call) RunAndReturn(run func(context.Context, registry.AuthConfig) (registry.AuthenticateOKBody, error)) *APIClient_RegistryLogin_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SecretCreate provides a mock function with given fields: ctx, secret
 func (_m *APIClient) SecretCreate(ctx context.Context, secret swarm.SecretSpec) (swarm.SecretCreateResponse, error) {
-	ret := _m.Called(ctx, secret)
-
-	if len(ret) == 0 {
-		panic("no return value specified for SecretCreate")
-	}
-
-	var r0 swarm.SecretCreateResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, swarm.SecretSpec) (swarm.SecretCreateResponse, error)); ok {
-		return rf(ctx, secret)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, swarm.SecretSpec) swarm.SecretCreateResponse); ok {
-		r0 = rf(ctx, secret)
-	} else {
-		r0 = ret.Get(0).(swarm.SecretCreateResponse)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, swarm.SecretSpec) error); ok {
-		r1 = rf(ctx, secret)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(swarm.SecretCreateResponse), nil
 }
 
 // APIClient_SecretCreate_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'SecretCreate'
@@ -5248,61 +3271,29 @@ type APIClient_SecretCreate_Call struct {
 //   - ctx context.Context
 //   - secret swarm.SecretSpec
 func (_e *APIClient_Expecter) SecretCreate(ctx interface{}, secret interface{}) *APIClient_SecretCreate_Call {
-	return &APIClient_SecretCreate_Call{Call: _e.mock.On("SecretCreate", ctx, secret)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SecretCreate_Call) Run(run func(ctx context.Context, secret swarm.SecretSpec)) *APIClient_SecretCreate_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(swarm.SecretSpec))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SecretCreate_Call) Return(_a0 swarm.SecretCreateResponse, _a1 error) *APIClient_SecretCreate_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SecretCreate_Call) RunAndReturn(run func(context.Context, swarm.SecretSpec) (swarm.SecretCreateResponse, error)) *APIClient_SecretCreate_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SecretInspectWithRaw provides a mock function with given fields: ctx, name
 func (_m *APIClient) SecretInspectWithRaw(ctx context.Context, name string) (swarm.Secret, []byte, error) {
-	ret := _m.Called(ctx, name)
-
-	if len(ret) == 0 {
-		panic("no return value specified for SecretInspectWithRaw")
-	}
-
-	var r0 swarm.Secret
-	var r1 []byte
-	var r2 error
-	if rf, ok := ret.Get(0).(func(context.Context, string) (swarm.Secret, []byte, error)); ok {
-		return rf(ctx, name)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string) swarm.Secret); ok {
-		r0 = rf(ctx, name)
-	} else {
-		r0 = ret.Get(0).(swarm.Secret)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string) []byte); ok {
-		r1 = rf(ctx, name)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).([]byte)
-		}
-	}
-
-	if rf, ok := ret.Get(2).(func(context.Context, string) error); ok {
-		r2 = rf(ctx, name)
-	} else {
-		r2 = ret.Error(2)
-	}
-
-	return r0, r1, r2
+	_ = "STUB: not implemented"
+	return *new(swarm.Secret), nil, nil
 }
 
 // APIClient_SecretInspectWithRaw_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'SecretInspectWithRaw'
@@ -5314,54 +3305,29 @@ type APIClient_SecretInspectWithRaw_Call struct {
 //   - ctx context.Context
 //   - name string
 func (_e *APIClient_Expecter) SecretInspectWithRaw(ctx interface{}, name interface{}) *APIClient_SecretInspectWithRaw_Call {
-	return &APIClient_SecretInspectWithRaw_Call{Call: _e.mock.On("SecretInspectWithRaw", ctx, name)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SecretInspectWithRaw_Call) Run(run func(ctx context.Context, name string)) *APIClient_SecretInspectWithRaw_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SecretInspectWithRaw_Call) Return(_a0 swarm.Secret, _a1 []byte, _a2 error) *APIClient_SecretInspectWithRaw_Call {
-	_c.Call.Return(_a0, _a1, _a2)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SecretInspectWithRaw_Call) RunAndReturn(run func(context.Context, string) (swarm.Secret, []byte, error)) *APIClient_SecretInspectWithRaw_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SecretList provides a mock function with given fields: ctx, options
 func (_m *APIClient) SecretList(ctx context.Context, options swarm.SecretListOptions) ([]swarm.Secret, error) {
-	ret := _m.Called(ctx, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for SecretList")
-	}
-
-	var r0 []swarm.Secret
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, swarm.SecretListOptions) ([]swarm.Secret, error)); ok {
-		return rf(ctx, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, swarm.SecretListOptions) []swarm.Secret); ok {
-		r0 = rf(ctx, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]swarm.Secret)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, swarm.SecretListOptions) error); ok {
-		r1 = rf(ctx, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // APIClient_SecretList_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'SecretList'
@@ -5373,42 +3339,29 @@ type APIClient_SecretList_Call struct {
 //   - ctx context.Context
 //   - options swarm.SecretListOptions
 func (_e *APIClient_Expecter) SecretList(ctx interface{}, options interface{}) *APIClient_SecretList_Call {
-	return &APIClient_SecretList_Call{Call: _e.mock.On("SecretList", ctx, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SecretList_Call) Run(run func(ctx context.Context, options swarm.SecretListOptions)) *APIClient_SecretList_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(swarm.SecretListOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SecretList_Call) Return(_a0 []swarm.Secret, _a1 error) *APIClient_SecretList_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SecretList_Call) RunAndReturn(run func(context.Context, swarm.SecretListOptions) ([]swarm.Secret, error)) *APIClient_SecretList_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SecretRemove provides a mock function with given fields: ctx, id
 func (_m *APIClient) SecretRemove(ctx context.Context, id string) error {
-	ret := _m.Called(ctx, id)
-
-	if len(ret) == 0 {
-		panic("no return value specified for SecretRemove")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string) error); ok {
-		r0 = rf(ctx, id)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_SecretRemove_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'SecretRemove'
@@ -5420,42 +3373,29 @@ type APIClient_SecretRemove_Call struct {
 //   - ctx context.Context
 //   - id string
 func (_e *APIClient_Expecter) SecretRemove(ctx interface{}, id interface{}) *APIClient_SecretRemove_Call {
-	return &APIClient_SecretRemove_Call{Call: _e.mock.On("SecretRemove", ctx, id)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SecretRemove_Call) Run(run func(ctx context.Context, id string)) *APIClient_SecretRemove_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SecretRemove_Call) Return(_a0 error) *APIClient_SecretRemove_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SecretRemove_Call) RunAndReturn(run func(context.Context, string) error) *APIClient_SecretRemove_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SecretUpdate provides a mock function with given fields: ctx, id, version, secret
 func (_m *APIClient) SecretUpdate(ctx context.Context, id string, version swarm.Version, secret swarm.SecretSpec) error {
-	ret := _m.Called(ctx, id, version, secret)
-
-	if len(ret) == 0 {
-		panic("no return value specified for SecretUpdate")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, swarm.Version, swarm.SecretSpec) error); ok {
-		r0 = rf(ctx, id, version, secret)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_SecretUpdate_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'SecretUpdate'
@@ -5469,52 +3409,29 @@ type APIClient_SecretUpdate_Call struct {
 //   - version swarm.Version
 //   - secret swarm.SecretSpec
 func (_e *APIClient_Expecter) SecretUpdate(ctx interface{}, id interface{}, version interface{}, secret interface{}) *APIClient_SecretUpdate_Call {
-	return &APIClient_SecretUpdate_Call{Call: _e.mock.On("SecretUpdate", ctx, id, version, secret)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SecretUpdate_Call) Run(run func(ctx context.Context, id string, version swarm.Version, secret swarm.SecretSpec)) *APIClient_SecretUpdate_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(swarm.Version), args[3].(swarm.SecretSpec))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SecretUpdate_Call) Return(_a0 error) *APIClient_SecretUpdate_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SecretUpdate_Call) RunAndReturn(run func(context.Context, string, swarm.Version, swarm.SecretSpec) error) *APIClient_SecretUpdate_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ServerVersion provides a mock function with given fields: ctx
 func (_m *APIClient) ServerVersion(ctx context.Context) (types.Version, error) {
-	ret := _m.Called(ctx)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ServerVersion")
-	}
-
-	var r0 types.Version
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context) (types.Version, error)); ok {
-		return rf(ctx)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context) types.Version); ok {
-		r0 = rf(ctx)
-	} else {
-		r0 = ret.Get(0).(types.Version)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context) error); ok {
-		r1 = rf(ctx)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(types.Version), nil
 }
 
 // APIClient_ServerVersion_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ServerVersion'
@@ -5525,52 +3442,29 @@ type APIClient_ServerVersion_Call struct {
 // ServerVersion is a helper method to define mock.On call
 //   - ctx context.Context
 func (_e *APIClient_Expecter) ServerVersion(ctx interface{}) *APIClient_ServerVersion_Call {
-	return &APIClient_ServerVersion_Call{Call: _e.mock.On("ServerVersion", ctx)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ServerVersion_Call) Run(run func(ctx context.Context)) *APIClient_ServerVersion_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ServerVersion_Call) Return(_a0 types.Version, _a1 error) *APIClient_ServerVersion_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ServerVersion_Call) RunAndReturn(run func(context.Context) (types.Version, error)) *APIClient_ServerVersion_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ServiceCreate provides a mock function with given fields: ctx, service, options
 func (_m *APIClient) ServiceCreate(ctx context.Context, service swarm.ServiceSpec, options swarm.ServiceCreateOptions) (swarm.ServiceCreateResponse, error) {
-	ret := _m.Called(ctx, service, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ServiceCreate")
-	}
-
-	var r0 swarm.ServiceCreateResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, swarm.ServiceSpec, swarm.ServiceCreateOptions) (swarm.ServiceCreateResponse, error)); ok {
-		return rf(ctx, service, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, swarm.ServiceSpec, swarm.ServiceCreateOptions) swarm.ServiceCreateResponse); ok {
-		r0 = rf(ctx, service, options)
-	} else {
-		r0 = ret.Get(0).(swarm.ServiceCreateResponse)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, swarm.ServiceSpec, swarm.ServiceCreateOptions) error); ok {
-		r1 = rf(ctx, service, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(swarm.ServiceCreateResponse), nil
 }
 
 // APIClient_ServiceCreate_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ServiceCreate'
@@ -5583,61 +3477,29 @@ type APIClient_ServiceCreate_Call struct {
 //   - service swarm.ServiceSpec
 //   - options swarm.ServiceCreateOptions
 func (_e *APIClient_Expecter) ServiceCreate(ctx interface{}, service interface{}, options interface{}) *APIClient_ServiceCreate_Call {
-	return &APIClient_ServiceCreate_Call{Call: _e.mock.On("ServiceCreate", ctx, service, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ServiceCreate_Call) Run(run func(ctx context.Context, service swarm.ServiceSpec, options swarm.ServiceCreateOptions)) *APIClient_ServiceCreate_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(swarm.ServiceSpec), args[2].(swarm.ServiceCreateOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ServiceCreate_Call) Return(_a0 swarm.ServiceCreateResponse, _a1 error) *APIClient_ServiceCreate_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ServiceCreate_Call) RunAndReturn(run func(context.Context, swarm.ServiceSpec, swarm.ServiceCreateOptions) (swarm.ServiceCreateResponse, error)) *APIClient_ServiceCreate_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ServiceInspectWithRaw provides a mock function with given fields: ctx, serviceID, options
 func (_m *APIClient) ServiceInspectWithRaw(ctx context.Context, serviceID string, options swarm.ServiceInspectOptions) (swarm.Service, []byte, error) {
-	ret := _m.Called(ctx, serviceID, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ServiceInspectWithRaw")
-	}
-
-	var r0 swarm.Service
-	var r1 []byte
-	var r2 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, swarm.ServiceInspectOptions) (swarm.Service, []byte, error)); ok {
-		return rf(ctx, serviceID, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, swarm.ServiceInspectOptions) swarm.Service); ok {
-		r0 = rf(ctx, serviceID, options)
-	} else {
-		r0 = ret.Get(0).(swarm.Service)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, swarm.ServiceInspectOptions) []byte); ok {
-		r1 = rf(ctx, serviceID, options)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).([]byte)
-		}
-	}
-
-	if rf, ok := ret.Get(2).(func(context.Context, string, swarm.ServiceInspectOptions) error); ok {
-		r2 = rf(ctx, serviceID, options)
-	} else {
-		r2 = ret.Error(2)
-	}
-
-	return r0, r1, r2
+	_ = "STUB: not implemented"
+	return *new(swarm.Service), nil, nil
 }
 
 // APIClient_ServiceInspectWithRaw_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ServiceInspectWithRaw'
@@ -5650,54 +3512,29 @@ type APIClient_ServiceInspectWithRaw_Call struct {
 //   - serviceID string
 //   - options swarm.ServiceInspectOptions
 func (_e *APIClient_Expecter) ServiceInspectWithRaw(ctx interface{}, serviceID interface{}, options interface{}) *APIClient_ServiceInspectWithRaw_Call {
-	return &APIClient_ServiceInspectWithRaw_Call{Call: _e.mock.On("ServiceInspectWithRaw", ctx, serviceID, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ServiceInspectWithRaw_Call) Run(run func(ctx context.Context, serviceID string, options swarm.ServiceInspectOptions)) *APIClient_ServiceInspectWithRaw_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(swarm.ServiceInspectOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ServiceInspectWithRaw_Call) Return(_a0 swarm.Service, _a1 []byte, _a2 error) *APIClient_ServiceInspectWithRaw_Call {
-	_c.Call.Return(_a0, _a1, _a2)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ServiceInspectWithRaw_Call) RunAndReturn(run func(context.Context, string, swarm.ServiceInspectOptions) (swarm.Service, []byte, error)) *APIClient_ServiceInspectWithRaw_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ServiceList provides a mock function with given fields: ctx, options
 func (_m *APIClient) ServiceList(ctx context.Context, options swarm.ServiceListOptions) ([]swarm.Service, error) {
-	ret := _m.Called(ctx, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ServiceList")
-	}
-
-	var r0 []swarm.Service
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, swarm.ServiceListOptions) ([]swarm.Service, error)); ok {
-		return rf(ctx, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, swarm.ServiceListOptions) []swarm.Service); ok {
-		r0 = rf(ctx, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]swarm.Service)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, swarm.ServiceListOptions) error); ok {
-		r1 = rf(ctx, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // APIClient_ServiceList_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ServiceList'
@@ -5709,54 +3546,29 @@ type APIClient_ServiceList_Call struct {
 //   - ctx context.Context
 //   - options swarm.ServiceListOptions
 func (_e *APIClient_Expecter) ServiceList(ctx interface{}, options interface{}) *APIClient_ServiceList_Call {
-	return &APIClient_ServiceList_Call{Call: _e.mock.On("ServiceList", ctx, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ServiceList_Call) Run(run func(ctx context.Context, options swarm.ServiceListOptions)) *APIClient_ServiceList_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(swarm.ServiceListOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ServiceList_Call) Return(_a0 []swarm.Service, _a1 error) *APIClient_ServiceList_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ServiceList_Call) RunAndReturn(run func(context.Context, swarm.ServiceListOptions) ([]swarm.Service, error)) *APIClient_ServiceList_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ServiceLogs provides a mock function with given fields: ctx, serviceID, options
 func (_m *APIClient) ServiceLogs(ctx context.Context, serviceID string, options container.LogsOptions) (io.ReadCloser, error) {
-	ret := _m.Called(ctx, serviceID, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ServiceLogs")
-	}
-
-	var r0 io.ReadCloser
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, container.LogsOptions) (io.ReadCloser, error)); ok {
-		return rf(ctx, serviceID, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, container.LogsOptions) io.ReadCloser); ok {
-		r0 = rf(ctx, serviceID, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(io.ReadCloser)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, container.LogsOptions) error); ok {
-		r1 = rf(ctx, serviceID, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(io.ReadCloser), nil
 }
 
 // APIClient_ServiceLogs_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ServiceLogs'
@@ -5769,42 +3581,29 @@ type APIClient_ServiceLogs_Call struct {
 //   - serviceID string
 //   - options container.LogsOptions
 func (_e *APIClient_Expecter) ServiceLogs(ctx interface{}, serviceID interface{}, options interface{}) *APIClient_ServiceLogs_Call {
-	return &APIClient_ServiceLogs_Call{Call: _e.mock.On("ServiceLogs", ctx, serviceID, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ServiceLogs_Call) Run(run func(ctx context.Context, serviceID string, options container.LogsOptions)) *APIClient_ServiceLogs_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(container.LogsOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ServiceLogs_Call) Return(_a0 io.ReadCloser, _a1 error) *APIClient_ServiceLogs_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ServiceLogs_Call) RunAndReturn(run func(context.Context, string, container.LogsOptions) (io.ReadCloser, error)) *APIClient_ServiceLogs_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ServiceRemove provides a mock function with given fields: ctx, serviceID
 func (_m *APIClient) ServiceRemove(ctx context.Context, serviceID string) error {
-	ret := _m.Called(ctx, serviceID)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ServiceRemove")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string) error); ok {
-		r0 = rf(ctx, serviceID)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_ServiceRemove_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ServiceRemove'
@@ -5816,52 +3615,29 @@ type APIClient_ServiceRemove_Call struct {
 //   - ctx context.Context
 //   - serviceID string
 func (_e *APIClient_Expecter) ServiceRemove(ctx interface{}, serviceID interface{}) *APIClient_ServiceRemove_Call {
-	return &APIClient_ServiceRemove_Call{Call: _e.mock.On("ServiceRemove", ctx, serviceID)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ServiceRemove_Call) Run(run func(ctx context.Context, serviceID string)) *APIClient_ServiceRemove_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ServiceRemove_Call) Return(_a0 error) *APIClient_ServiceRemove_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ServiceRemove_Call) RunAndReturn(run func(context.Context, string) error) *APIClient_ServiceRemove_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ServiceUpdate provides a mock function with given fields: ctx, serviceID, version, service, options
 func (_m *APIClient) ServiceUpdate(ctx context.Context, serviceID string, version swarm.Version, service swarm.ServiceSpec, options swarm.ServiceUpdateOptions) (swarm.ServiceUpdateResponse, error) {
-	ret := _m.Called(ctx, serviceID, version, service, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ServiceUpdate")
-	}
-
-	var r0 swarm.ServiceUpdateResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, swarm.Version, swarm.ServiceSpec, swarm.ServiceUpdateOptions) (swarm.ServiceUpdateResponse, error)); ok {
-		return rf(ctx, serviceID, version, service, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, swarm.Version, swarm.ServiceSpec, swarm.ServiceUpdateOptions) swarm.ServiceUpdateResponse); ok {
-		r0 = rf(ctx, serviceID, version, service, options)
-	} else {
-		r0 = ret.Get(0).(swarm.ServiceUpdateResponse)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, swarm.Version, swarm.ServiceSpec, swarm.ServiceUpdateOptions) error); ok {
-		r1 = rf(ctx, serviceID, version, service, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(swarm.ServiceUpdateResponse), nil
 }
 
 // APIClient_ServiceUpdate_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ServiceUpdate'
@@ -5876,52 +3652,29 @@ type APIClient_ServiceUpdate_Call struct {
 //   - service swarm.ServiceSpec
 //   - options swarm.ServiceUpdateOptions
 func (_e *APIClient_Expecter) ServiceUpdate(ctx interface{}, serviceID interface{}, version interface{}, service interface{}, options interface{}) *APIClient_ServiceUpdate_Call {
-	return &APIClient_ServiceUpdate_Call{Call: _e.mock.On("ServiceUpdate", ctx, serviceID, version, service, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ServiceUpdate_Call) Run(run func(ctx context.Context, serviceID string, version swarm.Version, service swarm.ServiceSpec, options swarm.ServiceUpdateOptions)) *APIClient_ServiceUpdate_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(swarm.Version), args[3].(swarm.ServiceSpec), args[4].(swarm.ServiceUpdateOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ServiceUpdate_Call) Return(_a0 swarm.ServiceUpdateResponse, _a1 error) *APIClient_ServiceUpdate_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_ServiceUpdate_Call) RunAndReturn(run func(context.Context, string, swarm.Version, swarm.ServiceSpec, swarm.ServiceUpdateOptions) (swarm.ServiceUpdateResponse, error)) *APIClient_ServiceUpdate_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SwarmGetUnlockKey provides a mock function with given fields: ctx
 func (_m *APIClient) SwarmGetUnlockKey(ctx context.Context) (swarm.UnlockKeyResponse, error) {
-	ret := _m.Called(ctx)
-
-	if len(ret) == 0 {
-		panic("no return value specified for SwarmGetUnlockKey")
-	}
-
-	var r0 swarm.UnlockKeyResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context) (swarm.UnlockKeyResponse, error)); ok {
-		return rf(ctx)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context) swarm.UnlockKeyResponse); ok {
-		r0 = rf(ctx)
-	} else {
-		r0 = ret.Get(0).(swarm.UnlockKeyResponse)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context) error); ok {
-		r1 = rf(ctx)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(swarm.UnlockKeyResponse), nil
 }
 
 // APIClient_SwarmGetUnlockKey_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'SwarmGetUnlockKey'
@@ -5932,52 +3685,29 @@ type APIClient_SwarmGetUnlockKey_Call struct {
 // SwarmGetUnlockKey is a helper method to define mock.On call
 //   - ctx context.Context
 func (_e *APIClient_Expecter) SwarmGetUnlockKey(ctx interface{}) *APIClient_SwarmGetUnlockKey_Call {
-	return &APIClient_SwarmGetUnlockKey_Call{Call: _e.mock.On("SwarmGetUnlockKey", ctx)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SwarmGetUnlockKey_Call) Run(run func(ctx context.Context)) *APIClient_SwarmGetUnlockKey_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SwarmGetUnlockKey_Call) Return(_a0 swarm.UnlockKeyResponse, _a1 error) *APIClient_SwarmGetUnlockKey_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SwarmGetUnlockKey_Call) RunAndReturn(run func(context.Context) (swarm.UnlockKeyResponse, error)) *APIClient_SwarmGetUnlockKey_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SwarmInit provides a mock function with given fields: ctx, req
 func (_m *APIClient) SwarmInit(ctx context.Context, req swarm.InitRequest) (string, error) {
-	ret := _m.Called(ctx, req)
-
-	if len(ret) == 0 {
-		panic("no return value specified for SwarmInit")
-	}
-
-	var r0 string
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, swarm.InitRequest) (string, error)); ok {
-		return rf(ctx, req)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, swarm.InitRequest) string); ok {
-		r0 = rf(ctx, req)
-	} else {
-		r0 = ret.Get(0).(string)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, swarm.InitRequest) error); ok {
-		r1 = rf(ctx, req)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return "", nil
 }
 
 // APIClient_SwarmInit_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'SwarmInit'
@@ -5989,52 +3719,29 @@ type APIClient_SwarmInit_Call struct {
 //   - ctx context.Context
 //   - req swarm.InitRequest
 func (_e *APIClient_Expecter) SwarmInit(ctx interface{}, req interface{}) *APIClient_SwarmInit_Call {
-	return &APIClient_SwarmInit_Call{Call: _e.mock.On("SwarmInit", ctx, req)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SwarmInit_Call) Run(run func(ctx context.Context, req swarm.InitRequest)) *APIClient_SwarmInit_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(swarm.InitRequest))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SwarmInit_Call) Return(_a0 string, _a1 error) *APIClient_SwarmInit_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SwarmInit_Call) RunAndReturn(run func(context.Context, swarm.InitRequest) (string, error)) *APIClient_SwarmInit_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SwarmInspect provides a mock function with given fields: ctx
 func (_m *APIClient) SwarmInspect(ctx context.Context) (swarm.Swarm, error) {
-	ret := _m.Called(ctx)
-
-	if len(ret) == 0 {
-		panic("no return value specified for SwarmInspect")
-	}
-
-	var r0 swarm.Swarm
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context) (swarm.Swarm, error)); ok {
-		return rf(ctx)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context) swarm.Swarm); ok {
-		r0 = rf(ctx)
-	} else {
-		r0 = ret.Get(0).(swarm.Swarm)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context) error); ok {
-		r1 = rf(ctx)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(swarm.Swarm), nil
 }
 
 // APIClient_SwarmInspect_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'SwarmInspect'
@@ -6045,42 +3752,29 @@ type APIClient_SwarmInspect_Call struct {
 // SwarmInspect is a helper method to define mock.On call
 //   - ctx context.Context
 func (_e *APIClient_Expecter) SwarmInspect(ctx interface{}) *APIClient_SwarmInspect_Call {
-	return &APIClient_SwarmInspect_Call{Call: _e.mock.On("SwarmInspect", ctx)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SwarmInspect_Call) Run(run func(ctx context.Context)) *APIClient_SwarmInspect_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SwarmInspect_Call) Return(_a0 swarm.Swarm, _a1 error) *APIClient_SwarmInspect_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SwarmInspect_Call) RunAndReturn(run func(context.Context) (swarm.Swarm, error)) *APIClient_SwarmInspect_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SwarmJoin provides a mock function with given fields: ctx, req
 func (_m *APIClient) SwarmJoin(ctx context.Context, req swarm.JoinRequest) error {
-	ret := _m.Called(ctx, req)
-
-	if len(ret) == 0 {
-		panic("no return value specified for SwarmJoin")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, swarm.JoinRequest) error); ok {
-		r0 = rf(ctx, req)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_SwarmJoin_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'SwarmJoin'
@@ -6092,42 +3786,29 @@ type APIClient_SwarmJoin_Call struct {
 //   - ctx context.Context
 //   - req swarm.JoinRequest
 func (_e *APIClient_Expecter) SwarmJoin(ctx interface{}, req interface{}) *APIClient_SwarmJoin_Call {
-	return &APIClient_SwarmJoin_Call{Call: _e.mock.On("SwarmJoin", ctx, req)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SwarmJoin_Call) Run(run func(ctx context.Context, req swarm.JoinRequest)) *APIClient_SwarmJoin_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(swarm.JoinRequest))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SwarmJoin_Call) Return(_a0 error) *APIClient_SwarmJoin_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SwarmJoin_Call) RunAndReturn(run func(context.Context, swarm.JoinRequest) error) *APIClient_SwarmJoin_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SwarmLeave provides a mock function with given fields: ctx, force
 func (_m *APIClient) SwarmLeave(ctx context.Context, force bool) error {
-	ret := _m.Called(ctx, force)
-
-	if len(ret) == 0 {
-		panic("no return value specified for SwarmLeave")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, bool) error); ok {
-		r0 = rf(ctx, force)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_SwarmLeave_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'SwarmLeave'
@@ -6139,42 +3820,29 @@ type APIClient_SwarmLeave_Call struct {
 //   - ctx context.Context
 //   - force bool
 func (_e *APIClient_Expecter) SwarmLeave(ctx interface{}, force interface{}) *APIClient_SwarmLeave_Call {
-	return &APIClient_SwarmLeave_Call{Call: _e.mock.On("SwarmLeave", ctx, force)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SwarmLeave_Call) Run(run func(ctx context.Context, force bool)) *APIClient_SwarmLeave_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(bool))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SwarmLeave_Call) Return(_a0 error) *APIClient_SwarmLeave_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SwarmLeave_Call) RunAndReturn(run func(context.Context, bool) error) *APIClient_SwarmLeave_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SwarmUnlock provides a mock function with given fields: ctx, req
 func (_m *APIClient) SwarmUnlock(ctx context.Context, req swarm.UnlockRequest) error {
-	ret := _m.Called(ctx, req)
-
-	if len(ret) == 0 {
-		panic("no return value specified for SwarmUnlock")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, swarm.UnlockRequest) error); ok {
-		r0 = rf(ctx, req)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_SwarmUnlock_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'SwarmUnlock'
@@ -6186,42 +3854,29 @@ type APIClient_SwarmUnlock_Call struct {
 //   - ctx context.Context
 //   - req swarm.UnlockRequest
 func (_e *APIClient_Expecter) SwarmUnlock(ctx interface{}, req interface{}) *APIClient_SwarmUnlock_Call {
-	return &APIClient_SwarmUnlock_Call{Call: _e.mock.On("SwarmUnlock", ctx, req)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SwarmUnlock_Call) Run(run func(ctx context.Context, req swarm.UnlockRequest)) *APIClient_SwarmUnlock_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(swarm.UnlockRequest))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SwarmUnlock_Call) Return(_a0 error) *APIClient_SwarmUnlock_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SwarmUnlock_Call) RunAndReturn(run func(context.Context, swarm.UnlockRequest) error) *APIClient_SwarmUnlock_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SwarmUpdate provides a mock function with given fields: ctx, version, _a2, flags
 func (_m *APIClient) SwarmUpdate(ctx context.Context, version swarm.Version, _a2 swarm.Spec, flags swarm.UpdateFlags) error {
-	ret := _m.Called(ctx, version, _a2, flags)
-
-	if len(ret) == 0 {
-		panic("no return value specified for SwarmUpdate")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, swarm.Version, swarm.Spec, swarm.UpdateFlags) error); ok {
-		r0 = rf(ctx, version, _a2, flags)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_SwarmUpdate_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'SwarmUpdate'
@@ -6235,61 +3890,29 @@ type APIClient_SwarmUpdate_Call struct {
 //   - _a2 swarm.Spec
 //   - flags swarm.UpdateFlags
 func (_e *APIClient_Expecter) SwarmUpdate(ctx interface{}, version interface{}, _a2 interface{}, flags interface{}) *APIClient_SwarmUpdate_Call {
-	return &APIClient_SwarmUpdate_Call{Call: _e.mock.On("SwarmUpdate", ctx, version, _a2, flags)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SwarmUpdate_Call) Run(run func(ctx context.Context, version swarm.Version, _a2 swarm.Spec, flags swarm.UpdateFlags)) *APIClient_SwarmUpdate_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(swarm.Version), args[2].(swarm.Spec), args[3].(swarm.UpdateFlags))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SwarmUpdate_Call) Return(_a0 error) *APIClient_SwarmUpdate_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_SwarmUpdate_Call) RunAndReturn(run func(context.Context, swarm.Version, swarm.Spec, swarm.UpdateFlags) error) *APIClient_SwarmUpdate_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // TaskInspectWithRaw provides a mock function with given fields: ctx, taskID
 func (_m *APIClient) TaskInspectWithRaw(ctx context.Context, taskID string) (swarm.Task, []byte, error) {
-	ret := _m.Called(ctx, taskID)
-
-	if len(ret) == 0 {
-		panic("no return value specified for TaskInspectWithRaw")
-	}
-
-	var r0 swarm.Task
-	var r1 []byte
-	var r2 error
-	if rf, ok := ret.Get(0).(func(context.Context, string) (swarm.Task, []byte, error)); ok {
-		return rf(ctx, taskID)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string) swarm.Task); ok {
-		r0 = rf(ctx, taskID)
-	} else {
-		r0 = ret.Get(0).(swarm.Task)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string) []byte); ok {
-		r1 = rf(ctx, taskID)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).([]byte)
-		}
-	}
-
-	if rf, ok := ret.Get(2).(func(context.Context, string) error); ok {
-		r2 = rf(ctx, taskID)
-	} else {
-		r2 = ret.Error(2)
-	}
-
-	return r0, r1, r2
+	_ = "STUB: not implemented"
+	return *new(swarm.Task), nil, nil
 }
 
 // APIClient_TaskInspectWithRaw_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'TaskInspectWithRaw'
@@ -6301,54 +3924,29 @@ type APIClient_TaskInspectWithRaw_Call struct {
 //   - ctx context.Context
 //   - taskID string
 func (_e *APIClient_Expecter) TaskInspectWithRaw(ctx interface{}, taskID interface{}) *APIClient_TaskInspectWithRaw_Call {
-	return &APIClient_TaskInspectWithRaw_Call{Call: _e.mock.On("TaskInspectWithRaw", ctx, taskID)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_TaskInspectWithRaw_Call) Run(run func(ctx context.Context, taskID string)) *APIClient_TaskInspectWithRaw_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_TaskInspectWithRaw_Call) Return(_a0 swarm.Task, _a1 []byte, _a2 error) *APIClient_TaskInspectWithRaw_Call {
-	_c.Call.Return(_a0, _a1, _a2)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_TaskInspectWithRaw_Call) RunAndReturn(run func(context.Context, string) (swarm.Task, []byte, error)) *APIClient_TaskInspectWithRaw_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // TaskList provides a mock function with given fields: ctx, options
 func (_m *APIClient) TaskList(ctx context.Context, options swarm.TaskListOptions) ([]swarm.Task, error) {
-	ret := _m.Called(ctx, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for TaskList")
-	}
-
-	var r0 []swarm.Task
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, swarm.TaskListOptions) ([]swarm.Task, error)); ok {
-		return rf(ctx, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, swarm.TaskListOptions) []swarm.Task); ok {
-		r0 = rf(ctx, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]swarm.Task)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, swarm.TaskListOptions) error); ok {
-		r1 = rf(ctx, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // APIClient_TaskList_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'TaskList'
@@ -6360,54 +3958,29 @@ type APIClient_TaskList_Call struct {
 //   - ctx context.Context
 //   - options swarm.TaskListOptions
 func (_e *APIClient_Expecter) TaskList(ctx interface{}, options interface{}) *APIClient_TaskList_Call {
-	return &APIClient_TaskList_Call{Call: _e.mock.On("TaskList", ctx, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_TaskList_Call) Run(run func(ctx context.Context, options swarm.TaskListOptions)) *APIClient_TaskList_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(swarm.TaskListOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_TaskList_Call) Return(_a0 []swarm.Task, _a1 error) *APIClient_TaskList_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_TaskList_Call) RunAndReturn(run func(context.Context, swarm.TaskListOptions) ([]swarm.Task, error)) *APIClient_TaskList_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // TaskLogs provides a mock function with given fields: ctx, taskID, options
 func (_m *APIClient) TaskLogs(ctx context.Context, taskID string, options container.LogsOptions) (io.ReadCloser, error) {
-	ret := _m.Called(ctx, taskID, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for TaskLogs")
-	}
-
-	var r0 io.ReadCloser
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, container.LogsOptions) (io.ReadCloser, error)); ok {
-		return rf(ctx, taskID, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, container.LogsOptions) io.ReadCloser); ok {
-		r0 = rf(ctx, taskID, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(io.ReadCloser)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, container.LogsOptions) error); ok {
-		r1 = rf(ctx, taskID, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(io.ReadCloser), nil
 }
 
 // APIClient_TaskLogs_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'TaskLogs'
@@ -6420,52 +3993,29 @@ type APIClient_TaskLogs_Call struct {
 //   - taskID string
 //   - options container.LogsOptions
 func (_e *APIClient_Expecter) TaskLogs(ctx interface{}, taskID interface{}, options interface{}) *APIClient_TaskLogs_Call {
-	return &APIClient_TaskLogs_Call{Call: _e.mock.On("TaskLogs", ctx, taskID, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_TaskLogs_Call) Run(run func(ctx context.Context, taskID string, options container.LogsOptions)) *APIClient_TaskLogs_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(container.LogsOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_TaskLogs_Call) Return(_a0 io.ReadCloser, _a1 error) *APIClient_TaskLogs_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_TaskLogs_Call) RunAndReturn(run func(context.Context, string, container.LogsOptions) (io.ReadCloser, error)) *APIClient_TaskLogs_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // VolumeCreate provides a mock function with given fields: ctx, options
 func (_m *APIClient) VolumeCreate(ctx context.Context, options volume.CreateOptions) (volume.Volume, error) {
-	ret := _m.Called(ctx, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for VolumeCreate")
-	}
-
-	var r0 volume.Volume
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, volume.CreateOptions) (volume.Volume, error)); ok {
-		return rf(ctx, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, volume.CreateOptions) volume.Volume); ok {
-		r0 = rf(ctx, options)
-	} else {
-		r0 = ret.Get(0).(volume.Volume)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, volume.CreateOptions) error); ok {
-		r1 = rf(ctx, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(volume.Volume), nil
 }
 
 // APIClient_VolumeCreate_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'VolumeCreate'
@@ -6477,52 +4027,29 @@ type APIClient_VolumeCreate_Call struct {
 //   - ctx context.Context
 //   - options volume.CreateOptions
 func (_e *APIClient_Expecter) VolumeCreate(ctx interface{}, options interface{}) *APIClient_VolumeCreate_Call {
-	return &APIClient_VolumeCreate_Call{Call: _e.mock.On("VolumeCreate", ctx, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_VolumeCreate_Call) Run(run func(ctx context.Context, options volume.CreateOptions)) *APIClient_VolumeCreate_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(volume.CreateOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_VolumeCreate_Call) Return(_a0 volume.Volume, _a1 error) *APIClient_VolumeCreate_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_VolumeCreate_Call) RunAndReturn(run func(context.Context, volume.CreateOptions) (volume.Volume, error)) *APIClient_VolumeCreate_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // VolumeInspect provides a mock function with given fields: ctx, volumeID
 func (_m *APIClient) VolumeInspect(ctx context.Context, volumeID string) (volume.Volume, error) {
-	ret := _m.Called(ctx, volumeID)
-
-	if len(ret) == 0 {
-		panic("no return value specified for VolumeInspect")
-	}
-
-	var r0 volume.Volume
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string) (volume.Volume, error)); ok {
-		return rf(ctx, volumeID)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string) volume.Volume); ok {
-		r0 = rf(ctx, volumeID)
-	} else {
-		r0 = ret.Get(0).(volume.Volume)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string) error); ok {
-		r1 = rf(ctx, volumeID)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(volume.Volume), nil
 }
 
 // APIClient_VolumeInspect_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'VolumeInspect'
@@ -6534,61 +4061,29 @@ type APIClient_VolumeInspect_Call struct {
 //   - ctx context.Context
 //   - volumeID string
 func (_e *APIClient_Expecter) VolumeInspect(ctx interface{}, volumeID interface{}) *APIClient_VolumeInspect_Call {
-	return &APIClient_VolumeInspect_Call{Call: _e.mock.On("VolumeInspect", ctx, volumeID)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_VolumeInspect_Call) Run(run func(ctx context.Context, volumeID string)) *APIClient_VolumeInspect_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_VolumeInspect_Call) Return(_a0 volume.Volume, _a1 error) *APIClient_VolumeInspect_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_VolumeInspect_Call) RunAndReturn(run func(context.Context, string) (volume.Volume, error)) *APIClient_VolumeInspect_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // VolumeInspectWithRaw provides a mock function with given fields: ctx, volumeID
 func (_m *APIClient) VolumeInspectWithRaw(ctx context.Context, volumeID string) (volume.Volume, []byte, error) {
-	ret := _m.Called(ctx, volumeID)
-
-	if len(ret) == 0 {
-		panic("no return value specified for VolumeInspectWithRaw")
-	}
-
-	var r0 volume.Volume
-	var r1 []byte
-	var r2 error
-	if rf, ok := ret.Get(0).(func(context.Context, string) (volume.Volume, []byte, error)); ok {
-		return rf(ctx, volumeID)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string) volume.Volume); ok {
-		r0 = rf(ctx, volumeID)
-	} else {
-		r0 = ret.Get(0).(volume.Volume)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string) []byte); ok {
-		r1 = rf(ctx, volumeID)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).([]byte)
-		}
-	}
-
-	if rf, ok := ret.Get(2).(func(context.Context, string) error); ok {
-		r2 = rf(ctx, volumeID)
-	} else {
-		r2 = ret.Error(2)
-	}
-
-	return r0, r1, r2
+	_ = "STUB: not implemented"
+	return *new(volume.Volume), nil, nil
 }
 
 // APIClient_VolumeInspectWithRaw_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'VolumeInspectWithRaw'
@@ -6600,52 +4095,29 @@ type APIClient_VolumeInspectWithRaw_Call struct {
 //   - ctx context.Context
 //   - volumeID string
 func (_e *APIClient_Expecter) VolumeInspectWithRaw(ctx interface{}, volumeID interface{}) *APIClient_VolumeInspectWithRaw_Call {
-	return &APIClient_VolumeInspectWithRaw_Call{Call: _e.mock.On("VolumeInspectWithRaw", ctx, volumeID)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_VolumeInspectWithRaw_Call) Run(run func(ctx context.Context, volumeID string)) *APIClient_VolumeInspectWithRaw_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_VolumeInspectWithRaw_Call) Return(_a0 volume.Volume, _a1 []byte, _a2 error) *APIClient_VolumeInspectWithRaw_Call {
-	_c.Call.Return(_a0, _a1, _a2)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_VolumeInspectWithRaw_Call) RunAndReturn(run func(context.Context, string) (volume.Volume, []byte, error)) *APIClient_VolumeInspectWithRaw_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // VolumeList provides a mock function with given fields: ctx, options
 func (_m *APIClient) VolumeList(ctx context.Context, options volume.ListOptions) (volume.ListResponse, error) {
-	ret := _m.Called(ctx, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for VolumeList")
-	}
-
-	var r0 volume.ListResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, volume.ListOptions) (volume.ListResponse, error)); ok {
-		return rf(ctx, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, volume.ListOptions) volume.ListResponse); ok {
-		r0 = rf(ctx, options)
-	} else {
-		r0 = ret.Get(0).(volume.ListResponse)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, volume.ListOptions) error); ok {
-		r1 = rf(ctx, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(volume.ListResponse), nil
 }
 
 // APIClient_VolumeList_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'VolumeList'
@@ -6657,42 +4129,29 @@ type APIClient_VolumeList_Call struct {
 //   - ctx context.Context
 //   - options volume.ListOptions
 func (_e *APIClient_Expecter) VolumeList(ctx interface{}, options interface{}) *APIClient_VolumeList_Call {
-	return &APIClient_VolumeList_Call{Call: _e.mock.On("VolumeList", ctx, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_VolumeList_Call) Run(run func(ctx context.Context, options volume.ListOptions)) *APIClient_VolumeList_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(volume.ListOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_VolumeList_Call) Return(_a0 volume.ListResponse, _a1 error) *APIClient_VolumeList_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_VolumeList_Call) RunAndReturn(run func(context.Context, volume.ListOptions) (volume.ListResponse, error)) *APIClient_VolumeList_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // VolumeRemove provides a mock function with given fields: ctx, volumeID, force
 func (_m *APIClient) VolumeRemove(ctx context.Context, volumeID string, force bool) error {
-	ret := _m.Called(ctx, volumeID, force)
-
-	if len(ret) == 0 {
-		panic("no return value specified for VolumeRemove")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, bool) error); ok {
-		r0 = rf(ctx, volumeID, force)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_VolumeRemove_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'VolumeRemove'
@@ -6705,42 +4164,29 @@ type APIClient_VolumeRemove_Call struct {
 //   - volumeID string
 //   - force bool
 func (_e *APIClient_Expecter) VolumeRemove(ctx interface{}, volumeID interface{}, force interface{}) *APIClient_VolumeRemove_Call {
-	return &APIClient_VolumeRemove_Call{Call: _e.mock.On("VolumeRemove", ctx, volumeID, force)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_VolumeRemove_Call) Run(run func(ctx context.Context, volumeID string, force bool)) *APIClient_VolumeRemove_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(bool))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_VolumeRemove_Call) Return(_a0 error) *APIClient_VolumeRemove_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_VolumeRemove_Call) RunAndReturn(run func(context.Context, string, bool) error) *APIClient_VolumeRemove_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // VolumeUpdate provides a mock function with given fields: ctx, volumeID, version, options
 func (_m *APIClient) VolumeUpdate(ctx context.Context, volumeID string, version swarm.Version, options volume.UpdateOptions) error {
-	ret := _m.Called(ctx, volumeID, version, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for VolumeUpdate")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, swarm.Version, volume.UpdateOptions) error); ok {
-		r0 = rf(ctx, volumeID, version, options)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // APIClient_VolumeUpdate_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'VolumeUpdate'
@@ -6754,52 +4200,29 @@ type APIClient_VolumeUpdate_Call struct {
 //   - version swarm.Version
 //   - options volume.UpdateOptions
 func (_e *APIClient_Expecter) VolumeUpdate(ctx interface{}, volumeID interface{}, version interface{}, options interface{}) *APIClient_VolumeUpdate_Call {
-	return &APIClient_VolumeUpdate_Call{Call: _e.mock.On("VolumeUpdate", ctx, volumeID, version, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_VolumeUpdate_Call) Run(run func(ctx context.Context, volumeID string, version swarm.Version, options volume.UpdateOptions)) *APIClient_VolumeUpdate_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(swarm.Version), args[3].(volume.UpdateOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_VolumeUpdate_Call) Return(_a0 error) *APIClient_VolumeUpdate_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_VolumeUpdate_Call) RunAndReturn(run func(context.Context, string, swarm.Version, volume.UpdateOptions) error) *APIClient_VolumeUpdate_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // VolumesPrune provides a mock function with given fields: ctx, pruneFilter
 func (_m *APIClient) VolumesPrune(ctx context.Context, pruneFilter filters.Args) (volume.PruneReport, error) {
-	ret := _m.Called(ctx, pruneFilter)
-
-	if len(ret) == 0 {
-		panic("no return value specified for VolumesPrune")
-	}
-
-	var r0 volume.PruneReport
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, filters.Args) (volume.PruneReport, error)); ok {
-		return rf(ctx, pruneFilter)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, filters.Args) volume.PruneReport); ok {
-		r0 = rf(ctx, pruneFilter)
-	} else {
-		r0 = ret.Get(0).(volume.PruneReport)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, filters.Args) error); ok {
-		r1 = rf(ctx, pruneFilter)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(volume.PruneReport), nil
 }
 
 // APIClient_VolumesPrune_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'VolumesPrune'
@@ -6811,24 +4234,23 @@ type APIClient_VolumesPrune_Call struct {
 //   - ctx context.Context
 //   - pruneFilter filters.Args
 func (_e *APIClient_Expecter) VolumesPrune(ctx interface{}, pruneFilter interface{}) *APIClient_VolumesPrune_Call {
-	return &APIClient_VolumesPrune_Call{Call: _e.mock.On("VolumesPrune", ctx, pruneFilter)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_VolumesPrune_Call) Run(run func(ctx context.Context, pruneFilter filters.Args)) *APIClient_VolumesPrune_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(filters.Args))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_VolumesPrune_Call) Return(_a0 volume.PruneReport, _a1 error) *APIClient_VolumesPrune_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *APIClient_VolumesPrune_Call) RunAndReturn(run func(context.Context, filters.Args) (volume.PruneReport, error)) *APIClient_VolumesPrune_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewAPIClient creates a new instance of APIClient. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
@@ -6837,10 +4259,6 @@ func NewAPIClient(t interface {
 	mock.TestingT
 	Cleanup(func())
 }) *APIClient {
-	mock := &APIClient{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

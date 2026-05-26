@@ -2,12 +2,10 @@ package lifecycle
 
 import (
 	"context"
-	"fmt"
 	"syscall"
 
 	"github.com/alexei-led/pumba/pkg/chaos"
 	"github.com/alexei-led/pumba/pkg/container"
-	log "github.com/sirupsen/logrus"
 )
 
 const (
@@ -67,41 +65,12 @@ type killCommand struct {
 
 // NewKillCommand create new Kill Command instance
 func NewKillCommand(client killClient, params *chaos.GlobalParams, signal string, limit int) (chaos.Command, error) {
-	kill := &killCommand{
-		client:  client,
-		names:   params.Names,
-		pattern: params.Pattern,
-		labels:  params.Labels,
-		signal:  signal,
-		limit:   limit,
-		dryRun:  params.DryRun,
-	}
-	if kill.signal == "" {
-		kill.signal = DefaultKillSignal
-	}
-	if _, ok := linuxSignals[kill.signal]; !ok {
-		return nil, fmt.Errorf("undefined Linux signal: %s", signal)
-	}
-	return kill, nil
+	_ = "STUB: not implemented"
+	return *new(chaos.Command), nil
 }
 
 // Run kill command
 func (k *killCommand) Run(ctx context.Context, random bool) error {
-	log.WithFields(log.Fields{
-		"names":   k.names,
-		"pattern": k.pattern,
-		"labels":  k.labels,
-		"signal":  k.signal,
-		"limit":   k.limit,
-		"random":  random,
-	}).Debug("killing all matching containers")
-	gp := &chaos.GlobalParams{Names: k.names, Pattern: k.pattern, Labels: k.labels}
-	return chaos.RunOnContainers(ctx, k.client, gp, k.limit, random, false,
-		func(ctx context.Context, c *container.Container) error {
-			log.WithFields(log.Fields{"ctr": c, "signal": k.signal}).Debug("killing ctr")
-			if err := k.client.KillContainer(ctx, c, k.signal, k.dryRun); err != nil {
-				return fmt.Errorf("failed to kill ctr: %w", err)
-			}
-			return nil
-		})
+	_ = "STUB: not implemented"
+	return nil
 }

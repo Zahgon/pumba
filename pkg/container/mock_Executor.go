@@ -17,26 +17,12 @@ type MockExecutor_Expecter struct {
 	mock *mock.Mock
 }
 
-func (_m *MockExecutor) EXPECT() *MockExecutor_Expecter {
-	return &MockExecutor_Expecter{mock: &_m.Mock}
-}
+func (_m *MockExecutor) EXPECT() *MockExecutor_Expecter { _ = "STUB: not implemented"; return nil }
 
 // ExecContainer provides a mock function with given fields: _a0, _a1, _a2, _a3, _a4
 func (_m *MockExecutor) ExecContainer(_a0 context.Context, _a1 *Container, _a2 string, _a3 []string, _a4 bool) error {
-	ret := _m.Called(_a0, _a1, _a2, _a3, _a4)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ExecContainer")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *Container, string, []string, bool) error); ok {
-		r0 = rf(_a0, _a1, _a2, _a3, _a4)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // MockExecutor_ExecContainer_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ExecContainer'
@@ -51,24 +37,23 @@ type MockExecutor_ExecContainer_Call struct {
 //   - _a3 []string
 //   - _a4 bool
 func (_e *MockExecutor_Expecter) ExecContainer(_a0 interface{}, _a1 interface{}, _a2 interface{}, _a3 interface{}, _a4 interface{}) *MockExecutor_ExecContainer_Call {
-	return &MockExecutor_ExecContainer_Call{Call: _e.mock.On("ExecContainer", _a0, _a1, _a2, _a3, _a4)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockExecutor_ExecContainer_Call) Run(run func(_a0 context.Context, _a1 *Container, _a2 string, _a3 []string, _a4 bool)) *MockExecutor_ExecContainer_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(*Container), args[2].(string), args[3].([]string), args[4].(bool))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockExecutor_ExecContainer_Call) Return(_a0 error) *MockExecutor_ExecContainer_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockExecutor_ExecContainer_Call) RunAndReturn(run func(context.Context, *Container, string, []string, bool) error) *MockExecutor_ExecContainer_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewMockExecutor creates a new instance of MockExecutor. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
@@ -77,10 +62,6 @@ func NewMockExecutor(t interface {
 	mock.TestingT
 	Cleanup(func())
 }) *MockExecutor {
-	mock := &MockExecutor{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

@@ -7,7 +7,6 @@ package cmd
 import (
 	"context"
 	"errors"
-	"fmt"
 
 	"github.com/alexei-led/pumba/pkg/chaos"
 	"github.com/alexei-led/pumba/pkg/chaos/cliflags"
@@ -49,30 +48,6 @@ var ErrContainerArgRequired = errors.New("container name, list of names, or RE2 
 // resolves the runtime client, parses global + per-command params, builds the
 // chaos.Command, and runs it through chaos.RunChaosCommand.
 func NewAction[P any](ctx context.Context, runtime chaos.Runtime, spec Spec[P]) *cli.Command {
-	return &cli.Command{
-		Name:        spec.Name,
-		Usage:       spec.Usage,
-		ArgsUsage:   spec.ArgsUsage,
-		Description: spec.Description,
-		Flags:       spec.Flags,
-		Action: func(c *cli.Context) error {
-			if spec.RequireArgs && !c.Args().Present() {
-				return ErrContainerArgRequired
-			}
-			f := cliflags.NewV1(c)
-			gp := chaos.ParseGlobalParams(f)
-			p, err := spec.Parse(f, gp)
-			if err != nil {
-				return err
-			}
-			cmd, err := spec.Build(runtime(), gp, p)
-			if err != nil {
-				return err
-			}
-			if err := chaos.RunChaosCommand(ctx, cmd, gp); err != nil {
-				return fmt.Errorf("running %s: %w", spec.Name, err)
-			}
-			return nil
-		},
-	}
+	_ = "STUB: not implemented"
+	return nil
 }

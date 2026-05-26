@@ -2,13 +2,10 @@ package stress
 
 import (
 	"context"
-	"fmt"
-	"strings"
 	"time"
 
 	"github.com/alexei-led/pumba/pkg/chaos"
 	"github.com/alexei-led/pumba/pkg/container"
-	log "github.com/sirupsen/logrus"
 )
 
 // stressClient is the narrow interface needed by the stress command.
@@ -39,88 +36,21 @@ const (
 
 // NewStressCommand create new Kill stressCommand instance
 func NewStressCommand(client stressClient, globalParams *chaos.GlobalParams, image string, pull bool, stressors string, duration time.Duration, limit int, injectCgroup bool) chaos.Command {
-	stress := &stressCommand{
-		client:       client,
-		names:        globalParams.Names,
-		pattern:      globalParams.Pattern,
-		labels:       globalParams.Labels,
-		image:        image,
-		pull:         pull,
-		stressors:    strings.Fields(stressors),
-		duration:     duration,
-		limit:        limit,
-		injectCgroup: injectCgroup,
-		dryRun:       globalParams.DryRun,
-	}
-	return stress
+	_ = "STUB: not implemented"
+	return *new(chaos.Command)
 }
 
 // Run stress command
 func (s *stressCommand) Run(ctx context.Context, random bool) error {
-	log.WithFields(log.Fields{
-		"names":     s.names,
-		"pattern":   s.pattern,
-		"labels":    s.labels,
-		"duration":  s.duration,
-		"stressors": s.stressors,
-		"limit":     s.limit,
-		"random":    random,
-	}).Debug("stress testing all matching containers")
-	gp := &chaos.GlobalParams{Names: s.names, Pattern: s.pattern, Labels: s.labels}
-	if err := chaos.RunOnContainers(ctx, s.client, gp, s.limit, random, true, s.stressContainer); err != nil {
-		return fmt.Errorf("one or more stress test failed: %w", err)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (s *stressCommand) stressContainer(ctx context.Context, c *container.Container) error {
-	log.WithFields(log.Fields{
-		"container":       c.ID(),
-		"duration":        s.duration,
-		"stressors":       s.stressors,
-		"stress-ng image": s.image,
-		"pull image":      s.pull,
-	}).Debug("stress testing container for duration")
-	req := &container.StressRequest{
-		Container:    c,
-		Stressors:    s.stressors,
-		Duration:     s.duration,
-		Sidecar:      container.SidecarSpec{Image: s.image, Pull: s.pull},
-		InjectCgroup: s.injectCgroup,
-		DryRun:       s.dryRun,
-	}
-	result, err := s.client.StressContainer(ctx, req)
-	if err != nil {
-		return fmt.Errorf("stress test failed: %w", err)
-	}
-	if s.dryRun {
-		return nil
-	}
-	timer := time.NewTimer(s.duration)
-	defer timer.Stop()
-	select {
-	case out := <-result.Output:
-		log.WithField("stdout", out).Debug("stress-ng completed")
-	case e := <-result.Errors:
-		return fmt.Errorf("stress-ng failed with error: %w", e)
-	case <-ctx.Done():
-		log.Debug("stop stress test on containers by stop event")
-		// cleanup must run even when parent ctx is canceled; preserve values but strip cancellation
-		cleanupCtx, cleanupCancel := context.WithTimeout(context.WithoutCancel(ctx), defaultStopTimeout)
-		defer cleanupCancel()
-		err = s.client.StopContainerWithID(cleanupCtx, result.SidecarID, defaultStopTimeout, s.dryRun)
-		if err != nil {
-			return fmt.Errorf("failed to stop stress-ng container: %w", err)
-		}
-	case <-timer.C:
-		log.WithField("duration", s.duration).Debug("stop stress containers after duration")
-		// parent ctx may cancel simultaneously with the timer; strip cancellation for cleanup
-		cleanupCtx, cleanupCancel := context.WithTimeout(context.WithoutCancel(ctx), defaultStopTimeout)
-		defer cleanupCancel()
-		err = s.client.StopContainerWithID(cleanupCtx, result.SidecarID, defaultStopTimeout, s.dryRun)
-		if err != nil {
-			return fmt.Errorf("failed to stop stress-ng container: %w", err)
-		}
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// cleanup must run even when parent ctx is canceled; preserve values but strip cancellation
+
+// parent ctx may cancel simultaneously with the timer; strip cancellation for cleanup

@@ -4,11 +4,8 @@ import (
 	"context"
 	"fmt"
 	"os"
-	"os/signal"
-	"syscall"
 	"time"
 
-	"github.com/alexei-led/pumba/pkg/chaos/cliflags"
 	ctr "github.com/alexei-led/pumba/pkg/container"
 	log "github.com/sirupsen/logrus"
 	"github.com/urfave/cli"
@@ -90,31 +87,12 @@ func main() {
 	}
 }
 
-func before(c *cli.Context) error {
-	setupLogging(cliflags.NewV1FromApp(c))
-	client, err := createRuntimeClient(c)
-	if err != nil {
-		return err
-	}
-	runtimeClient = client
-	return nil
-}
+func before(c *cli.Context) error { _ = "STUB: not implemented"; return nil }
 
 func handleSignals() context.Context {
+	_ = "STUB: not implemented"
 	// Graceful shut-down on SIGINT/SIGTERM
-	sig := make(chan os.Signal, 1)
-	signal.Notify(sig, syscall.SIGINT, syscall.SIGTERM)
-
-	// create cancelable context
-	ctx, cancel := context.WithCancel(context.Background())
-
-	go func() {
-		defer cancel()
-		sid := <-sig
-		log.Debugf("Received signal: %d\n", sid)
-		log.Debug("Canceling running chaos commands ...")
-		log.Debug("Gracefully exiting after some cleanup ...")
-	}()
-
-	return ctx
+	return *new(context.Context)
 }
+
+// create cancelable context

@@ -17,26 +17,12 @@ type MockNetem_Expecter struct {
 	mock *mock.Mock
 }
 
-func (_m *MockNetem) EXPECT() *MockNetem_Expecter {
-	return &MockNetem_Expecter{mock: &_m.Mock}
-}
+func (_m *MockNetem) EXPECT() *MockNetem_Expecter { _ = "STUB: not implemented"; return nil }
 
 // NetemContainer provides a mock function with given fields: _a0, _a1
 func (_m *MockNetem) NetemContainer(_a0 context.Context, _a1 *NetemRequest) error {
-	ret := _m.Called(_a0, _a1)
-
-	if len(ret) == 0 {
-		panic("no return value specified for NetemContainer")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *NetemRequest) error); ok {
-		r0 = rf(_a0, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // MockNetem_NetemContainer_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'NetemContainer'
@@ -48,42 +34,29 @@ type MockNetem_NetemContainer_Call struct {
 //   - _a0 context.Context
 //   - _a1 *NetemRequest
 func (_e *MockNetem_Expecter) NetemContainer(_a0 interface{}, _a1 interface{}) *MockNetem_NetemContainer_Call {
-	return &MockNetem_NetemContainer_Call{Call: _e.mock.On("NetemContainer", _a0, _a1)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockNetem_NetemContainer_Call) Run(run func(_a0 context.Context, _a1 *NetemRequest)) *MockNetem_NetemContainer_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(*NetemRequest))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockNetem_NetemContainer_Call) Return(_a0 error) *MockNetem_NetemContainer_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockNetem_NetemContainer_Call) RunAndReturn(run func(context.Context, *NetemRequest) error) *MockNetem_NetemContainer_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // StopNetemContainer provides a mock function with given fields: _a0, _a1
 func (_m *MockNetem) StopNetemContainer(_a0 context.Context, _a1 *NetemRequest) error {
-	ret := _m.Called(_a0, _a1)
-
-	if len(ret) == 0 {
-		panic("no return value specified for StopNetemContainer")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *NetemRequest) error); ok {
-		r0 = rf(_a0, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // MockNetem_StopNetemContainer_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'StopNetemContainer'
@@ -95,24 +68,23 @@ type MockNetem_StopNetemContainer_Call struct {
 //   - _a0 context.Context
 //   - _a1 *NetemRequest
 func (_e *MockNetem_Expecter) StopNetemContainer(_a0 interface{}, _a1 interface{}) *MockNetem_StopNetemContainer_Call {
-	return &MockNetem_StopNetemContainer_Call{Call: _e.mock.On("StopNetemContainer", _a0, _a1)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockNetem_StopNetemContainer_Call) Run(run func(_a0 context.Context, _a1 *NetemRequest)) *MockNetem_StopNetemContainer_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(*NetemRequest))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockNetem_StopNetemContainer_Call) Return(_a0 error) *MockNetem_StopNetemContainer_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockNetem_StopNetemContainer_Call) RunAndReturn(run func(context.Context, *NetemRequest) error) *MockNetem_StopNetemContainer_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewMockNetem creates a new instance of MockNetem. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
@@ -121,10 +93,6 @@ func NewMockNetem(t interface {
 	mock.TestingT
 	Cleanup(func())
 }) *MockNetem {
-	mock := &MockNetem{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

@@ -19,27 +19,10 @@ type MockapiClient_Expecter struct {
 	mock *mock.Mock
 }
 
-func (_m *MockapiClient) EXPECT() *MockapiClient_Expecter {
-	return &MockapiClient_Expecter{mock: &_m.Mock}
-}
+func (_m *MockapiClient) EXPECT() *MockapiClient_Expecter { _ = "STUB: not implemented"; return nil }
 
 // Close provides a mock function with no fields
-func (_m *MockapiClient) Close() error {
-	ret := _m.Called()
-
-	if len(ret) == 0 {
-		panic("no return value specified for Close")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func() error); ok {
-		r0 = rf()
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
-}
+func (_m *MockapiClient) Close() error { _ = "STUB: not implemented"; return nil }
 
 // MockapiClient_Close_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'Close'
 type MockapiClient_Close_Call struct {
@@ -48,61 +31,29 @@ type MockapiClient_Close_Call struct {
 
 // Close is a helper method to define mock.On call
 func (_e *MockapiClient_Expecter) Close() *MockapiClient_Close_Call {
-	return &MockapiClient_Close_Call{Call: _e.mock.On("Close")}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockapiClient_Close_Call) Run(run func()) *MockapiClient_Close_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run()
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockapiClient_Close_Call) Return(_a0 error) *MockapiClient_Close_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockapiClient_Close_Call) RunAndReturn(run func() error) *MockapiClient_Close_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // Containers provides a mock function with given fields: ctx, filters
 func (_m *MockapiClient) Containers(ctx context.Context, filters ...string) ([]client.Container, error) {
-	_va := make([]interface{}, len(filters))
-	for _i := range filters {
-		_va[_i] = filters[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, ctx)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	if len(ret) == 0 {
-		panic("no return value specified for Containers")
-	}
-
-	var r0 []client.Container
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, ...string) ([]client.Container, error)); ok {
-		return rf(ctx, filters...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, ...string) []client.Container); ok {
-		r0 = rf(ctx, filters...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]client.Container)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, ...string) error); ok {
-		r1 = rf(ctx, filters...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // MockapiClient_Containers_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'Containers'
@@ -114,61 +65,29 @@ type MockapiClient_Containers_Call struct {
 //   - ctx context.Context
 //   - filters ...string
 func (_e *MockapiClient_Expecter) Containers(ctx interface{}, filters ...interface{}) *MockapiClient_Containers_Call {
-	return &MockapiClient_Containers_Call{Call: _e.mock.On("Containers",
-		append([]interface{}{ctx}, filters...)...)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockapiClient_Containers_Call) Run(run func(ctx context.Context, filters ...string)) *MockapiClient_Containers_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		variadicArgs := make([]string, len(args)-1)
-		for i, a := range args[1:] {
-			if a != nil {
-				variadicArgs[i] = a.(string)
-			}
-		}
-		run(args[0].(context.Context), variadicArgs...)
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockapiClient_Containers_Call) Return(_a0 []client.Container, _a1 error) *MockapiClient_Containers_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockapiClient_Containers_Call) RunAndReturn(run func(context.Context, ...string) ([]client.Container, error)) *MockapiClient_Containers_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // GetImage provides a mock function with given fields: ctx, ref
 func (_m *MockapiClient) GetImage(ctx context.Context, ref string) (client.Image, error) {
-	ret := _m.Called(ctx, ref)
-
-	if len(ret) == 0 {
-		panic("no return value specified for GetImage")
-	}
-
-	var r0 client.Image
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string) (client.Image, error)); ok {
-		return rf(ctx, ref)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string) client.Image); ok {
-		r0 = rf(ctx, ref)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(client.Image)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string) error); ok {
-		r1 = rf(ctx, ref)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(client.Image), nil
 }
 
 // MockapiClient_GetImage_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'GetImage'
@@ -180,54 +99,29 @@ type MockapiClient_GetImage_Call struct {
 //   - ctx context.Context
 //   - ref string
 func (_e *MockapiClient_Expecter) GetImage(ctx interface{}, ref interface{}) *MockapiClient_GetImage_Call {
-	return &MockapiClient_GetImage_Call{Call: _e.mock.On("GetImage", ctx, ref)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockapiClient_GetImage_Call) Run(run func(ctx context.Context, ref string)) *MockapiClient_GetImage_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockapiClient_GetImage_Call) Return(_a0 client.Image, _a1 error) *MockapiClient_GetImage_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockapiClient_GetImage_Call) RunAndReturn(run func(context.Context, string) (client.Image, error)) *MockapiClient_GetImage_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // LoadContainer provides a mock function with given fields: ctx, id
 func (_m *MockapiClient) LoadContainer(ctx context.Context, id string) (client.Container, error) {
-	ret := _m.Called(ctx, id)
-
-	if len(ret) == 0 {
-		panic("no return value specified for LoadContainer")
-	}
-
-	var r0 client.Container
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string) (client.Container, error)); ok {
-		return rf(ctx, id)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string) client.Container); ok {
-		r0 = rf(ctx, id)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(client.Container)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string) error); ok {
-		r1 = rf(ctx, id)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(client.Container), nil
 }
 
 // MockapiClient_LoadContainer_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'LoadContainer'
@@ -239,61 +133,29 @@ type MockapiClient_LoadContainer_Call struct {
 //   - ctx context.Context
 //   - id string
 func (_e *MockapiClient_Expecter) LoadContainer(ctx interface{}, id interface{}) *MockapiClient_LoadContainer_Call {
-	return &MockapiClient_LoadContainer_Call{Call: _e.mock.On("LoadContainer", ctx, id)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockapiClient_LoadContainer_Call) Run(run func(ctx context.Context, id string)) *MockapiClient_LoadContainer_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockapiClient_LoadContainer_Call) Return(_a0 client.Container, _a1 error) *MockapiClient_LoadContainer_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockapiClient_LoadContainer_Call) RunAndReturn(run func(context.Context, string) (client.Container, error)) *MockapiClient_LoadContainer_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewContainer provides a mock function with given fields: ctx, id, opts
 func (_m *MockapiClient) NewContainer(ctx context.Context, id string, opts ...client.NewContainerOpts) (client.Container, error) {
-	_va := make([]interface{}, len(opts))
-	for _i := range opts {
-		_va[_i] = opts[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, ctx, id)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	if len(ret) == 0 {
-		panic("no return value specified for NewContainer")
-	}
-
-	var r0 client.Container
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, ...client.NewContainerOpts) (client.Container, error)); ok {
-		return rf(ctx, id, opts...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, ...client.NewContainerOpts) client.Container); ok {
-		r0 = rf(ctx, id, opts...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(client.Container)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, ...client.NewContainerOpts) error); ok {
-		r1 = rf(ctx, id, opts...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(client.Container), nil
 }
 
 // MockapiClient_NewContainer_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'NewContainer'
@@ -306,68 +168,29 @@ type MockapiClient_NewContainer_Call struct {
 //   - id string
 //   - opts ...client.NewContainerOpts
 func (_e *MockapiClient_Expecter) NewContainer(ctx interface{}, id interface{}, opts ...interface{}) *MockapiClient_NewContainer_Call {
-	return &MockapiClient_NewContainer_Call{Call: _e.mock.On("NewContainer",
-		append([]interface{}{ctx, id}, opts...)...)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockapiClient_NewContainer_Call) Run(run func(ctx context.Context, id string, opts ...client.NewContainerOpts)) *MockapiClient_NewContainer_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		variadicArgs := make([]client.NewContainerOpts, len(args)-2)
-		for i, a := range args[2:] {
-			if a != nil {
-				variadicArgs[i] = a.(client.NewContainerOpts)
-			}
-		}
-		run(args[0].(context.Context), args[1].(string), variadicArgs...)
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockapiClient_NewContainer_Call) Return(_a0 client.Container, _a1 error) *MockapiClient_NewContainer_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockapiClient_NewContainer_Call) RunAndReturn(run func(context.Context, string, ...client.NewContainerOpts) (client.Container, error)) *MockapiClient_NewContainer_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // Pull provides a mock function with given fields: ctx, ref, opts
 func (_m *MockapiClient) Pull(ctx context.Context, ref string, opts ...client.RemoteOpt) (client.Image, error) {
-	_va := make([]interface{}, len(opts))
-	for _i := range opts {
-		_va[_i] = opts[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, ctx, ref)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	if len(ret) == 0 {
-		panic("no return value specified for Pull")
-	}
-
-	var r0 client.Image
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, ...client.RemoteOpt) (client.Image, error)); ok {
-		return rf(ctx, ref, opts...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, ...client.RemoteOpt) client.Image); ok {
-		r0 = rf(ctx, ref, opts...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(client.Image)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, ...client.RemoteOpt) error); ok {
-		r1 = rf(ctx, ref, opts...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(client.Image), nil
 }
 
 // MockapiClient_Pull_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'Pull'
@@ -380,31 +203,23 @@ type MockapiClient_Pull_Call struct {
 //   - ref string
 //   - opts ...client.RemoteOpt
 func (_e *MockapiClient_Expecter) Pull(ctx interface{}, ref interface{}, opts ...interface{}) *MockapiClient_Pull_Call {
-	return &MockapiClient_Pull_Call{Call: _e.mock.On("Pull",
-		append([]interface{}{ctx, ref}, opts...)...)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockapiClient_Pull_Call) Run(run func(ctx context.Context, ref string, opts ...client.RemoteOpt)) *MockapiClient_Pull_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		variadicArgs := make([]client.RemoteOpt, len(args)-2)
-		for i, a := range args[2:] {
-			if a != nil {
-				variadicArgs[i] = a.(client.RemoteOpt)
-			}
-		}
-		run(args[0].(context.Context), args[1].(string), variadicArgs...)
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockapiClient_Pull_Call) Return(_a0 client.Image, _a1 error) *MockapiClient_Pull_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockapiClient_Pull_Call) RunAndReturn(run func(context.Context, string, ...client.RemoteOpt) (client.Image, error)) *MockapiClient_Pull_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewMockapiClient creates a new instance of MockapiClient. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
@@ -413,10 +228,6 @@ func NewMockapiClient(t interface {
 	mock.TestingT
 	Cleanup(func())
 }) *MockapiClient {
-	mock := &MockapiClient{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

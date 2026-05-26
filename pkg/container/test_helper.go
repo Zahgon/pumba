@@ -1,43 +1,20 @@
 package container
 
 import (
-	"bytes"
-	"fmt"
 	"io"
 )
 
 // CreateTestContainers create test container
-func CreateTestContainers(count int) []*Container {
-	var containers []*Container
-	for i := range count {
-		containers = append(containers, &Container{
-			ContainerName: fmt.Sprintf("c%d", i),
-			ImageID:       "defaultID",
-			Labels:        map[string]string{},
-			Networks:      map[string]NetworkLink{},
-		})
-	}
-	return containers
-}
+func CreateTestContainers(count int) []*Container { _ = "STUB: not implemented"; return nil }
 
 // CreateLabeledTestContainers generate test containers with labels
 func CreateLabeledTestContainers(count int, labels map[string]string) []*Container {
-	var containers []*Container
-	for i := range count {
-		containers = append(containers, &Container{
-			ContainerName: fmt.Sprintf("c%d", i),
-			ImageID:       "defaultID",
-			Labels:        labels,
-			Networks:      map[string]NetworkLink{},
-		})
-	}
-	return containers
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // Wrap wraps a given text reader with a ReadCloser
-func Wrap(text string) io.ReadCloser {
-	return io.NopCloser(bytes.NewReader([]byte(text)))
-}
+func Wrap(text string) io.ReadCloser { _ = "STUB: not implemented"; return *new(io.ReadCloser) }
 
 // DockerAPIResponse docker container api response body
 type DockerAPIResponse struct {

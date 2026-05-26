@@ -28,38 +28,12 @@ type ImageAPIClient_Expecter struct {
 	mock *mock.Mock
 }
 
-func (_m *ImageAPIClient) EXPECT() *ImageAPIClient_Expecter {
-	return &ImageAPIClient_Expecter{mock: &_m.Mock}
-}
+func (_m *ImageAPIClient) EXPECT() *ImageAPIClient_Expecter { _ = "STUB: not implemented"; return nil }
 
 // BuildCachePrune provides a mock function with given fields: ctx, opts
 func (_m *ImageAPIClient) BuildCachePrune(ctx context.Context, opts build.CachePruneOptions) (*build.CachePruneReport, error) {
-	ret := _m.Called(ctx, opts)
-
-	if len(ret) == 0 {
-		panic("no return value specified for BuildCachePrune")
-	}
-
-	var r0 *build.CachePruneReport
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, build.CachePruneOptions) (*build.CachePruneReport, error)); ok {
-		return rf(ctx, opts)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, build.CachePruneOptions) *build.CachePruneReport); ok {
-		r0 = rf(ctx, opts)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*build.CachePruneReport)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, build.CachePruneOptions) error); ok {
-		r1 = rf(ctx, opts)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ImageAPIClient_BuildCachePrune_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'BuildCachePrune'
@@ -71,42 +45,29 @@ type ImageAPIClient_BuildCachePrune_Call struct {
 //   - ctx context.Context
 //   - opts build.CachePruneOptions
 func (_e *ImageAPIClient_Expecter) BuildCachePrune(ctx interface{}, opts interface{}) *ImageAPIClient_BuildCachePrune_Call {
-	return &ImageAPIClient_BuildCachePrune_Call{Call: _e.mock.On("BuildCachePrune", ctx, opts)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_BuildCachePrune_Call) Run(run func(ctx context.Context, opts build.CachePruneOptions)) *ImageAPIClient_BuildCachePrune_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(build.CachePruneOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_BuildCachePrune_Call) Return(_a0 *build.CachePruneReport, _a1 error) *ImageAPIClient_BuildCachePrune_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_BuildCachePrune_Call) RunAndReturn(run func(context.Context, build.CachePruneOptions) (*build.CachePruneReport, error)) *ImageAPIClient_BuildCachePrune_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // BuildCancel provides a mock function with given fields: ctx, id
 func (_m *ImageAPIClient) BuildCancel(ctx context.Context, id string) error {
-	ret := _m.Called(ctx, id)
-
-	if len(ret) == 0 {
-		panic("no return value specified for BuildCancel")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string) error); ok {
-		r0 = rf(ctx, id)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImageAPIClient_BuildCancel_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'BuildCancel'
@@ -118,52 +79,29 @@ type ImageAPIClient_BuildCancel_Call struct {
 //   - ctx context.Context
 //   - id string
 func (_e *ImageAPIClient_Expecter) BuildCancel(ctx interface{}, id interface{}) *ImageAPIClient_BuildCancel_Call {
-	return &ImageAPIClient_BuildCancel_Call{Call: _e.mock.On("BuildCancel", ctx, id)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_BuildCancel_Call) Run(run func(ctx context.Context, id string)) *ImageAPIClient_BuildCancel_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_BuildCancel_Call) Return(_a0 error) *ImageAPIClient_BuildCancel_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_BuildCancel_Call) RunAndReturn(run func(context.Context, string) error) *ImageAPIClient_BuildCancel_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImageBuild provides a mock function with given fields: ctx, _a1, options
 func (_m *ImageAPIClient) ImageBuild(ctx context.Context, _a1 io.Reader, options build.ImageBuildOptions) (build.ImageBuildResponse, error) {
-	ret := _m.Called(ctx, _a1, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImageBuild")
-	}
-
-	var r0 build.ImageBuildResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, io.Reader, build.ImageBuildOptions) (build.ImageBuildResponse, error)); ok {
-		return rf(ctx, _a1, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, io.Reader, build.ImageBuildOptions) build.ImageBuildResponse); ok {
-		r0 = rf(ctx, _a1, options)
-	} else {
-		r0 = ret.Get(0).(build.ImageBuildResponse)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, io.Reader, build.ImageBuildOptions) error); ok {
-		r1 = rf(ctx, _a1, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(build.ImageBuildResponse), nil
 }
 
 // ImageAPIClient_ImageBuild_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImageBuild'
@@ -176,54 +114,29 @@ type ImageAPIClient_ImageBuild_Call struct {
 //   - _a1 io.Reader
 //   - options build.ImageBuildOptions
 func (_e *ImageAPIClient_Expecter) ImageBuild(ctx interface{}, _a1 interface{}, options interface{}) *ImageAPIClient_ImageBuild_Call {
-	return &ImageAPIClient_ImageBuild_Call{Call: _e.mock.On("ImageBuild", ctx, _a1, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageBuild_Call) Run(run func(ctx context.Context, _a1 io.Reader, options build.ImageBuildOptions)) *ImageAPIClient_ImageBuild_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(io.Reader), args[2].(build.ImageBuildOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageBuild_Call) Return(_a0 build.ImageBuildResponse, _a1 error) *ImageAPIClient_ImageBuild_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageBuild_Call) RunAndReturn(run func(context.Context, io.Reader, build.ImageBuildOptions) (build.ImageBuildResponse, error)) *ImageAPIClient_ImageBuild_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImageCreate provides a mock function with given fields: ctx, parentReference, options
 func (_m *ImageAPIClient) ImageCreate(ctx context.Context, parentReference string, options image.CreateOptions) (io.ReadCloser, error) {
-	ret := _m.Called(ctx, parentReference, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImageCreate")
-	}
-
-	var r0 io.ReadCloser
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, image.CreateOptions) (io.ReadCloser, error)); ok {
-		return rf(ctx, parentReference, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, image.CreateOptions) io.ReadCloser); ok {
-		r0 = rf(ctx, parentReference, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(io.ReadCloser)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, image.CreateOptions) error); ok {
-		r1 = rf(ctx, parentReference, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(io.ReadCloser), nil
 }
 
 // ImageAPIClient_ImageCreate_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImageCreate'
@@ -236,61 +149,29 @@ type ImageAPIClient_ImageCreate_Call struct {
 //   - parentReference string
 //   - options image.CreateOptions
 func (_e *ImageAPIClient_Expecter) ImageCreate(ctx interface{}, parentReference interface{}, options interface{}) *ImageAPIClient_ImageCreate_Call {
-	return &ImageAPIClient_ImageCreate_Call{Call: _e.mock.On("ImageCreate", ctx, parentReference, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageCreate_Call) Run(run func(ctx context.Context, parentReference string, options image.CreateOptions)) *ImageAPIClient_ImageCreate_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(image.CreateOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageCreate_Call) Return(_a0 io.ReadCloser, _a1 error) *ImageAPIClient_ImageCreate_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageCreate_Call) RunAndReturn(run func(context.Context, string, image.CreateOptions) (io.ReadCloser, error)) *ImageAPIClient_ImageCreate_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImageHistory provides a mock function with given fields: ctx, _a1, _a2
 func (_m *ImageAPIClient) ImageHistory(ctx context.Context, _a1 string, _a2 ...client.ImageHistoryOption) ([]image.HistoryResponseItem, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, ctx, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImageHistory")
-	}
-
-	var r0 []image.HistoryResponseItem
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, ...client.ImageHistoryOption) ([]image.HistoryResponseItem, error)); ok {
-		return rf(ctx, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, ...client.ImageHistoryOption) []image.HistoryResponseItem); ok {
-		r0 = rf(ctx, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]image.HistoryResponseItem)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, ...client.ImageHistoryOption) error); ok {
-		r1 = rf(ctx, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ImageAPIClient_ImageHistory_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImageHistory'
@@ -303,61 +184,29 @@ type ImageAPIClient_ImageHistory_Call struct {
 //   - _a1 string
 //   - _a2 ...client.ImageHistoryOption
 func (_e *ImageAPIClient_Expecter) ImageHistory(ctx interface{}, _a1 interface{}, _a2 ...interface{}) *ImageAPIClient_ImageHistory_Call {
-	return &ImageAPIClient_ImageHistory_Call{Call: _e.mock.On("ImageHistory",
-		append([]interface{}{ctx, _a1}, _a2...)...)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageHistory_Call) Run(run func(ctx context.Context, _a1 string, _a2 ...client.ImageHistoryOption)) *ImageAPIClient_ImageHistory_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		variadicArgs := make([]client.ImageHistoryOption, len(args)-2)
-		for i, a := range args[2:] {
-			if a != nil {
-				variadicArgs[i] = a.(client.ImageHistoryOption)
-			}
-		}
-		run(args[0].(context.Context), args[1].(string), variadicArgs...)
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageHistory_Call) Return(_a0 []image.HistoryResponseItem, _a1 error) *ImageAPIClient_ImageHistory_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageHistory_Call) RunAndReturn(run func(context.Context, string, ...client.ImageHistoryOption) ([]image.HistoryResponseItem, error)) *ImageAPIClient_ImageHistory_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImageImport provides a mock function with given fields: ctx, source, ref, options
 func (_m *ImageAPIClient) ImageImport(ctx context.Context, source image.ImportSource, ref string, options image.ImportOptions) (io.ReadCloser, error) {
-	ret := _m.Called(ctx, source, ref, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImageImport")
-	}
-
-	var r0 io.ReadCloser
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, image.ImportSource, string, image.ImportOptions) (io.ReadCloser, error)); ok {
-		return rf(ctx, source, ref, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, image.ImportSource, string, image.ImportOptions) io.ReadCloser); ok {
-		r0 = rf(ctx, source, ref, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(io.ReadCloser)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, image.ImportSource, string, image.ImportOptions) error); ok {
-		r1 = rf(ctx, source, ref, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(io.ReadCloser), nil
 }
 
 // ImageAPIClient_ImageImport_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImageImport'
@@ -371,59 +220,29 @@ type ImageAPIClient_ImageImport_Call struct {
 //   - ref string
 //   - options image.ImportOptions
 func (_e *ImageAPIClient_Expecter) ImageImport(ctx interface{}, source interface{}, ref interface{}, options interface{}) *ImageAPIClient_ImageImport_Call {
-	return &ImageAPIClient_ImageImport_Call{Call: _e.mock.On("ImageImport", ctx, source, ref, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageImport_Call) Run(run func(ctx context.Context, source image.ImportSource, ref string, options image.ImportOptions)) *ImageAPIClient_ImageImport_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(image.ImportSource), args[2].(string), args[3].(image.ImportOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageImport_Call) Return(_a0 io.ReadCloser, _a1 error) *ImageAPIClient_ImageImport_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageImport_Call) RunAndReturn(run func(context.Context, image.ImportSource, string, image.ImportOptions) (io.ReadCloser, error)) *ImageAPIClient_ImageImport_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImageInspect provides a mock function with given fields: ctx, _a1, _a2
 func (_m *ImageAPIClient) ImageInspect(ctx context.Context, _a1 string, _a2 ...client.ImageInspectOption) (image.InspectResponse, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, ctx, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImageInspect")
-	}
-
-	var r0 image.InspectResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, ...client.ImageInspectOption) (image.InspectResponse, error)); ok {
-		return rf(ctx, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, ...client.ImageInspectOption) image.InspectResponse); ok {
-		r0 = rf(ctx, _a1, _a2...)
-	} else {
-		r0 = ret.Get(0).(image.InspectResponse)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, ...client.ImageInspectOption) error); ok {
-		r1 = rf(ctx, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(image.InspectResponse), nil
 }
 
 // ImageAPIClient_ImageInspect_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImageInspect'
@@ -436,68 +255,29 @@ type ImageAPIClient_ImageInspect_Call struct {
 //   - _a1 string
 //   - _a2 ...client.ImageInspectOption
 func (_e *ImageAPIClient_Expecter) ImageInspect(ctx interface{}, _a1 interface{}, _a2 ...interface{}) *ImageAPIClient_ImageInspect_Call {
-	return &ImageAPIClient_ImageInspect_Call{Call: _e.mock.On("ImageInspect",
-		append([]interface{}{ctx, _a1}, _a2...)...)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageInspect_Call) Run(run func(ctx context.Context, _a1 string, _a2 ...client.ImageInspectOption)) *ImageAPIClient_ImageInspect_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		variadicArgs := make([]client.ImageInspectOption, len(args)-2)
-		for i, a := range args[2:] {
-			if a != nil {
-				variadicArgs[i] = a.(client.ImageInspectOption)
-			}
-		}
-		run(args[0].(context.Context), args[1].(string), variadicArgs...)
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageInspect_Call) Return(_a0 image.InspectResponse, _a1 error) *ImageAPIClient_ImageInspect_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageInspect_Call) RunAndReturn(run func(context.Context, string, ...client.ImageInspectOption) (image.InspectResponse, error)) *ImageAPIClient_ImageInspect_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImageInspectWithRaw provides a mock function with given fields: ctx, _a1
 func (_m *ImageAPIClient) ImageInspectWithRaw(ctx context.Context, _a1 string) (image.InspectResponse, []byte, error) {
-	ret := _m.Called(ctx, _a1)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImageInspectWithRaw")
-	}
-
-	var r0 image.InspectResponse
-	var r1 []byte
-	var r2 error
-	if rf, ok := ret.Get(0).(func(context.Context, string) (image.InspectResponse, []byte, error)); ok {
-		return rf(ctx, _a1)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string) image.InspectResponse); ok {
-		r0 = rf(ctx, _a1)
-	} else {
-		r0 = ret.Get(0).(image.InspectResponse)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string) []byte); ok {
-		r1 = rf(ctx, _a1)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).([]byte)
-		}
-	}
-
-	if rf, ok := ret.Get(2).(func(context.Context, string) error); ok {
-		r2 = rf(ctx, _a1)
-	} else {
-		r2 = ret.Error(2)
-	}
-
-	return r0, r1, r2
+	_ = "STUB: not implemented"
+	return *new(image.InspectResponse), nil, nil
 }
 
 // ImageAPIClient_ImageInspectWithRaw_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImageInspectWithRaw'
@@ -509,54 +289,29 @@ type ImageAPIClient_ImageInspectWithRaw_Call struct {
 //   - ctx context.Context
 //   - _a1 string
 func (_e *ImageAPIClient_Expecter) ImageInspectWithRaw(ctx interface{}, _a1 interface{}) *ImageAPIClient_ImageInspectWithRaw_Call {
-	return &ImageAPIClient_ImageInspectWithRaw_Call{Call: _e.mock.On("ImageInspectWithRaw", ctx, _a1)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageInspectWithRaw_Call) Run(run func(ctx context.Context, _a1 string)) *ImageAPIClient_ImageInspectWithRaw_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageInspectWithRaw_Call) Return(_a0 image.InspectResponse, _a1 []byte, _a2 error) *ImageAPIClient_ImageInspectWithRaw_Call {
-	_c.Call.Return(_a0, _a1, _a2)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageInspectWithRaw_Call) RunAndReturn(run func(context.Context, string) (image.InspectResponse, []byte, error)) *ImageAPIClient_ImageInspectWithRaw_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImageList provides a mock function with given fields: ctx, options
 func (_m *ImageAPIClient) ImageList(ctx context.Context, options image.ListOptions) ([]image.Summary, error) {
-	ret := _m.Called(ctx, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImageList")
-	}
-
-	var r0 []image.Summary
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, image.ListOptions) ([]image.Summary, error)); ok {
-		return rf(ctx, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, image.ListOptions) []image.Summary); ok {
-		r0 = rf(ctx, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]image.Summary)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, image.ListOptions) error); ok {
-		r1 = rf(ctx, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ImageAPIClient_ImageList_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImageList'
@@ -568,59 +323,29 @@ type ImageAPIClient_ImageList_Call struct {
 //   - ctx context.Context
 //   - options image.ListOptions
 func (_e *ImageAPIClient_Expecter) ImageList(ctx interface{}, options interface{}) *ImageAPIClient_ImageList_Call {
-	return &ImageAPIClient_ImageList_Call{Call: _e.mock.On("ImageList", ctx, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageList_Call) Run(run func(ctx context.Context, options image.ListOptions)) *ImageAPIClient_ImageList_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(image.ListOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageList_Call) Return(_a0 []image.Summary, _a1 error) *ImageAPIClient_ImageList_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageList_Call) RunAndReturn(run func(context.Context, image.ListOptions) ([]image.Summary, error)) *ImageAPIClient_ImageList_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImageLoad provides a mock function with given fields: ctx, input, _a2
 func (_m *ImageAPIClient) ImageLoad(ctx context.Context, input io.Reader, _a2 ...client.ImageLoadOption) (image.LoadResponse, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, ctx, input)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImageLoad")
-	}
-
-	var r0 image.LoadResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, io.Reader, ...client.ImageLoadOption) (image.LoadResponse, error)); ok {
-		return rf(ctx, input, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, io.Reader, ...client.ImageLoadOption) image.LoadResponse); ok {
-		r0 = rf(ctx, input, _a2...)
-	} else {
-		r0 = ret.Get(0).(image.LoadResponse)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, io.Reader, ...client.ImageLoadOption) error); ok {
-		r1 = rf(ctx, input, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(image.LoadResponse), nil
 }
 
 // ImageAPIClient_ImageLoad_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImageLoad'
@@ -633,61 +358,29 @@ type ImageAPIClient_ImageLoad_Call struct {
 //   - input io.Reader
 //   - _a2 ...client.ImageLoadOption
 func (_e *ImageAPIClient_Expecter) ImageLoad(ctx interface{}, input interface{}, _a2 ...interface{}) *ImageAPIClient_ImageLoad_Call {
-	return &ImageAPIClient_ImageLoad_Call{Call: _e.mock.On("ImageLoad",
-		append([]interface{}{ctx, input}, _a2...)...)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageLoad_Call) Run(run func(ctx context.Context, input io.Reader, _a2 ...client.ImageLoadOption)) *ImageAPIClient_ImageLoad_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		variadicArgs := make([]client.ImageLoadOption, len(args)-2)
-		for i, a := range args[2:] {
-			if a != nil {
-				variadicArgs[i] = a.(client.ImageLoadOption)
-			}
-		}
-		run(args[0].(context.Context), args[1].(io.Reader), variadicArgs...)
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageLoad_Call) Return(_a0 image.LoadResponse, _a1 error) *ImageAPIClient_ImageLoad_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageLoad_Call) RunAndReturn(run func(context.Context, io.Reader, ...client.ImageLoadOption) (image.LoadResponse, error)) *ImageAPIClient_ImageLoad_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImagePull provides a mock function with given fields: ctx, ref, options
 func (_m *ImageAPIClient) ImagePull(ctx context.Context, ref string, options image.PullOptions) (io.ReadCloser, error) {
-	ret := _m.Called(ctx, ref, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImagePull")
-	}
-
-	var r0 io.ReadCloser
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, image.PullOptions) (io.ReadCloser, error)); ok {
-		return rf(ctx, ref, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, image.PullOptions) io.ReadCloser); ok {
-		r0 = rf(ctx, ref, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(io.ReadCloser)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, image.PullOptions) error); ok {
-		r1 = rf(ctx, ref, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(io.ReadCloser), nil
 }
 
 // ImageAPIClient_ImagePull_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImagePull'
@@ -700,54 +393,29 @@ type ImageAPIClient_ImagePull_Call struct {
 //   - ref string
 //   - options image.PullOptions
 func (_e *ImageAPIClient_Expecter) ImagePull(ctx interface{}, ref interface{}, options interface{}) *ImageAPIClient_ImagePull_Call {
-	return &ImageAPIClient_ImagePull_Call{Call: _e.mock.On("ImagePull", ctx, ref, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImagePull_Call) Run(run func(ctx context.Context, ref string, options image.PullOptions)) *ImageAPIClient_ImagePull_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(image.PullOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImagePull_Call) Return(_a0 io.ReadCloser, _a1 error) *ImageAPIClient_ImagePull_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImagePull_Call) RunAndReturn(run func(context.Context, string, image.PullOptions) (io.ReadCloser, error)) *ImageAPIClient_ImagePull_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImagePush provides a mock function with given fields: ctx, ref, options
 func (_m *ImageAPIClient) ImagePush(ctx context.Context, ref string, options image.PushOptions) (io.ReadCloser, error) {
-	ret := _m.Called(ctx, ref, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImagePush")
-	}
-
-	var r0 io.ReadCloser
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, image.PushOptions) (io.ReadCloser, error)); ok {
-		return rf(ctx, ref, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, image.PushOptions) io.ReadCloser); ok {
-		r0 = rf(ctx, ref, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(io.ReadCloser)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, image.PushOptions) error); ok {
-		r1 = rf(ctx, ref, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(io.ReadCloser), nil
 }
 
 // ImageAPIClient_ImagePush_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImagePush'
@@ -760,54 +428,29 @@ type ImageAPIClient_ImagePush_Call struct {
 //   - ref string
 //   - options image.PushOptions
 func (_e *ImageAPIClient_Expecter) ImagePush(ctx interface{}, ref interface{}, options interface{}) *ImageAPIClient_ImagePush_Call {
-	return &ImageAPIClient_ImagePush_Call{Call: _e.mock.On("ImagePush", ctx, ref, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImagePush_Call) Run(run func(ctx context.Context, ref string, options image.PushOptions)) *ImageAPIClient_ImagePush_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(image.PushOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImagePush_Call) Return(_a0 io.ReadCloser, _a1 error) *ImageAPIClient_ImagePush_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImagePush_Call) RunAndReturn(run func(context.Context, string, image.PushOptions) (io.ReadCloser, error)) *ImageAPIClient_ImagePush_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImageRemove provides a mock function with given fields: ctx, _a1, options
 func (_m *ImageAPIClient) ImageRemove(ctx context.Context, _a1 string, options image.RemoveOptions) ([]image.DeleteResponse, error) {
-	ret := _m.Called(ctx, _a1, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImageRemove")
-	}
-
-	var r0 []image.DeleteResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, image.RemoveOptions) ([]image.DeleteResponse, error)); ok {
-		return rf(ctx, _a1, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, image.RemoveOptions) []image.DeleteResponse); ok {
-		r0 = rf(ctx, _a1, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]image.DeleteResponse)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, image.RemoveOptions) error); ok {
-		r1 = rf(ctx, _a1, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ImageAPIClient_ImageRemove_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImageRemove'
@@ -820,61 +463,29 @@ type ImageAPIClient_ImageRemove_Call struct {
 //   - _a1 string
 //   - options image.RemoveOptions
 func (_e *ImageAPIClient_Expecter) ImageRemove(ctx interface{}, _a1 interface{}, options interface{}) *ImageAPIClient_ImageRemove_Call {
-	return &ImageAPIClient_ImageRemove_Call{Call: _e.mock.On("ImageRemove", ctx, _a1, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageRemove_Call) Run(run func(ctx context.Context, _a1 string, options image.RemoveOptions)) *ImageAPIClient_ImageRemove_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(image.RemoveOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageRemove_Call) Return(_a0 []image.DeleteResponse, _a1 error) *ImageAPIClient_ImageRemove_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageRemove_Call) RunAndReturn(run func(context.Context, string, image.RemoveOptions) ([]image.DeleteResponse, error)) *ImageAPIClient_ImageRemove_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImageSave provides a mock function with given fields: ctx, images, _a2
 func (_m *ImageAPIClient) ImageSave(ctx context.Context, images []string, _a2 ...client.ImageSaveOption) (io.ReadCloser, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, ctx, images)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImageSave")
-	}
-
-	var r0 io.ReadCloser
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, []string, ...client.ImageSaveOption) (io.ReadCloser, error)); ok {
-		return rf(ctx, images, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, []string, ...client.ImageSaveOption) io.ReadCloser); ok {
-		r0 = rf(ctx, images, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(io.ReadCloser)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, []string, ...client.ImageSaveOption) error); ok {
-		r1 = rf(ctx, images, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(io.ReadCloser), nil
 }
 
 // ImageAPIClient_ImageSave_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImageSave'
@@ -887,61 +498,29 @@ type ImageAPIClient_ImageSave_Call struct {
 //   - images []string
 //   - _a2 ...client.ImageSaveOption
 func (_e *ImageAPIClient_Expecter) ImageSave(ctx interface{}, images interface{}, _a2 ...interface{}) *ImageAPIClient_ImageSave_Call {
-	return &ImageAPIClient_ImageSave_Call{Call: _e.mock.On("ImageSave",
-		append([]interface{}{ctx, images}, _a2...)...)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageSave_Call) Run(run func(ctx context.Context, images []string, _a2 ...client.ImageSaveOption)) *ImageAPIClient_ImageSave_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		variadicArgs := make([]client.ImageSaveOption, len(args)-2)
-		for i, a := range args[2:] {
-			if a != nil {
-				variadicArgs[i] = a.(client.ImageSaveOption)
-			}
-		}
-		run(args[0].(context.Context), args[1].([]string), variadicArgs...)
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageSave_Call) Return(_a0 io.ReadCloser, _a1 error) *ImageAPIClient_ImageSave_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageSave_Call) RunAndReturn(run func(context.Context, []string, ...client.ImageSaveOption) (io.ReadCloser, error)) *ImageAPIClient_ImageSave_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImageSearch provides a mock function with given fields: ctx, term, options
 func (_m *ImageAPIClient) ImageSearch(ctx context.Context, term string, options registry.SearchOptions) ([]registry.SearchResult, error) {
-	ret := _m.Called(ctx, term, options)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImageSearch")
-	}
-
-	var r0 []registry.SearchResult
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, registry.SearchOptions) ([]registry.SearchResult, error)); ok {
-		return rf(ctx, term, options)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, registry.SearchOptions) []registry.SearchResult); ok {
-		r0 = rf(ctx, term, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]registry.SearchResult)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, registry.SearchOptions) error); ok {
-		r1 = rf(ctx, term, options)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ImageAPIClient_ImageSearch_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImageSearch'
@@ -954,42 +533,29 @@ type ImageAPIClient_ImageSearch_Call struct {
 //   - term string
 //   - options registry.SearchOptions
 func (_e *ImageAPIClient_Expecter) ImageSearch(ctx interface{}, term interface{}, options interface{}) *ImageAPIClient_ImageSearch_Call {
-	return &ImageAPIClient_ImageSearch_Call{Call: _e.mock.On("ImageSearch", ctx, term, options)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageSearch_Call) Run(run func(ctx context.Context, term string, options registry.SearchOptions)) *ImageAPIClient_ImageSearch_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(registry.SearchOptions))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageSearch_Call) Return(_a0 []registry.SearchResult, _a1 error) *ImageAPIClient_ImageSearch_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageSearch_Call) RunAndReturn(run func(context.Context, string, registry.SearchOptions) ([]registry.SearchResult, error)) *ImageAPIClient_ImageSearch_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImageTag provides a mock function with given fields: ctx, _a1, ref
 func (_m *ImageAPIClient) ImageTag(ctx context.Context, _a1 string, ref string) error {
-	ret := _m.Called(ctx, _a1, ref)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImageTag")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, string) error); ok {
-		r0 = rf(ctx, _a1, ref)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImageAPIClient_ImageTag_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImageTag'
@@ -1002,52 +568,29 @@ type ImageAPIClient_ImageTag_Call struct {
 //   - _a1 string
 //   - ref string
 func (_e *ImageAPIClient_Expecter) ImageTag(ctx interface{}, _a1 interface{}, ref interface{}) *ImageAPIClient_ImageTag_Call {
-	return &ImageAPIClient_ImageTag_Call{Call: _e.mock.On("ImageTag", ctx, _a1, ref)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageTag_Call) Run(run func(ctx context.Context, _a1 string, ref string)) *ImageAPIClient_ImageTag_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(string))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageTag_Call) Return(_a0 error) *ImageAPIClient_ImageTag_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImageTag_Call) RunAndReturn(run func(context.Context, string, string) error) *ImageAPIClient_ImageTag_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ImagesPrune provides a mock function with given fields: ctx, pruneFilter
 func (_m *ImageAPIClient) ImagesPrune(ctx context.Context, pruneFilter filters.Args) (image.PruneReport, error) {
-	ret := _m.Called(ctx, pruneFilter)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ImagesPrune")
-	}
-
-	var r0 image.PruneReport
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, filters.Args) (image.PruneReport, error)); ok {
-		return rf(ctx, pruneFilter)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, filters.Args) image.PruneReport); ok {
-		r0 = rf(ctx, pruneFilter)
-	} else {
-		r0 = ret.Get(0).(image.PruneReport)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, filters.Args) error); ok {
-		r1 = rf(ctx, pruneFilter)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(image.PruneReport), nil
 }
 
 // ImageAPIClient_ImagesPrune_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ImagesPrune'
@@ -1059,24 +602,23 @@ type ImageAPIClient_ImagesPrune_Call struct {
 //   - ctx context.Context
 //   - pruneFilter filters.Args
 func (_e *ImageAPIClient_Expecter) ImagesPrune(ctx interface{}, pruneFilter interface{}) *ImageAPIClient_ImagesPrune_Call {
-	return &ImageAPIClient_ImagesPrune_Call{Call: _e.mock.On("ImagesPrune", ctx, pruneFilter)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImagesPrune_Call) Run(run func(ctx context.Context, pruneFilter filters.Args)) *ImageAPIClient_ImagesPrune_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(filters.Args))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImagesPrune_Call) Return(_a0 image.PruneReport, _a1 error) *ImageAPIClient_ImagesPrune_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *ImageAPIClient_ImagesPrune_Call) RunAndReturn(run func(context.Context, filters.Args) (image.PruneReport, error)) *ImageAPIClient_ImagesPrune_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewImageAPIClient creates a new instance of ImageAPIClient. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
@@ -1085,10 +627,6 @@ func NewImageAPIClient(t interface {
 	mock.TestingT
 	Cleanup(func())
 }) *ImageAPIClient {
-	mock := &ImageAPIClient{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

@@ -17,26 +17,12 @@ type Command_Expecter struct {
 	mock *mock.Mock
 }
 
-func (_m *Command) EXPECT() *Command_Expecter {
-	return &Command_Expecter{mock: &_m.Mock}
-}
+func (_m *Command) EXPECT() *Command_Expecter { _ = "STUB: not implemented"; return nil }
 
 // Run provides a mock function with given fields: ctx, random
 func (_m *Command) Run(ctx context.Context, random bool) error {
-	ret := _m.Called(ctx, random)
-
-	if len(ret) == 0 {
-		panic("no return value specified for Run")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, bool) error); ok {
-		r0 = rf(ctx, random)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // Command_Run_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'Run'
@@ -48,24 +34,23 @@ type Command_Run_Call struct {
 //   - ctx context.Context
 //   - random bool
 func (_e *Command_Expecter) Run(ctx interface{}, random interface{}) *Command_Run_Call {
-	return &Command_Run_Call{Call: _e.mock.On("Run", ctx, random)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *Command_Run_Call) Run(run func(ctx context.Context, random bool)) *Command_Run_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(bool))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *Command_Run_Call) Return(_a0 error) *Command_Run_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *Command_Run_Call) RunAndReturn(run func(context.Context, bool) error) *Command_Run_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewCommand creates a new instance of Command. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
@@ -74,10 +59,6 @@ func NewCommand(t interface {
 	mock.TestingT
 	Cleanup(func())
 }) *Command {
-	mock := &Command{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

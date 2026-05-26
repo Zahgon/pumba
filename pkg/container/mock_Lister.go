@@ -17,38 +17,12 @@ type MockLister_Expecter struct {
 	mock *mock.Mock
 }
 
-func (_m *MockLister) EXPECT() *MockLister_Expecter {
-	return &MockLister_Expecter{mock: &_m.Mock}
-}
+func (_m *MockLister) EXPECT() *MockLister_Expecter { _ = "STUB: not implemented"; return nil }
 
 // ListContainers provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockLister) ListContainers(_a0 context.Context, _a1 FilterFunc, _a2 ListOpts) ([]*Container, error) {
-	ret := _m.Called(_a0, _a1, _a2)
-
-	if len(ret) == 0 {
-		panic("no return value specified for ListContainers")
-	}
-
-	var r0 []*Container
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, FilterFunc, ListOpts) ([]*Container, error)); ok {
-		return rf(_a0, _a1, _a2)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, FilterFunc, ListOpts) []*Container); ok {
-		r0 = rf(_a0, _a1, _a2)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*Container)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, FilterFunc, ListOpts) error); ok {
-		r1 = rf(_a0, _a1, _a2)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // MockLister_ListContainers_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'ListContainers'
@@ -61,24 +35,23 @@ type MockLister_ListContainers_Call struct {
 //   - _a1 FilterFunc
 //   - _a2 ListOpts
 func (_e *MockLister_Expecter) ListContainers(_a0 interface{}, _a1 interface{}, _a2 interface{}) *MockLister_ListContainers_Call {
-	return &MockLister_ListContainers_Call{Call: _e.mock.On("ListContainers", _a0, _a1, _a2)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockLister_ListContainers_Call) Run(run func(_a0 context.Context, _a1 FilterFunc, _a2 ListOpts)) *MockLister_ListContainers_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(FilterFunc), args[2].(ListOpts))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockLister_ListContainers_Call) Return(_a0 []*Container, _a1 error) *MockLister_ListContainers_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockLister_ListContainers_Call) RunAndReturn(run func(context.Context, FilterFunc, ListOpts) ([]*Container, error)) *MockLister_ListContainers_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewMockLister creates a new instance of MockLister. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
@@ -87,10 +60,6 @@ func NewMockLister(t interface {
 	mock.TestingT
 	Cleanup(func())
 }) *MockLister {
-	mock := &MockLister{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

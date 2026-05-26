@@ -17,26 +17,12 @@ type MockIPTables_Expecter struct {
 	mock *mock.Mock
 }
 
-func (_m *MockIPTables) EXPECT() *MockIPTables_Expecter {
-	return &MockIPTables_Expecter{mock: &_m.Mock}
-}
+func (_m *MockIPTables) EXPECT() *MockIPTables_Expecter { _ = "STUB: not implemented"; return nil }
 
 // IPTablesContainer provides a mock function with given fields: _a0, _a1
 func (_m *MockIPTables) IPTablesContainer(_a0 context.Context, _a1 *IPTablesRequest) error {
-	ret := _m.Called(_a0, _a1)
-
-	if len(ret) == 0 {
-		panic("no return value specified for IPTablesContainer")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *IPTablesRequest) error); ok {
-		r0 = rf(_a0, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // MockIPTables_IPTablesContainer_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'IPTablesContainer'
@@ -48,42 +34,29 @@ type MockIPTables_IPTablesContainer_Call struct {
 //   - _a0 context.Context
 //   - _a1 *IPTablesRequest
 func (_e *MockIPTables_Expecter) IPTablesContainer(_a0 interface{}, _a1 interface{}) *MockIPTables_IPTablesContainer_Call {
-	return &MockIPTables_IPTablesContainer_Call{Call: _e.mock.On("IPTablesContainer", _a0, _a1)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockIPTables_IPTablesContainer_Call) Run(run func(_a0 context.Context, _a1 *IPTablesRequest)) *MockIPTables_IPTablesContainer_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(*IPTablesRequest))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockIPTables_IPTablesContainer_Call) Return(_a0 error) *MockIPTables_IPTablesContainer_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockIPTables_IPTablesContainer_Call) RunAndReturn(run func(context.Context, *IPTablesRequest) error) *MockIPTables_IPTablesContainer_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // StopIPTablesContainer provides a mock function with given fields: _a0, _a1
 func (_m *MockIPTables) StopIPTablesContainer(_a0 context.Context, _a1 *IPTablesRequest) error {
-	ret := _m.Called(_a0, _a1)
-
-	if len(ret) == 0 {
-		panic("no return value specified for StopIPTablesContainer")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *IPTablesRequest) error); ok {
-		r0 = rf(_a0, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // MockIPTables_StopIPTablesContainer_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'StopIPTablesContainer'
@@ -95,24 +68,23 @@ type MockIPTables_StopIPTablesContainer_Call struct {
 //   - _a0 context.Context
 //   - _a1 *IPTablesRequest
 func (_e *MockIPTables_Expecter) StopIPTablesContainer(_a0 interface{}, _a1 interface{}) *MockIPTables_StopIPTablesContainer_Call {
-	return &MockIPTables_StopIPTablesContainer_Call{Call: _e.mock.On("StopIPTablesContainer", _a0, _a1)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockIPTables_StopIPTablesContainer_Call) Run(run func(_a0 context.Context, _a1 *IPTablesRequest)) *MockIPTables_StopIPTablesContainer_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(*IPTablesRequest))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockIPTables_StopIPTablesContainer_Call) Return(_a0 error) *MockIPTables_StopIPTablesContainer_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockIPTables_StopIPTablesContainer_Call) RunAndReturn(run func(context.Context, *IPTablesRequest) error) *MockIPTables_StopIPTablesContainer_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewMockIPTables creates a new instance of MockIPTables. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
@@ -121,10 +93,6 @@ func NewMockIPTables(t interface {
 	mock.TestingT
 	Cleanup(func())
 }) *MockIPTables {
-	mock := &MockIPTables{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

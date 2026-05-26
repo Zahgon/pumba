@@ -2,7 +2,6 @@ package podman
 
 import (
 	"context"
-	"fmt"
 	"io"
 	"time"
 
@@ -14,7 +13,6 @@ import (
 	networktypes "github.com/docker/docker/api/types/network"
 	"github.com/docker/docker/api/types/system"
 	v1 "github.com/opencontainers/image-spec/specs-go/v1"
-	log "github.com/sirupsen/logrus"
 )
 
 // apiBackend is the narrow Docker SDK surface the podmanClient exercises for
@@ -88,85 +86,40 @@ type podmanClient struct {
 // subsequent chaos commands that need kernel privileges can fail fast with a
 // useful diagnostic instead of a cryptic error from inside the sidecar.
 func NewClient(explicitSocket string) (ctr.Client, error) {
-	uri, source, err := resolveSocket(explicitSocket)
-	if err != nil {
-		return nil, err
-	}
-	log.WithFields(log.Fields{"socket": uri, "source": source}).Debug("resolved podman socket")
-
-	api, err := newAPIClient(uri, nil)
-	if err != nil {
-		return nil, fmt.Errorf("podman runtime: create api client for %s: %w", uri, err)
-	}
-
-	delegate, err := newDelegate(api)
-	if err != nil {
-		_ = api.Close()
-		return nil, fmt.Errorf("podman runtime: wrap docker delegate: %w", err)
-	}
-
-	ctx, cancel := context.WithTimeout(context.Background(), bootstrapTimeout)
-	defer cancel()
-	info, err := fetchInfo(ctx, api)
-	if err != nil {
-		_ = api.Close()
-		return nil, fmt.Errorf("podman runtime: query /info on %s: %w", uri, err)
-	}
-
-	rootless := detectRootless(&info)
-	log.WithFields(log.Fields{"socket": uri, "rootless": rootless}).Debug("podman client ready")
-
-	return &podmanClient{
-		Client:    delegate,
-		api:       api,
-		rootless:  rootless,
-		socketURI: uri,
-	}, nil
+	_ = "STUB: not implemented"
+	return *new(ctr.Client), nil
 }
 
 // Close releases the underlying Docker SDK client's HTTP transport. Shadows
 // the embedded delegate's no-op Close so the connection cache doesn't leak.
-func (p *podmanClient) Close() error {
-	if p.api == nil {
-		return nil
-	}
-	return p.api.Close()
-}
+func (p *podmanClient) Close() error { _ = "STUB: not implemented"; return nil }
 
 // NetemContainer injects a netem qdisc into the target's network namespace.
 // Rootless Podman cannot grant NET_ADMIN to a sidecar in the target's netns;
 // fail fast with a clear diagnostic rather than an opaque sidecar error.
 func (p *podmanClient) NetemContainer(ctx context.Context, req *ctr.NetemRequest) error {
-	if p.rootless {
-		return rootlessError("netem", p.socketURI)
-	}
-	return p.Client.NetemContainer(ctx, req)
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // StopNetemContainer removes the netem rules installed by NetemContainer.
 // Mirrors the rootless guard so stop-without-start on a rootless socket also
 // returns the same diagnostic instead of a cryptic sidecar failure.
 func (p *podmanClient) StopNetemContainer(ctx context.Context, req *ctr.NetemRequest) error {
-	if p.rootless {
-		return rootlessError("netem", p.socketURI)
-	}
-	return p.Client.StopNetemContainer(ctx, req)
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // IPTablesContainer installs iptables rules in the target's network namespace.
 // Same rootless constraint as NetemContainer.
 func (p *podmanClient) IPTablesContainer(ctx context.Context, req *ctr.IPTablesRequest) error {
-	if p.rootless {
-		return rootlessError("iptables", p.socketURI)
-	}
-	return p.Client.IPTablesContainer(ctx, req)
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // StopIPTablesContainer removes the iptables rules installed by
 // IPTablesContainer. Mirrors the rootless guard.
 func (p *podmanClient) StopIPTablesContainer(ctx context.Context, req *ctr.IPTablesRequest) error {
-	if p.rootless {
-		return rootlessError("iptables", p.socketURI)
-	}
-	return p.Client.StopIPTablesContainer(ctx, req)
+	_ = "STUB: not implemented"
+	return nil
 }

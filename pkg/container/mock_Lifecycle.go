@@ -18,26 +18,12 @@ type MockLifecycle_Expecter struct {
 	mock *mock.Mock
 }
 
-func (_m *MockLifecycle) EXPECT() *MockLifecycle_Expecter {
-	return &MockLifecycle_Expecter{mock: &_m.Mock}
-}
+func (_m *MockLifecycle) EXPECT() *MockLifecycle_Expecter { _ = "STUB: not implemented"; return nil }
 
 // KillContainer provides a mock function with given fields: _a0, _a1, _a2, _a3
 func (_m *MockLifecycle) KillContainer(_a0 context.Context, _a1 *Container, _a2 string, _a3 bool) error {
-	ret := _m.Called(_a0, _a1, _a2, _a3)
-
-	if len(ret) == 0 {
-		panic("no return value specified for KillContainer")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *Container, string, bool) error); ok {
-		r0 = rf(_a0, _a1, _a2, _a3)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // MockLifecycle_KillContainer_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'KillContainer'
@@ -51,42 +37,29 @@ type MockLifecycle_KillContainer_Call struct {
 //   - _a2 string
 //   - _a3 bool
 func (_e *MockLifecycle_Expecter) KillContainer(_a0 interface{}, _a1 interface{}, _a2 interface{}, _a3 interface{}) *MockLifecycle_KillContainer_Call {
-	return &MockLifecycle_KillContainer_Call{Call: _e.mock.On("KillContainer", _a0, _a1, _a2, _a3)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockLifecycle_KillContainer_Call) Run(run func(_a0 context.Context, _a1 *Container, _a2 string, _a3 bool)) *MockLifecycle_KillContainer_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(*Container), args[2].(string), args[3].(bool))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockLifecycle_KillContainer_Call) Return(_a0 error) *MockLifecycle_KillContainer_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockLifecycle_KillContainer_Call) RunAndReturn(run func(context.Context, *Container, string, bool) error) *MockLifecycle_KillContainer_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // PauseContainer provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockLifecycle) PauseContainer(_a0 context.Context, _a1 *Container, _a2 bool) error {
-	ret := _m.Called(_a0, _a1, _a2)
-
-	if len(ret) == 0 {
-		panic("no return value specified for PauseContainer")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *Container, bool) error); ok {
-		r0 = rf(_a0, _a1, _a2)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // MockLifecycle_PauseContainer_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'PauseContainer'
@@ -99,42 +72,29 @@ type MockLifecycle_PauseContainer_Call struct {
 //   - _a1 *Container
 //   - _a2 bool
 func (_e *MockLifecycle_Expecter) PauseContainer(_a0 interface{}, _a1 interface{}, _a2 interface{}) *MockLifecycle_PauseContainer_Call {
-	return &MockLifecycle_PauseContainer_Call{Call: _e.mock.On("PauseContainer", _a0, _a1, _a2)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockLifecycle_PauseContainer_Call) Run(run func(_a0 context.Context, _a1 *Container, _a2 bool)) *MockLifecycle_PauseContainer_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(*Container), args[2].(bool))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockLifecycle_PauseContainer_Call) Return(_a0 error) *MockLifecycle_PauseContainer_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockLifecycle_PauseContainer_Call) RunAndReturn(run func(context.Context, *Container, bool) error) *MockLifecycle_PauseContainer_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // RemoveContainer provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockLifecycle) RemoveContainer(_a0 context.Context, _a1 *Container, _a2 RemoveOpts) error {
-	ret := _m.Called(_a0, _a1, _a2)
-
-	if len(ret) == 0 {
-		panic("no return value specified for RemoveContainer")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *Container, RemoveOpts) error); ok {
-		r0 = rf(_a0, _a1, _a2)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // MockLifecycle_RemoveContainer_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'RemoveContainer'
@@ -147,42 +107,29 @@ type MockLifecycle_RemoveContainer_Call struct {
 //   - _a1 *Container
 //   - _a2 RemoveOpts
 func (_e *MockLifecycle_Expecter) RemoveContainer(_a0 interface{}, _a1 interface{}, _a2 interface{}) *MockLifecycle_RemoveContainer_Call {
-	return &MockLifecycle_RemoveContainer_Call{Call: _e.mock.On("RemoveContainer", _a0, _a1, _a2)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockLifecycle_RemoveContainer_Call) Run(run func(_a0 context.Context, _a1 *Container, _a2 RemoveOpts)) *MockLifecycle_RemoveContainer_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(*Container), args[2].(RemoveOpts))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockLifecycle_RemoveContainer_Call) Return(_a0 error) *MockLifecycle_RemoveContainer_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockLifecycle_RemoveContainer_Call) RunAndReturn(run func(context.Context, *Container, RemoveOpts) error) *MockLifecycle_RemoveContainer_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // RestartContainer provides a mock function with given fields: _a0, _a1, _a2, _a3
 func (_m *MockLifecycle) RestartContainer(_a0 context.Context, _a1 *Container, _a2 time.Duration, _a3 bool) error {
-	ret := _m.Called(_a0, _a1, _a2, _a3)
-
-	if len(ret) == 0 {
-		panic("no return value specified for RestartContainer")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *Container, time.Duration, bool) error); ok {
-		r0 = rf(_a0, _a1, _a2, _a3)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // MockLifecycle_RestartContainer_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'RestartContainer'
@@ -196,42 +143,29 @@ type MockLifecycle_RestartContainer_Call struct {
 //   - _a2 time.Duration
 //   - _a3 bool
 func (_e *MockLifecycle_Expecter) RestartContainer(_a0 interface{}, _a1 interface{}, _a2 interface{}, _a3 interface{}) *MockLifecycle_RestartContainer_Call {
-	return &MockLifecycle_RestartContainer_Call{Call: _e.mock.On("RestartContainer", _a0, _a1, _a2, _a3)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockLifecycle_RestartContainer_Call) Run(run func(_a0 context.Context, _a1 *Container, _a2 time.Duration, _a3 bool)) *MockLifecycle_RestartContainer_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(*Container), args[2].(time.Duration), args[3].(bool))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockLifecycle_RestartContainer_Call) Return(_a0 error) *MockLifecycle_RestartContainer_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockLifecycle_RestartContainer_Call) RunAndReturn(run func(context.Context, *Container, time.Duration, bool) error) *MockLifecycle_RestartContainer_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // StartContainer provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockLifecycle) StartContainer(_a0 context.Context, _a1 *Container, _a2 bool) error {
-	ret := _m.Called(_a0, _a1, _a2)
-
-	if len(ret) == 0 {
-		panic("no return value specified for StartContainer")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *Container, bool) error); ok {
-		r0 = rf(_a0, _a1, _a2)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // MockLifecycle_StartContainer_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'StartContainer'
@@ -244,42 +178,29 @@ type MockLifecycle_StartContainer_Call struct {
 //   - _a1 *Container
 //   - _a2 bool
 func (_e *MockLifecycle_Expecter) StartContainer(_a0 interface{}, _a1 interface{}, _a2 interface{}) *MockLifecycle_StartContainer_Call {
-	return &MockLifecycle_StartContainer_Call{Call: _e.mock.On("StartContainer", _a0, _a1, _a2)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockLifecycle_StartContainer_Call) Run(run func(_a0 context.Context, _a1 *Container, _a2 bool)) *MockLifecycle_StartContainer_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(*Container), args[2].(bool))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockLifecycle_StartContainer_Call) Return(_a0 error) *MockLifecycle_StartContainer_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockLifecycle_StartContainer_Call) RunAndReturn(run func(context.Context, *Container, bool) error) *MockLifecycle_StartContainer_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // StopContainer provides a mock function with given fields: _a0, _a1, _a2, _a3
 func (_m *MockLifecycle) StopContainer(_a0 context.Context, _a1 *Container, _a2 int, _a3 bool) error {
-	ret := _m.Called(_a0, _a1, _a2, _a3)
-
-	if len(ret) == 0 {
-		panic("no return value specified for StopContainer")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *Container, int, bool) error); ok {
-		r0 = rf(_a0, _a1, _a2, _a3)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // MockLifecycle_StopContainer_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'StopContainer'
@@ -293,42 +214,29 @@ type MockLifecycle_StopContainer_Call struct {
 //   - _a2 int
 //   - _a3 bool
 func (_e *MockLifecycle_Expecter) StopContainer(_a0 interface{}, _a1 interface{}, _a2 interface{}, _a3 interface{}) *MockLifecycle_StopContainer_Call {
-	return &MockLifecycle_StopContainer_Call{Call: _e.mock.On("StopContainer", _a0, _a1, _a2, _a3)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockLifecycle_StopContainer_Call) Run(run func(_a0 context.Context, _a1 *Container, _a2 int, _a3 bool)) *MockLifecycle_StopContainer_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(*Container), args[2].(int), args[3].(bool))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockLifecycle_StopContainer_Call) Return(_a0 error) *MockLifecycle_StopContainer_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockLifecycle_StopContainer_Call) RunAndReturn(run func(context.Context, *Container, int, bool) error) *MockLifecycle_StopContainer_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // StopContainerWithID provides a mock function with given fields: _a0, _a1, _a2, _a3
 func (_m *MockLifecycle) StopContainerWithID(_a0 context.Context, _a1 string, _a2 time.Duration, _a3 bool) error {
-	ret := _m.Called(_a0, _a1, _a2, _a3)
-
-	if len(ret) == 0 {
-		panic("no return value specified for StopContainerWithID")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, time.Duration, bool) error); ok {
-		r0 = rf(_a0, _a1, _a2, _a3)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // MockLifecycle_StopContainerWithID_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'StopContainerWithID'
@@ -342,42 +250,29 @@ type MockLifecycle_StopContainerWithID_Call struct {
 //   - _a2 time.Duration
 //   - _a3 bool
 func (_e *MockLifecycle_Expecter) StopContainerWithID(_a0 interface{}, _a1 interface{}, _a2 interface{}, _a3 interface{}) *MockLifecycle_StopContainerWithID_Call {
-	return &MockLifecycle_StopContainerWithID_Call{Call: _e.mock.On("StopContainerWithID", _a0, _a1, _a2, _a3)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockLifecycle_StopContainerWithID_Call) Run(run func(_a0 context.Context, _a1 string, _a2 time.Duration, _a3 bool)) *MockLifecycle_StopContainerWithID_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(string), args[2].(time.Duration), args[3].(bool))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockLifecycle_StopContainerWithID_Call) Return(_a0 error) *MockLifecycle_StopContainerWithID_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockLifecycle_StopContainerWithID_Call) RunAndReturn(run func(context.Context, string, time.Duration, bool) error) *MockLifecycle_StopContainerWithID_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // UnpauseContainer provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockLifecycle) UnpauseContainer(_a0 context.Context, _a1 *Container, _a2 bool) error {
-	ret := _m.Called(_a0, _a1, _a2)
-
-	if len(ret) == 0 {
-		panic("no return value specified for UnpauseContainer")
-	}
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *Container, bool) error); ok {
-		r0 = rf(_a0, _a1, _a2)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // MockLifecycle_UnpauseContainer_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'UnpauseContainer'
@@ -390,24 +285,23 @@ type MockLifecycle_UnpauseContainer_Call struct {
 //   - _a1 *Container
 //   - _a2 bool
 func (_e *MockLifecycle_Expecter) UnpauseContainer(_a0 interface{}, _a1 interface{}, _a2 interface{}) *MockLifecycle_UnpauseContainer_Call {
-	return &MockLifecycle_UnpauseContainer_Call{Call: _e.mock.On("UnpauseContainer", _a0, _a1, _a2)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockLifecycle_UnpauseContainer_Call) Run(run func(_a0 context.Context, _a1 *Container, _a2 bool)) *MockLifecycle_UnpauseContainer_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(*Container), args[2].(bool))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockLifecycle_UnpauseContainer_Call) Return(_a0 error) *MockLifecycle_UnpauseContainer_Call {
-	_c.Call.Return(_a0)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockLifecycle_UnpauseContainer_Call) RunAndReturn(run func(context.Context, *Container, bool) error) *MockLifecycle_UnpauseContainer_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewMockLifecycle creates a new instance of MockLifecycle. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
@@ -416,10 +310,6 @@ func NewMockLifecycle(t interface {
 	mock.TestingT
 	Cleanup(func())
 }) *MockLifecycle {
-	mock := &MockLifecycle{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

@@ -2,11 +2,9 @@ package netem
 
 import (
 	"context"
-	"fmt"
 	"time"
 
 	"github.com/alexei-led/pumba/pkg/container"
-	log "github.com/sirupsen/logrus"
 )
 
 // netemClient is the narrow interface needed by all netem commands.
@@ -22,45 +20,12 @@ const cleanupTimeout = 30 * time.Second
 
 // run network emulation command, stop netem on timeout or abort
 func runNetem(ctx context.Context, client netemClient, req *container.NetemRequest) error {
-	logger := log.WithFields(log.Fields{
-		"id":       req.Container.ID(),
-		"name":     req.Container.Name(),
-		"iface":    req.Interface,
-		"netem":    req.Command,
-		"ips":      req.IPs,
-		"sports":   req.SPorts,
-		"dports":   req.DPorts,
-		"duration": req.Duration,
-		"tc-image": req.Sidecar.Image,
-		"pull":     req.Sidecar.Pull,
-	})
-	logger.Debug("running netem command")
-	if err := client.NetemContainer(ctx, req); err != nil {
-		return fmt.Errorf("netem failed: %w", err)
-	}
-	logger.Debug("netem command started")
-
-	// create new context with timeout for canceling
-	stopCtx, cancel := context.WithTimeout(context.Background(), req.Duration)
-	defer cancel()
-	// wait for specified duration and then stop netem (where it applied) or stop on ctx.Done()
-	// use context.WithoutCancel so cleanup succeeds even if the parent ctx is canceled
-	// or if it inherited a deadline that has elapsed alongside stopCtx.
-	select {
-	case <-ctx.Done():
-		logger.Debug("stopping netem command on abort")
-		cleanupCtx, cleanupCancel := context.WithTimeout(context.WithoutCancel(ctx), cleanupTimeout)
-		defer cleanupCancel()
-		if err := client.StopNetemContainer(cleanupCtx, req); err != nil {
-			logger.WithError(err).Warn("failed to stop netem container (container may have been removed)")
-		}
-	case <-stopCtx.Done():
-		logger.Debug("stopping netem command on timeout")
-		cleanupCtx, cleanupCancel := context.WithTimeout(context.WithoutCancel(ctx), cleanupTimeout)
-		defer cleanupCancel()
-		if err := client.StopNetemContainer(cleanupCtx, req); err != nil {
-			logger.WithError(err).Warn("failed to stop netem container (container may have been removed)")
-		}
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// create new context with timeout for canceling
+
+// wait for specified duration and then stop netem (where it applied) or stop on ctx.Done()
+// use context.WithoutCancel so cleanup succeeds even if the parent ctx is canceled
+// or if it inherited a deadline that has elapsed alongside stopCtx.

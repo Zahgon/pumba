@@ -17,38 +17,12 @@ type MockStressor_Expecter struct {
 	mock *mock.Mock
 }
 
-func (_m *MockStressor) EXPECT() *MockStressor_Expecter {
-	return &MockStressor_Expecter{mock: &_m.Mock}
-}
+func (_m *MockStressor) EXPECT() *MockStressor_Expecter { _ = "STUB: not implemented"; return nil }
 
 // StressContainer provides a mock function with given fields: _a0, _a1
 func (_m *MockStressor) StressContainer(_a0 context.Context, _a1 *StressRequest) (*StressResult, error) {
-	ret := _m.Called(_a0, _a1)
-
-	if len(ret) == 0 {
-		panic("no return value specified for StressContainer")
-	}
-
-	var r0 *StressResult
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *StressRequest) (*StressResult, error)); ok {
-		return rf(_a0, _a1)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *StressRequest) *StressResult); ok {
-		r0 = rf(_a0, _a1)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*StressResult)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *StressRequest) error); ok {
-		r1 = rf(_a0, _a1)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // MockStressor_StressContainer_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'StressContainer'
@@ -60,24 +34,23 @@ type MockStressor_StressContainer_Call struct {
 //   - _a0 context.Context
 //   - _a1 *StressRequest
 func (_e *MockStressor_Expecter) StressContainer(_a0 interface{}, _a1 interface{}) *MockStressor_StressContainer_Call {
-	return &MockStressor_StressContainer_Call{Call: _e.mock.On("StressContainer", _a0, _a1)}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockStressor_StressContainer_Call) Run(run func(_a0 context.Context, _a1 *StressRequest)) *MockStressor_StressContainer_Call {
-	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(context.Context), args[1].(*StressRequest))
-	})
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockStressor_StressContainer_Call) Return(_a0 *StressResult, _a1 error) *MockStressor_StressContainer_Call {
-	_c.Call.Return(_a0, _a1)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (_c *MockStressor_StressContainer_Call) RunAndReturn(run func(context.Context, *StressRequest) (*StressResult, error)) *MockStressor_StressContainer_Call {
-	_c.Call.Return(run)
-	return _c
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewMockStressor creates a new instance of MockStressor. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
@@ -86,10 +59,6 @@ func NewMockStressor(t interface {
 	mock.TestingT
 	Cleanup(func())
 }) *MockStressor {
-	mock := &MockStressor{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

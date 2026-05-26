@@ -2,11 +2,8 @@ package chaos
 
 import (
 	"context"
-	"fmt"
 
 	"github.com/alexei-led/pumba/pkg/container"
-	log "github.com/sirupsen/logrus"
-	"golang.org/x/sync/errgroup"
 )
 
 // ContainerAction applies a chaos action to a single target container.
@@ -43,7 +40,8 @@ func RunOnContainers(
 	random, parallel bool,
 	fn ContainerAction,
 ) error {
-	return runOnContainers(ctx, lister, gp, limit, false, random, parallel, fn)
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // RunOnContainersAll behaves like RunOnContainers but also includes stopped
@@ -57,7 +55,8 @@ func RunOnContainersAll(
 	random, parallel bool,
 	fn ContainerAction,
 ) error {
-	return runOnContainers(ctx, lister, gp, limit, true, random, parallel, fn)
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func runOnContainers(
@@ -68,30 +67,6 @@ func runOnContainers(
 	all, random, parallel bool,
 	fn ContainerAction,
 ) error {
-	containers, err := container.ListNContainersAll(ctx, lister, gp.Names, gp.Pattern, gp.Labels, limit, all)
-	if err != nil {
-		return fmt.Errorf("listing containers: %w", err)
-	}
-	if len(containers) == 0 {
-		log.Warning("no containers found")
-		return nil
-	}
-	if random {
-		if c := container.RandomContainer(containers); c != nil {
-			containers = []*container.Container{c}
-		}
-	}
-	if !parallel {
-		for _, c := range containers {
-			if err := fn(ctx, c); err != nil {
-				return err
-			}
-		}
-		return nil
-	}
-	var eg errgroup.Group
-	for _, c := range containers {
-		eg.Go(func() error { return fn(ctx, c) })
-	}
-	return eg.Wait()
+	_ = "STUB: not implemented"
+	return nil
 }

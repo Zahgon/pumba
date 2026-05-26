@@ -4,8 +4,6 @@ import (
 	"errors"
 	"fmt"
 	"os"
-	"slices"
-	"strings"
 )
 
 // Canonical cgroup driver names returned by ParseProc1Cgroup.
@@ -75,25 +73,8 @@ var (
 //
 // which both truncate to `/machine.slice/libpod-<id>.scope`.
 func ParseProc1Cgroup(contents string) (driver, fullPath, parent, leaf string, err error) {
-	trimmed := strings.TrimSpace(contents)
-	if trimmed == "" {
-		return "", "", "", "", errEmptyCgroup
-	}
-
-	rawPath, selectErr := selectCgroupPath(trimmed)
-	if selectErr != nil {
-		return "", "", "", "", selectErr
-	}
-
-	rawPath = normaliseCgroupPath(rawPath)
-	if rawPath == "/" || rawPath == "/"+containerSegment {
-		return "", "", "", "", fmt.Errorf("%w (saw %q)", errPrivateCgroupnsView, rawPath)
-	}
-
-	fullPath = truncateToContainerScope(rawPath)
-	driver = driverForPath(fullPath)
-	parent, leaf = splitParentLeaf(fullPath)
-	return driver, fullPath, parent, leaf, nil
+	_ = "STUB: not implemented"
+	return "", "", "", "", nil
 }
 
 // RawCgroupPath returns the un-truncated cgroup path from /proc/<pid>/cgroup
@@ -101,134 +82,39 @@ func ParseProc1Cgroup(contents string) (driver, fullPath, parent, leaf string, e
 // only cgroup that accepts PID writes under cgroup v2's "no internal
 // processes" rule. Prefer this over heuristic filesystem probes (which can
 // race Podman's libpod init creating/destroying a `container/` sub-cgroup).
-func RawCgroupPath(contents string) (string, error) {
-	trimmed := strings.TrimSpace(contents)
-	if trimmed == "" {
-		return "", errEmptyCgroup
-	}
-	rawPath, err := selectCgroupPath(trimmed)
-	if err != nil {
-		return "", err
-	}
-	rawPath = normaliseCgroupPath(rawPath)
-	if rawPath == "/" || rawPath == "/"+containerSegment {
-		return "", fmt.Errorf("%w (saw %q)", errPrivateCgroupnsView, rawPath)
-	}
-	return rawPath, nil
-}
+func RawCgroupPath(contents string) (string, error) { _ = "STUB: not implemented"; return "", nil }
 
 // selectCgroupPath returns the path portion of the preferred line from
 // /proc/<pid>/cgroup contents. Picks the v2 unified line if present, else the
 // v1 `name=systemd` hierarchy, else errors.
-func selectCgroupPath(contents string) (string, error) {
-	const expectedFields = 3
-	var (
-		v2Path, v1SystemdPath string
-		sawStructuredLine     bool
-	)
-	for line := range strings.SplitSeq(contents, "\n") {
-		line = strings.TrimSpace(line)
-		if line == "" {
-			continue
-		}
-		parts := strings.SplitN(line, ":", expectedFields)
-		if len(parts) != expectedFields {
-			continue
-		}
-		sawStructuredLine = true
-		if parts[0] == "0" && parts[1] == "" {
-			if v2Path == "" {
-				v2Path = parts[2]
-			}
-			continue
-		}
-		if v1SystemdPath == "" && hasSubsystem(parts[1], "name=systemd") {
-			v1SystemdPath = parts[2]
-		}
-	}
-	if !sawStructuredLine {
-		return "", errMalformedCgroup
-	}
-	switch {
-	case v2Path != "":
-		return v2Path, nil
-	case v1SystemdPath != "":
-		return v1SystemdPath, nil
-	}
-	return "", errNoCgroupLine
-}
+func selectCgroupPath(contents string) (string, error) { _ = "STUB: not implemented"; return "", nil }
 
 // hasSubsystem reports whether subsystems (the comma-separated controller
 // list from a cgroup line's second field) contains name as a full entry.
-func hasSubsystem(subsystems, name string) bool {
-	for s := range strings.SplitSeq(subsystems, ",") {
-		if s == name {
-			return true
-		}
-	}
-	return false
-}
+func hasSubsystem(subsystems, name string) bool { _ = "STUB: not implemented"; return false }
 
 // normaliseCgroupPath strips trailing slashes from p while preserving a lone
 // "/" for downstream private-cgroupns detection.
-func normaliseCgroupPath(p string) string {
-	if p == "/" {
-		return p
-	}
-	return strings.TrimRight(p, "/")
-}
+func normaliseCgroupPath(p string) string { _ = "STUB: not implemented"; return "" }
 
 // truncateToContainerScope returns the prefix of p up to and including the
 // rightmost container-scope segment. See ParseProc1Cgroup for the truncation
 // rules in prose.
-func truncateToContainerScope(p string) string {
-	segments := strings.Split(p, "/")
-	if idx := lastIndexEndingIn(segments, ".scope", true); idx >= 0 {
-		return strings.Join(segments[:idx+1], "/")
-	}
-	if idx := lastIndexEndingIn(segments, ".slice", false); idx >= 0 {
-		return strings.Join(segments[:idx+1], "/")
-	}
-	return p
-}
+func truncateToContainerScope(p string) string { _ = "STUB: not implemented"; return "" }
 
 // lastIndexEndingIn returns the index of the rightmost non-empty segment that
 // ends with suffix. When skipInitScope is true, segments exactly equal to
 // "init.scope" are treated as sub-cgroup noise and ignored during the scan.
 func lastIndexEndingIn(segments []string, suffix string, skipInitScope bool) int {
-	for i, seg := range slices.Backward(segments) {
-		if seg == "" {
-			continue
-		}
-		if skipInitScope && seg == initScopeSegment {
-			continue
-		}
-		if strings.HasSuffix(seg, suffix) {
-			return i
-		}
-	}
-	return -1
+	_ = "STUB: not implemented"
+	return 0
 }
 
 // driverForPath returns "systemd" when p contains `.slice` or `.scope`; else
 // "cgroupfs".
-func driverForPath(p string) string {
-	if strings.Contains(p, ".slice") || strings.Contains(p, ".scope") {
-		return driverSystemd
-	}
-	return driverCgroupfs
-}
+func driverForPath(p string) string { _ = "STUB: not implemented"; return "" }
 
 // splitParentLeaf returns (parent, leaf) for an absolute cgroup path. For
 // single-segment paths (e.g. "/libpod-abc.scope"), parent collapses to "/"
 // to match Docker SDK expectations around cgroup parent strings.
-func splitParentLeaf(p string) (string, string) {
-	i := strings.LastIndex(p, "/")
-	switch {
-	case i < 0:
-		return "/", p
-	case i == 0:
-		return "/", p[1:]
-	}
-	return p[:i], p[i+1:]
-}
+func splitParentLeaf(p string) (string, string) { _ = "STUB: not implemented"; return "", "" }
